@@ -1,0 +1,37 @@
+// 
+// tables.scss
+// Extended from Bootstrap
+// 
+
+// 
+// Additional styles for theme
+// 
+
+// Table dark gray
+.table.table-dark-gray {
+  thead{
+    background-color: $dark-gray !important;
+    color:$white;
+  }
+  tbody{
+    border-top: none;
+  }
+}
+.table td, .table th {
+  white-space: nowrap;
+}
+
+// Media up md
+@include media-breakpoint-up(md) {
+  .table-shrink.table td, .table-shrink.table th {
+    white-space: inherit;
+  }
+}
+
+// Media down sm
+@include media-breakpoint-down(md) {
+  .table-shrink .table-title{
+    width: 200px;
+    white-space: normal;
+  }
+}

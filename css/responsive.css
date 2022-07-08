@@ -1,0 +1,772 @@
+
+
+
+@media screen and (min-width:320px) and (max-width:990px){
+.navbar{z-index:999}
+.interface2{min-height:60px !important}
+.navbar-dark.innerNav .navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}
+.btn {background-color: #ff5461;padding: 0px 20px; border-radius: 5px;font-weight: 700;font-size: 14px; min-width: auto; padding:7px 20px}
+#map{top:0px !important; margin:0px !important}
+.map_rht{position:static; height:500px; top:0px}
+.fltrTopWrapper{padding:20px}
+.city-drop ul li input[type="text"]{width:80%; padding:5px}
+.lsit_grid_wrapper .nav{display:none}
+.fltr-area h4{margin-top:10px}
+.sideMapWrapper .searchBtn .btn{margin-top:0px; width:100%}
+.more_opt{background-color:#3aaced ;}
+.fltrMiddleWrapper{padding:20px}
+.fltr_head_area h2{margin-bottom:20px; font-size:22px}
+.fltr_head_area .fltr-bx{width:50%}
+.lsit_grid_wrapper .tab-content{position:static}
+.box .content h5{padding-right:0px;}
+.flex-box .box .more-info, .flex-box .box .infos{display:block}
+.bottom .content .more-info{position: relative;top: -27px;margin-bottom: -30px;}
+.Profilehv_pop{max-width:320px}
+.Profilehv_pop .modal-content .bottom .col{width:100%; max-width:100%; flex:none}
+.Profilehv_pop .modal-content .head{padding-top:70px;}
+.Profilehv_pop .modal-content .head img{max-width:80px; bottom:-38px}
+.Profilehv_pop .modal-content .head h4{margin-left:90px; font-size:18px}
+.Profilehv_pop::after{bottom:-21px}
+.pagination-area{ margin-top:30px;}
+.updates{padding:30px 0px}
+
+#addListPop .modal-content{padding:20px}
+#addListPop .modal-content ul li{width:130px; height:130px;}
+#addListPop .modal-content ul li figure{margin-bottom:10px;}
+
+#makePostPop.modal ul li figure{width:100%}
+#makePostPop.modal ul li input[type="text"]{ width:85%}
+#makePostPop.modal .modal-footer .btn{padding:7px 20px}
+
+.topMapWrapper{padding:20px}
+.topMapArea{height:500px}
+.topMapWrapper .fltr-area h4{ margin:0px}
+.topMapWrapper .fltr_head_area .categoryView{display:none}
+.map-cal input[type="text"]{width:80%; height:38px;}
+.fltr-bx.destination input{width:80%}
+.sideMapWrapper .eplaces .counterArea .count_inpt{padding-left:10px}
+
+.topMapWrapper .box .category{width:50px; height:50px; right:10px; line-height:50px; top:-26px}
+	.topMapWrapper .box .category img{ width:30px; height:auto}
+	.topMapWrapper .Profilehv_pop{ top:-320px}
+	.topMapWrapper .Profilehv_pop::after { bottom: 0px;right: 22px;}
+	
+.stuningWrapper, .todayBestWrapper{padding:30px 0px}
+.hotelMenuBanner h1{font-size:32px}
+.stuningWrapper ul{margin-top:0px}
+.stuningWrapper ul li{width:90%; margin:20px 5%}
+.headingBx{padding:20px}
+.headingBx h1{ font-size:28px;}
+.todayBestWrapper .lft-img{width:100%;}
+.todayBestWrapper .lft-img img{width:100%; height:auto}
+.todayBestWrapper .rht-tab{width:100%}
+.todayBestWrapper .rhtTabInner{padding:20px}
+.todayBestWrapper .rhtTabInner .nav-item{ width:33%}
+.todayBestWrapper .rhtTabInner li a{ padding:20px 0px; text-align:center}
+.todayBestWrapper .rhtTabInner h1{font-size:22px}
+.todayBestWrapper .rhtTabInner{ max-width:100%}
+
+
+.cmn_bx .bx_inner{padding:15px}
+.content_lft{width:100%}
+
+.cmn_bx .listing_features ul li{width:50%; font-size:12px; margin-bottom:10px}
+.cmn_bx .listing_features span{margin-right:5px; width:30px; height:30px; line-height:30px;}
+.cmn_bx .gallery ul li{width:40% !important; display:inline-block; float:none; margin:4.9%; float:left}
+
+.more_stuff input[type="text"]{max-width:100%}
+.article_slide .slide_bx{font-size:14px}
+.article_slide .carousel-control-next{ }
+.article_slide .carousel-control-prev{}
+
+.what_react ul{text-align:center}
+.what_react ul li{height:230px; display:inline-block; float:none}
+
+.cmn_bx .rating .rating_lft{width:40%; margin-right:2%}
+.cmn_bx .rating .rating_rht{width:58%; }
+.reviews .reviews_rht{width:70%}
+
+.reviews .replyTxt{ padding-left:0px !important}
+
+.content_rht{width:100%}
+.ad_wrapper img{max-width:100%}
+.box .dropdown-menu .dropdown-item, .comment-section .dropdown-menu .dropdown-item{padding-left:14px}
+.rating .dropdown-menu{min-width:100px; right:-100px !important}
+.box .lcs .like-list ul{min-width:175px}
+
+.ht_photos_wrapper .followListing  .box .owl-carousel .owl-dots {
+    position: absolute;
+    bottom: 30px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+
+}
+
+@media screen and (min-width:320px) and (max-width:1100px){
+	
+/*------ date------------------------------------------------*/
+.daterangepicker {
+	position: absolute;
+	color: inherit;
+	background-color: #fff;
+	border-radius: 4px;
+	border: 1px solid #eee;
+	width: 90% !important;
+	max-width: 250px;
+	padding: 0px;
+	margin-top: 7px;
+	top: 65px !important;
+	left: 15px !important;
+	z-index: 99;
+	display: none;
+	/*font-family: arial;*/
+	font-size: 15px;
+	line-height: 1em
+}
+.daterangepicker.opensleft:after {
+	right: 10px
+}
+.daterangepicker.openscenter:after, .daterangepicker.openscenter:before {
+	left: 0;
+	right: 0;
+	width: 0;
+	margin-left: auto;
+	margin-right: auto
+}
+.daterangepicker.opensright:before {
+	left: 100%;
+	margin-left: -39px
+}
+.daterangepicker.opensright:after {
+	left: 100%;
+	margin-left: -40px
+}
+.daterangepicker.drop-up {
+	margin-top: -7px
+}
+.daterangepicker.drop-up:after, .daterangepicker.drop-up:before {
+	top: initial;
+	bottom: -7px;
+	border-bottom: initial;
+	border-top: 7px solid #ccc
+}
+.daterangepicker.drop-up:after {
+	bottom: -6px;
+	border-top: 6px solid #fff
+}
+.daterangepicker.single .daterangepicker .ranges, .daterangepicker.single .drp-calendar {
+	float: none
+}
+.daterangepicker.single .drp-selected {
+	display: none
+}
+.daterangepicker.show-calendar .drp-buttons, .daterangepicker.show-calendar .drp-calendar {
+	display: block
+}
+.daterangepicker .drp-buttons .btn:after, .daterangepicker.auto-apply .drp-buttons {
+	display: none
+}
+.daterangepicker .drp-calendar {
+	display: none;
+	/*max-width: 270px*/
+}
+.drp-calendar {
+    width: 100%;
+}
+
+.daterangepicker .drp-calendar.left {
+	padding:0px
+}
+.daterangepicker .drp-calendar.right {
+	padding: 8px;
+	float:right !important
+}
+.daterangepicker .drp-calendar.single .calendar-table {
+	border: 0
+}
+.daterangepicker .calendar-table .month {
+	padding-bottom: 6px;
+	padding-top: 6px
+}
+.daterangepicker .calendar-table .next span, .daterangepicker .calendar-table .prev span {
+	color: #fff;
+	border: solid #666;
+	border-width: 0 1px 1px 0;
+	border-radius: 0;
+	display: inline-block;
+	padding: 3px
+}
+.daterangepicker .calendar-table .next span {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg)
+}
+.daterangepicker .calendar-table .prev span {
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg)
+}
+.daterangepicker .calendar-table td, .daterangepicker .calendar-table th {
+	text-align: center;
+	vertical-align: middle;
+	min-width: 16px;
+	width: 16px;
+	height: 13px;
+	line-height: 13px;
+	font-size: 11px;
+	border-radius: 4px;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	cursor: pointer;
+	color: #666;
+	font-weight:500;
+	font-family:arial;
+}
+.daterangepicker .calendar-table th {
+	color:#ff5461;
+	border:none
+}
+.daterangepicker .calendar-table {
+	border: 1px solid #fff;
+	border-radius: 4px;
+	background-color: #fff
+}
+.daterangepicker .calendar-table table {
+	width: 100%;
+	margin: 0;
+	border-spacing: 0;
+	border-collapse: collapse
+}
+.daterangepicker td.available:hover, .daterangepicker th.available:hover {
+	background-color: #eee;
+	border-color: transparent;
+	color: inherit
+}
+.daterangepicker td.week, .daterangepicker th.week {
+	font-size: 80%;
+	color: #ccc
+}
+.daterangepicker td.in-range, .daterangepicker td.off, .daterangepicker td.off.end-date, .daterangepicker td.off.in-range, .daterangepicker td.off.start-date {
+	background-color: #fff;
+	border-color: transparent;
+	color: #999
+}
+.daterangepicker td.in-range {
+	background-color: #ebf4f8;
+	border-radius: 0
+}
+.daterangepicker td.start-date {
+	border-radius: 4px 0 0 4px
+}
+.daterangepicker td.end-date {
+	border-radius: 0 4px 4px 0
+}
+.daterangepicker td.start-date.end-date {
+	border-radius: 4px
+}
+.daterangepicker td.active, .daterangepicker td.active:hover {
+	background-color: #357ebd;
+	border-color: transparent;
+	color: #fff
+}
+.daterangepicker th.month {
+	width: auto
+}
+.daterangepicker .calendar-table th.month {
+	color: #999
+}
+.daterangepicker option.disabled, .daterangepicker td.disabled {
+	color: #999;
+	cursor: not-allowed;
+	text-decoration: line-through
+}
+.daterangepicker select.monthselect, .daterangepicker select.yearselect {
+	font-size: 12px;
+	padding: 1px;
+	height: auto;
+	margin: 0;
+	cursor: default
+}
+.daterangepicker select.monthselect {
+	margin-right: 2%;
+	width: 56%
+}
+.daterangepicker select.yearselect {
+	width: 40%
+}
+.daterangepicker select.ampmselect, .daterangepicker select.hourselect, .daterangepicker select.minuteselect, .daterangepicker select.secondselect {
+	width: 50px;
+	margin: 0 auto;
+	background: #eee;
+	border: 1px solid #eee;
+	padding: 2px;
+	outline: 0;
+	font-size: 12px
+}
+.daterangepicker .calendar-time {
+	text-align: center;
+	margin: 4px auto 0;
+	line-height: 30px;
+	position: relative
+}
+.daterangepicker .calendar-time select.disabled {
+	color: #ccc;
+	cursor: not-allowed
+}
+.daterangepicker .drp-buttons {
+	clear: both;
+	text-align: right;
+	padding: 12px 8px;
+	border-top: 1px solid #eee;
+	display: none;
+	line-height: 12px;
+	vertical-align: middle
+}
+.daterangepicker .drp-selected {
+	display: inline-block;
+	font-size: 10px;
+	padding-right: 0px;
+	/*font-style: italic;*/
+	color: #666;
+	font-weight: 400;
+	padding-bottom:8px;
+}
+.daterangepicker .drp-buttons .btn {
+	margin-left: 4px;
+	margin-top:0px;
+	font-size: 11px;
+	padding:5px 10px;
+	/*font-weight: 500;
+	height: inherit!important;
+	line-height: inherit!important;
+	padding: 7px 22px!important;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	border-radius: 4px;
+	color: #fff!important;
+	box-shadow: none;
+	margin-top:0px;*/
+}
+.daterangepicker .drp-buttons .btn.btn-primary {
+	background: #18458b
+}
+.daterangepicker.show-ranges .drp-calendar.left {
+	border-left: 1px solid #ddd
+}
+.daterangepicker .ranges {
+	float: none;
+	text-align: left;
+	margin: 0
+}
+.daterangepicker.show-calendar .ranges {
+	margin-top: 8px
+}
+.daterangepicker .ranges ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%
+}
+.daterangepicker .ranges li {
+	font-size: 12px;
+	padding: 8px 12px;
+	cursor: pointer
+}
+.daterangepicker .ranges li:hover {
+	background-color: #eee
+}
+.daterangepicker .ranges li.active {
+	background-color: #08c;
+	color: #fff
+}
+
+.follow_area {text-align:center;}
+.follow_area .row{ display:block}
+.follow_area figure{width:150px; height:150px; line-height:150px; float:none; display:inline-block; margin:10px 0px; position:static}
+.follow_area figure img{ width:100%; height:auto}
+.follow_area figcaption{padding:0px; width:100%}
+.follow_area figcaption button{position:static;}
+.followSearch{clear:both}
+.followSearchInner{padding:15px}
+.followSearchInner h3{width:100%; font-size:12px;}
+.followSearchInner .search_bx{width:100%; max-width:600px}
+.followSearchInner .search_bx input[type="text"]{width:65%; padding:6px}
+.followSearchInner .search_bx input[type="submit"]{padding:6px; background-size:16px auto}
+.followSearchInner .dot .dropdown-menu{  min-width:150px}
+.followSearchInner .dot > a{line-height:16px}
+.followListing .bx figure{height:auto}
+.followListing .bx figcaption .dot .dropdown-menu{ min-width:150px}
+
+.followListing .bx ul li{margin:3px 5%}
+.followListing .bx ul li span{padding:6px 0px}
+.followListing .bx figcaption h5{margin-bottom:18px}
+
+
+.ht_photos_wrapper .followListing .bx figure{height:170px;}
+}
+
+
+@media screen and (min-width:991px) and (max-width:1800px){
+	body{font-size:13px}
+.interface2{min-height:60px !important}
+.navbar .navbar-nav .nav-link{font-size:12px; padding:0px;}
+.navbar .dropdown, .navbar .user.original{margin-left:4px; font-size:12px;}
+.navbar .form-inline .btn:first-of-type, .navbar .btn{margin:0px 7px; padding:6px 10px}
+	
+.map_rht {width: 30%; max-width: 30%;}
+.lft_cnt{width: 70%; max-width: 70%;}
+.fltr-bx.destination{padding-left:10px}
+.map-cal input[type="text"]{width:80%; height:38px;}
+.sideMapWrapper .eplaces .counterArea .count_inpt{padding-left:10px}
+.fltr-bx.destination input{width:80%}
+.daterangepicker{width:360px !important}
+
+.topMapWrapper{padding:20px}
+.topMapArea {
+    height: 400px;
+}
+.topMapWrapper .box .category{width:50px; height:50px; right:10px; line-height:50px; top:-26px}
+	.topMapWrapper .box .category img{ width:30px; height:auto}
+	.topMapWrapper .Profilehv_pop{ top:-355px}
+	.topMapWrapper .Profilehv_pop::after { bottom: 0px;right: 22px;}
+	
+	.topMapWrapper .box .infos .info {display: inline-block;margin-right: 14px;font-size: 12px; margin-right:5px;}
+	.topMapWrapper .box .more-info li{ margin-right:8px;}
+	.topMapWrapper .box .more-info li a{font-size:11px;}
+
+.stuningWrapper ul{margin-top:0px}
+.stuningWrapper ul li{width:40%; margin:20px 5%}
+
+.todayBestWrapper .lft-img img{width:100%; height:auto}
+.todayBestWrapper .rhtTabInner{padding:20px}
+.todayBestWrapper .rhtTabInner .nav-item{ width:33%}
+.todayBestWrapper .rhtTabInner li a{ padding:20px 0px; text-align:center}
+
+.cmn_bx .listing_features span{margin-right:5px}
+.cmn_bx .gallery ul li{width:23%; margin:0px 15px 15px 0px}
+.social_share ul li.sWid1{width:14%}
+.social_share ul li.sWid2{width:29%}
+.social_share ul li.sWid3{width:6%}
+.adcls li.sWid2 {width: 36% !important;}
+.social_share ul li a i	{margin:0px !important}
+.more_stuff input[type="text"]{margin-bottom:20px}
+
+.what_react ul li{width:12%; margin:1%}
+.what_react ul li figure{padding:0px}
+.cmn_bx .rating .rating_lft{width:160px; margin-right:15px}
+.cmn_bx .rating .rating_rht{width:66%}
+.reviews .reviews_rht{width:78%}
+.cmn_bx .request ul li.requestDate .date-container input[type="text"]{width:80%}
+.cmn_bx .request ul li .daterangepicker{width:285px !important}
+.cmn_bx .businessInfo ul li a{width:34px; height:34px; line-height:34px; margin-right:4px}
+.cmn_bx .statistics ul li i{width:30px; height:30px; line-height:30px;}
+.cmn_bx .statistics ul li{line-height:30px}
+.cmn_bx .contact_busi ul li textarea{height:90px !important}
+.cmn_bx .author figcaption{width:60%} 
+.cmn_bx .addReview textarea{min-height:120px}
+.reviews .reviews_lft .Profilehv_pop{right:-240px}
+.reviews .reviews_rht .gallery ul li{width:22%; height:100px}
+#range-1a, #range-1b{top:18px !important;}
+
+.ht_photos_wrapper .followListing .bx figure{height:auto; max-height:250px}
+
+}
+@media screen and (min-width:1801px) and (max-width:2400px){
+	.ht_eventRFQ_wrapper .sideBarWrapper{flex:none; max-width:18%}
+	.ht_eventRFQ_wrapper .cred_rht{flex:none; max-width:82% }
+	
+}
+
+@media screen and (min-width:1366px) and (max-width:1800px){
+	.cred_rht .cc_listing .cc_row .ccBx3{width:26%;}
+	.cred_rht .cc_listing .cc_row .ccBx3 ul li{padding:10px 20px}
+	.cred_rht .cc_listing .cc_row .ccBx2{width:25%}
+	.featureArea input[type="checkbox"] + label{font-size:10px}
+	.cred_rht .cc_listing .cc_row .ccBx2 .toggleArrow{bottom:-35px;}
+	
+	.rfq_listing_inner .bx .head1{padding:24px 11px 30px 11px}
+	.ht_eventRFQ_wrapper .sideBarWrapper{flex:none; max-width:20%}
+	.ht_eventRFQ_wrapper .cred_rht{flex:none; max-width:80% }
+}
+@media screen and (min-width:991px) and (max-width:1365px){
+	
+.sideBarWrapper{max-width:36%; flex:none}
+.cred_rht{max-width:64%; flex:none}
+	.cred_rht .cc_listing .cc_row{margin-bottom:30px; position:relative;}
+.cred_rht .cc_listing .cc_inner{text-align:center; }
+.cred_rht .cc_listing .cc_row .ccBx1{float:none; display:inline-block; margin-bottom:20px}
+.cred_rht .cc_listing .cc_row .ccBx2{width:100%; text-align:center; border:0px; position:static}
+.cred_rht .cc_listing .cc_row .ccBx3{width:60%}
+.cred_rht .cc_listing .cc_row .ccBx3 ul li{padding:30px 10px}
+.cred_rht .cc_listing .cc_row .ccBx5{width:25%}
+
+.cred_rht .cred_fltr .bx1, .cred_rht .cred_fltr .bx2, .cred_rht .cred_fltr .bx3{width:100%}
+.cred_rht .cred_fltr .bx2 select{width:100%;}
+.cred_rht .cred_fltr .bx2 span img{top:30px}
+.cred_rht .cred_fltr{padding:10px 20px}
+.cred_rht .cred_fltr .bx2 span a{display:block; padding:10px}
+
+.cctoggle{padding:0px}
+
+.rfq_listing h3{text-align:left}
+.ht_eventRFQ_wrapper .cmp_info .bx ul li{width:48.6%}
+.ht_eventRFQ_wrapper .cmp_info .bx ul li:nth-child(2n){ border:none}
+.rfq_listing_inner{text-align:center}
+.rfq_listing_inner .bx{width:100%; margin:0px 2% 20px 2%; max-width:246px;}
+}
+@media screen and (min-width:768px) and (max-width:990px){
+	.resViewSearch .searchTop{display:block; padding-bottom:0px;}
+.cred_rht .searchTop{display:none}
+	.daterangepicker{width:250px !important}
+	.topMapWrapper .fltrTopInner .moreCatBx ul{width:33%;float:left}
+	.topMapWrapper .fltrTopInner .moreCatBx ul:last-child{ margin-top:40px}
+	.topMapWrapper .box .category{width:50px; height:50px; right:10px; line-height:50px; top:-26px}
+	.topMapWrapper .box .category img{ width:30px; height:auto}
+	.topMapWrapper .Profilehv_pop{ top:-355px}
+	.topMapWrapper .Profilehv_pop::after { bottom: 0px;right: 22px;}
+	
+	.youMayLike .box h3{padding:50px 0px 0px}
+	
+	.article_slide .carousel-control-next{right:-50px}
+	.article_slide .carousel-control-prev{left:-50px}
+	#sticky{margin-left:-44px}
+	
+	
+.sideBarWrapper{padding-bottom:0px}
+
+.cred_rht .cred_fltr .bx1, .cred_rht .cred_fltr .bx2, .cred_rht .cred_fltr .bx3{width:100%}
+.cred_rht .cc_listing .cc_row .ccBx1 .cc_logoBx .Profilehv_pop::after{bottom:0px}
+.cred_rht .cred_fltr .bx2 select{width:100%;}
+.cred_rht .cred_fltr .bx2 span img{top:30px}
+.cred_rht .cred_fltr{padding:10px 20px}
+.cred_rht .cred_fltr .bx2 span a{display:block; padding:10px}
+
+.cred_rht .cc_listing .cc_row{margin-bottom:30px; position:relative;}
+.cred_rht .cc_listing .cc_inner{text-align:center; }
+.cred_rht .cc_listing .cc_row .ccBx1{float:none; display:inline-block; margin-bottom:20px}
+.cred_rht .cc_listing .cc_row .ccBx2{width:100%; text-align:center; border:0px; position:static}
+.cred_rht .cc_listing .cc_row .ccBx3{width:68%}
+.cred_rht .cc_listing .cc_row .ccBx3 ul li{padding:30px 16px}
+
+.cctoggle{padding:0px}
+
+.rfq_listing h3{text-align:center}
+.ht_eventRFQ_wrapper .cmp_info .bx ul li{width:48.6%}
+.ht_eventRFQ_wrapper .cmp_info .bx ul li:nth-child(2n){ border:none}
+.rfq_listing_inner{text-align:center}
+.rfq_listing_inner .bx{width:100%; margin:0px 2% 20px 2%; max-width:246px;}
+.rfq_listing_inner .bx .head1 figure .Profilehv_pop::after{bottom:0px}
+
+}
+@media screen and (min-width:641px) and (max-width:767px){
+.social_share ul li a span {display: none;}
+.social_share ul li.sWid1{ width:25% !important;}
+.social_share ul li.sWid2{width:17%}
+.social_share ul li.sWid3{width:10% !important}
+.social_share ul li.sWid4{width:10% !important}
+.adcls li.sWid2{ width:29% !important}
+.social_share ul li a.fb i, .social_share ul li a.twt i{margin-right:0px}
+
+.youMayLike .box h3{padding-top:44px}
+.moreFrom .morefrom_rht{padding:40px 20px 0px}
+.slipApart_area .priceBx{top:5px; right:-60px}
+.slipApart_area .slipApart_head{padding:60px 0px 20px}
+
+
+.sideBarWrapper{padding-bottom:0px}
+.cred_rht .searchTop1{width:100%; background:#f5f5f5; padding:0px 20px}
+.cred_rht .searchTop1 input{background:#f5f5f5}
+.cred_rht .searchTop2{width:100%; border-bottom:1px solid #eee}
+.cred_rht .searchTop2 .notify .dropdown-menu{right:inherit !important; top:30px !important}
+.cred_rht .cred_fltr .bx1, .cred_rht .cred_fltr .bx2, .cred_rht .cred_fltr .bx3{width:100%}
+.cred_rht .cc_listing .cc_row .ccBx1 .cc_logoBx .Profilehv_pop::after{bottom:0px}
+.cred_rht .cred_fltr .bx2 select{width:100%;}
+.cred_rht .cred_fltr .bx2 span img{top:30px}
+.cred_rht .cred_fltr{padding:10px 20px}
+.cred_rht .cred_fltr .bx2 span a{display:block; padding:10px}
+
+.cred_rht .cc_listing .cc_row{margin-bottom:30px; position:relative;}
+.cred_rht .cc_listing .cc_inner{text-align:center; }
+.cred_rht .cc_listing .cc_row .ccBx1{float:none; display:inline-block; margin-bottom:20px}
+.cred_rht .cc_listing .cc_row .ccBx2{width:100%; text-align:center; border:0px; position:static}
+.cred_rht .cc_listing .cc_row .ccBx3{width:68%}
+.cred_rht .cc_listing .cc_row .ccBx3 ul li{padding:30px 16px}
+
+.cctoggle{padding:0px}
+
+.rfq_listing h3{text-align:center}
+.ht_eventRFQ_wrapper .cmp_info .bx ul li{width:48.6%}
+.ht_eventRFQ_wrapper .cmp_info .bx ul li:nth-child(2n){ border:none}
+.rfq_listing_inner{text-align:center}
+.rfq_listing_inner .bx{width:100%; margin:0px 2% 20px 2%; max-width:246px;}
+.rfq_listing_inner .bx .head1 figure .Profilehv_pop::after{bottom:0px}
+
+.resViewSearch .searchTop{display:block; padding-bottom:0px;}
+.cred_rht .searchTop{display:none}
+
+}
+@media screen and (min-width:320px) and (max-width:640px){
+body{ font-size:13px;}
+.moreCatBx ul{width:100%; margin:10px 0px 0px}
+.moreCatBx ul:last-child li:first-child{ display:none}
+.navbar .dropdown{margin-left:5px}
+.navbar .form-inline .btn:first-of-type{margin-left:5px}
+
+.topMapWrapper .box > .head{ min-height:200px;}
+.topMapWrapper .fltrTopInner{padding:20px;}
+.topMapWrapper .Profilehv_pop::after{bottom:-21px}
+
+.pagination-area a{width:36px; height:36px; line-height:36px}
+
+.content_area{padding:0px}
+#sticky{display:none}
+.slipApart_area .priceBx{position:static}
+.slipApart_area .slipApart_head{text-align:center}
+.slipApart_area .slipApart_head figure{float:none; display:inline-block}
+.slipApart_area .slipApart_head figcaption{float:none; width:100%; margin:0px;}
+.slipApart_area ul{text-align:center}
+.slipApart_area ul li{display:inline-block; float:left; width:32%; margin-right: 1%; font-size:14px; margin-bottom:10px}
+
+.subscribe_frm .btn{width:100%; margin-top:20px}
+.cmn_bx .rating .rating_lft{width:100%}
+.cmn_bx .rating .rating_rht{width:100%}
+.reviews .review_row{text-align:center; padding:0px;}
+.reviews .reviews_lft{float:none; display:inline-block}
+.reviews .reviews_rht, .reviews .replyTxt .reviews_rht{width:100%; float:none; margin:20px 0px; display:inline-block}
+
+.cmn_bx .add_photo .photo_browse{width:49%; float:left; margin-right:2%}
+.cmn_bx .add_photo .filex{width:100%}
+.cmn_bx .add_photo .photo_show{width:49%;float:left}
+.cmn_bx .addReview .btn{width:100%}
+.cmn_bx .addReview .col-6{ max-width:100%; flex:none}
+.cmn_bx .addReview textarea{min-height:100px}
+.cmn_bx .addReview .form-control{margin-bottom:15px; padding:10px; font-size:12px;}
+.cmn_bx .statistics ul li{font-size:13px}
+
+.cmn_bx .contact_busi .form-control{margin-bottom:15px; padding:10px; font-size:12px;}
+.cmn_bx .contact_busi ul li textarea{height:90px !important}
+.cmn_bx .contact_busi ul li .btn{width:100%}
+.cmn_bx .request ul li.requestDate .date-container input[type="text"]{width:80%}
+.cmn_bx .author{text-align:center}
+.cmn_bx .author figcaption{width:100%; text-align:center}
+.cmn_bx .author figure{float:none; display:inline-block; margin:0px}
+.youMayLike h2{font-size:22px}
+.youMayLike .box h3{font-size:18px; padding:40px 0px 0px}
+
+.moreFrom{padding:10px 0px}
+.moreFrom .morefrom_rht{width:100%; padding:50px 20px 0px 20px}
+
+.moreFrom .morefrom_rht h6{font-size:12px; margin-bottom:0px}
+.moreFrom h3{font-size:18px; margin-bottom:5px; padding:0pxs}
+.moreFrom .morefrom_rht figcaption{line-height:normal}
+.moreFrom .head{ margin-top:15px}
+
+.article_slide .carousel-control-prev{left:-30px}
+.article_slide .carousel-control-next{right:-30px}
+.article_slide .prev_txt{left:18px}
+.article_slide .next_txt{right:18px}
+
+.social_share ul li a span {display: none;}
+.social_share ul li.sWid1{ width:25% !important;}
+.social_share ul li.sWid2{width:18%}
+.social_share ul li.sWid3{width:10% !important}
+.social_share ul li.sWid4{width:10% !important}
+.adcls li.sWid2{ width:30% !important}
+.social_share ul li a.fb i, .social_share ul li a.twt i{margin-right:0px}
+
+.mapPop{width:300px}
+.gm-style .gm-style-iw-c{left:-22px}
+.mapPop .content h5{margin-top:116px}
+.mapPop .rating .dropdown-menu{right:-50px !important}
+.gm-ui-hover-effect{z-index:9}
+
+.reviews .reviews_lft .Profilehv_pop{text-align:left; top:-290px}
+
+#range-1a, #range-1b{top:20px !important}
+.counterArea .countBx{max-width:100%; margin-right:5%}
+.counterArea .countBx:last-child{ margin-right:0px;}
+.social_share ul li span.count{font-size:36px}
+.social_share ul li.sWid1{top:20px}
+.Profilehv_pop{z-index:99}
+.cmn_bx .author .Profilehv_pop{top:-280px}
+.fltr_head_area .city-drop .dropdown-toggle{padding:10px 20px; margin-left:0px }
+.fltr_head_area label{margin-top:10px !important; width:40%; font-size:13px !important;}
+.fltr_head_area .fltr-bx{width:55%; margin-left:5%}
+.fltr-bx .fa.fa-angle-down{margin-top:2px}
+.fltr-bx.destination input{width:90%}
+.sideMapWrapper .eplaces .counterArea .count_inpt{padding-left:10px; line-height:normal; border:none}
+.sideMapWrapper .eplaces .counterArea .input-group{height:38px}
+.sideMapWrapper .eplaces .counterArea .countBx .btn{height:20px}
+
+
+#chosePhotosPop .choseFromList li{width:100%; height:auto; max-height:250px}
+#chosePhotosPop .choseFromList li > a > img{width:100%; height:auto}
+#chosePhotosPop .choseFromList li label{ width:400px; height:400px;}
+
+#chosePhotosPop .choseFromList li > figure > img{width:100%; height:auto}
+
+.ht_photos_wrapper .btn_area{width:100%}
+.ht_photos_wrapper .btn_area .btn{margin:10px 0px; width:49%}
+
+.ht_photos_wrapper .followListing .nav-tabs{position:static; margin-bottom:0px}
+.ht_photos_wrapper .followListing .nav-link{ padding:20px 25px}
+.ht_photos_wrapper  .followListing{padding-top:0px}
+.ht_photos_wrapper .followListing .bx figure{height:200px;}
+.ht_photos_wrapper .ph_album a{padding:70px}
+.ht_photos_wrapper .ph_album{height:auto}
+
+
+.sideBarWrapper{padding-bottom:0px}
+.searchTop1{width:100%; background:#f5f5f5; padding:0px 20px}
+.searchTop1 input{background:#f5f5f5}
+.searchTop2{width:100%; border-bottom:1px solid #eee}
+.searchTop2 .notify .dropdown-menu{right:inherit !important; top:30px !important}
+.cred_rht .cred_fltr .bx1, .cred_rht .cred_fltr .bx2, .cred_rht .cred_fltr .bx3{width:100%}
+.cred_rht .cred_fltr .bx2 select{width:100%;}
+.cred_rht .cred_fltr .bx2 span img{top:30px}
+.cred_rht .cred_fltr{padding:10px 20px}
+.cred_rht .cred_fltr .bx2 span a{display:block; padding:10px}
+
+.cred_rht .cc_listing .cc_row{margin-bottom:30px; position:relative;}
+.cred_rht .cc_listing .cc_inner{text-align:center; }
+.cred_rht .cc_listing .cc_row .ccBx1{float:none; display:inline-block; margin-bottom:20px}
+.cred_rht .cc_listing .cc_row .ccBx1 .cc_logoBx .Profilehv_pop{ top:-196px}
+.cred_rht .cc_listing .cc_row .ccBx2{width:100%; text-align:center; border:0px; position:static}
+.cred_rht .cc_listing .cc_row .ccBx3{width:100%; border:none}
+.cred_rht .cc_listing .cc_row .ccBx3 ul{ max-width:206px; display:inline-block}
+.cred_rht .cc_listing .cc_row .ccBx3 ul li{padding:5px 20px; float:left}
+.cred_rht .cc_listing .cc_row .ccBx4{width:100%; padding:0px}
+.cred_rht .cc_listing .cc_row .ccBx5{width:100%; padding:0px;}
+.cred_rht .cc_listing .cc_row .ccBx5 .btn{width:100%}
+
+
+.cred_rht .cc_listing .cc_row .ccBx2 .toggleArrow{right:inherit; left:45%}
+.cctoggle{padding:20px;}
+.ccToggleInner figure{width:100%; margin:0px}
+.ccToggleInner figcaption{width:100%; margin-left:0px}
+.ccToggleInner{padding:0px}
+
+
+.ht_eventRFQ_wrapper .sideBarWrapper .mediweb{padding-top:10px}
+.ht_eventRFQ_wrapper .cmp_info .bx ul li{width:100%; border:none}
+.ht_eventRFQ_wrapper .cmp_info .bx{width:100%}
+.ht_eventRFQ_wrapper .cmp_info{margin:0px 22px;}
+.rfq_listing_inner{text-align:center}
+.rfq_listing_inner .bx{width:100%; margin:0px 2% 20px 2%; max-width:246px;}
+
+
+.resViewSearch .searchTop{display:block; padding-bottom:0px;}
+.cred_rht .searchTop{display:none}
+
+.res_ccLogo{display:block}
+.res_ccLogo img{ margin-top:10px}
+.ccToggleInner figure{display:none}
+}
+
+@media screen and (min-width:320px) and (max-width:580px){
+.rfq_listing_inner .bx .head1 figure .Profilehv_pop{top:-196px}	
+}
+@media screen and (min-width:581px) and (max-width:640px){
+.rfq_listing_inner .bx .head1 figure .Profilehv_pop::after{bottom:0px}
+}

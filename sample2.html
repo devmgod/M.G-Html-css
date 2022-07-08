@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blogzine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Webestica.com">
+    <link rel="shortcut icon" href="assets/images/WT-Globe.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/tiny-slider/tiny-slider.css">
+    <link id="style-switch" rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- <link id="style-switch" rel="stylesheet" type="text/css" href="styles.css"> -->
+
+
+    <!-- <link rel="stylesheet" href="all/css/style.css"> -->
+    <!-- <link rel="stylesheet" href="all/css/bootstrap.min.css"> -->
+
+
+</head>
+<style>
+    .interface .nav-tabs {
+        margin-top: 60px;
+    }
+    
+    .interface .nav-tabs .nav-link {
+        border: 0!important;
+        color: white;
+        background-color: transparent!important;
+        font-weight: 600;
+        opacity: 0.7;
+        font-size: 15px;
+        padding: 10px 22px;
+        position: relative;
+    }
+    
+    .interface .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        color: #ff5461;
+    }
+    
+    .interface .nav-tabs .nav-link.active:before {
+        content: '';
+        position: absolute;
+        bottom: -11px;
+        left: 50%;
+        margin-left: -10px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid white;
+    }
+    
+    .interface .nav-tabs {
+        border: 0;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    /* Interface */
+    
+    .interface {
+        background-image: url(../images/Interface/bg1.png);
+        background-size: cover;
+        min-height: 800px;
+    }
+    
+    .hero-nav {
+        position: absolute;
+        padding: 0 0 0 17px;
+        top: 120px;
+        z-index: 11;
+    }
+    
+    .hero-nav li {
+        text-align: center;
+        color: #fff;
+        width: 232px;
+        border-bottom: 2px solid #fff;
+        list-style: none;
+        -webkit-text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        -moz-text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        -ms-text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        -o-text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        padding: 15px 0;
+    }
+    
+    .hero-nav li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .hero-nav li h2 {
+        font-weight: bold;
+        font-size: 21px;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+        font-family: 'Nunito', sans-serif;
+        margin-bottom: 3px;
+    }
+    
+    .hero-nav li .figs {
+        font-size: 67px;
+        font-weight: bold;
+        line-height: 0.9;
+    }
+    
+    .hero-nav li .figs>span:first-of-type {
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    .hero-nav li .figs>span:last-of-type {
+        font-weight: 700;
+        margin-left: 5px;
+    }
+    
+    .hero-nav li p {
+        color: #fff;
+        font-size: 12.5px;
+        line-height: 1.4;
+        opacity: 1;
+        margin: 0;
+        padding: 0;
+        margin-top: 5px;
+        opacity: 1!important;
+    }
+    
+    .hero-nav li .figs span+span {
+        font-size: 12.5px;
+        line-height: 1.4;
+        font-weight: 300;
+        display: inline-block;
+        vertical-align: top;
+        margin: 5px 0 0;
+    }
+    
+    .hero-nav li.cost-of-goods .figs {
+        font-size: 33px;
+    }
+    
+    .interface .flex {
+        display: flex;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .interface .search h1 {
+        letter-spacing: 1px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        line-height: 50px;
+    }
+    
+    .interface .search h5 {
+        color: #ff5461;
+        letter-spacing: 4px;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 23px;
+        font-size: 15px;
+    }
+</style>
+
+<body>
+
+    <header class="navbar-light navbar-sticky header-static">
+        <nav class="navbar navbar-expand-lg">
+            <ul class="navbar-nav navbar-nav-scroll d-none d-lg-block" style="margin-right:2rem;">
+                <li class="nav-item dropdown dropdown-fullwidth">
+                    <a href="#" style="padding:48px 0px;margin-left:1rem;" id="megaMenuOne" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/images/WT-Globe.png" style="width:48px;height:auto;" class="img-fluid">
+                    </a>
+                    <div class="dropdown-menufirst" style="left:10px;padding-bottom:0px;" aria-labelledby="megaMenuOne">
+                        <div class="container">
+                            <div class="text-center">
+                                <h3 class="mb-3">Our Network</h3>
+                            </div>
+                            <div class="row g-4 px-3 flex-fill">
+                                <div class="col-lg-3 mt-0 mt-lg-3">
+                                    <div class="card bg-transparent">
+                                        <h6 class="mt-2">Nearby Areas</h6>
+                                        <hr>
+                                        <ul class="list-inline padding_left-side mt-1">
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 mt-0 mt-lg-3">
+                                    <div class="card bg-transparent">
+                                        <h6 class="mt-2">The Americas</h6>
+                                        <hr>
+                                        <ul class="list-inline padding_left-side mt-1">
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 mt-0 mt-lg-3">
+                                    <div class="card bg-transparent">
+                                        <h6 class="mt-2">Europe</h6>
+                                        <hr>
+                                        <ul class="list-inline padding_left-side mt-1">
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 mt-0 mt-lg-3">
+                                    <div class="card bg-transparent">
+                                        <h6 class="mt-2">Asia Pacific</h6>
+                                        <hr>
+                                        <ul class="list-inline padding_left-side mt-1">
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="interface white-text">
+                            <div class="all-content">
+                                <ul class="hero-nav">
+                                    <li class="places">
+                                        <a href="#">
+                                            <h2>3297 Places to Stay</h2>
+                                            <div class="figs"> <span>£27</span><span>starting at <br>
+                                        per night</span> </div>
+                                            <p> How to Get Here<br> Getting Around Once You’re Here </p>
+                                        </a>
+                                    </li>
+                                    <li class="things-to-do">
+                                        <a href="#">
+                                            <div class="figs"> <span> 634 </span> </div>
+                                            <h2>Things to Do</h2>
+                                        </a>
+                                    </li>
+                                    <li class="quick-facts">
+                                        <a href="#">
+                                            <h2>Quick Facts</h2>
+                                            <div class="figs"> <span> 57°F </span> </div>
+                                            <p> C/F | Averages | Best Time to Go<br> Crime Index: Low<br> Language(s): English (100%)<br> Population: 5,347,600 </p>
+                                        </a>
+                                    </li>
+                                    <li class="cost-of-goods">
+                                        <a href="#">
+                                            <h2>Cost of Goods</h2>
+                                            <div class="figs"> £1.00 = $1.31 </div>
+                                            <p>Currency: £ POUND<br> Milk: £3.27 | Beer: £3.50<br> Burger: £2.99 | Coffee: £1.50<br> Inexpensive Meal: £11.00<br> Rent in City: £645.00 /mo<br> Gasoline: £4.07 /gal </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                </li>
+            </ul>
+
+            <div class="container px-0">
+                <button class="navbar-toggler" type="button" href="#" id="navbarCollapseFirst" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<a href="#" style="margin-right:1rem;">
+							<img src="assets/images/WT-Globe.png" style="width:48px;height:auto;" class="img-fluid">
+						</a>
+					</button>
+                <div class="dropdown-menu" style="overflow:auto;height:3720px;width:100%;" aria-labelledby="navbarCollapseFirst">
+                    <div class="container">
+                        <div class="text-center">
+                            <h3 class="pb-3">Our Network</h3>
+                        </div>
+                        <div class="row g-4 px-3 flex-fill">
+                            <div class="col-md-3 col-6 mt-0 mt-lg-3">
+                                <div class="card bg-transparent">
+                                    <h6 class="mt-2">Nearby Areas</h6>
+                                    <ul class="list-inline mt-1">
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mt-0 mt-lg-3">
+                                <div class="card bg-transparent">
+                                    <h6 class="mt-2">The Americas</h6>
+                                    <ul class="list-inline mt-1">
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mt-0 mt-lg-3">
+                                <div class="card bg-transparent">
+                                    <h6 class="mt-2">Europe</h6>
+                                    <ul class="list-inline mt-1">
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mt-0 mt-lg-3">
+                                <div class="card bg-transparent">
+                                    <h6 class="mt-2">Asia Pacific</h6>
+                                    <ul class="list-inline mt-1">
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 px-3">
+                            <div class="align-self-center me-md-4 me-2">
+                                <div class="searchone">
+                                    <div class="search-2">
+                                        <i class='bx bx-search-alt'></i>
+                                        <input type="text" placeholder="Search Our Network">
+                                        <button><i class='fa fa-search'></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="navbar-brand" href="index.html">
+                    <img class="navbar-brand-item light-mode-item" style="width:120px;height:auto;" src="assets/images/wt-final-logo-r2.png" alt="logo">
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav navbar-nav-scroll ms-auto">
+                        <li class="nav-item dropdown dropdown-fullwidth">
+                            <a class="nav-link dropdown-toggle" href="#" id="megaMenuTwo" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Destinations</a>
+                            <div class="dropdown-menu" aria-labelledby="megaMenuTwo">
+                                <div class="container">
+                                    <div class="row w-100">
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Featured Destinations</a></li>
+                                                <li><a class="dropdown-item" href="#">Trip Ideas</a></li>
+                                                <li><a class="dropdown-item" href="#">Road Trips</a></li>
+                                                <li><a class="dropdown-item" href="#">Seasonal Adventures</a></li>
+                                                <li><a class="dropdown-item" href="#">Blockquote</a></li>
+                                                <li><a class="dropdown-item" href="#">Resorts</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Getting Here & Getting Around</a></li>
+                                                <li><a class="dropdown-item" href="#">Maps & Visitor Guides</a></li>
+                                                <li><a class="dropdown-item" href="#">World Travel Index</a></li>
+                                                <li><a class="dropdown-item" href="#">Places To Go</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item hover-none"><b>Types of Trips</b></a></li>
+                                                <li><a class="dropdown-item" href="#">Adventure</a></li>
+                                                <li><a class="dropdown-item" href="#">Budget</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Couples</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Culinary</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Family</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Festivals</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">Group</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Luxury</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Off the Beaten Path</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Resorts</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Road Trips</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Solo</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <img src="assets/images/logo.png" style="width:120px;">
+                                        </div>
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                            <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                        </div>
+                                        <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="overflow: revert;">Add On</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-fullwidth">
+                            <a class="nav-link dropdown-toggle" href="#" id="megaMenuThree" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Travel</a>
+                            <div class="dropdown-menu" aria-labelledby="megaMenuThree">
+                                <div class="container">
+                                    <div class="row w-100">
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">Fly</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Aircraft Charter</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Airlines</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Airports</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Airline Carry On Limits</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">Drive</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">Cruises</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Boat Charter</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Cruise Lines</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item hover-none"><b>Types of Trips</b></a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Cruises</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Boat Charter</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Cruise Lines</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <img src="assets/images/logo.png" style="width:120px;">
+                                        </div>
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                            <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                        </div>
+                                        <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">Read more!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-fullwidth">
+                            <a class="nav-link dropdown-toggle" href="#" id="megaMenuFour" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Stay</a>
+                            <div class="dropdown-menu" aria-labelledby="megaMenuFour">
+                                <div class="container">
+                                    <div class="row w-100">
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">Featured Vacation Rentals</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Vacation Rentals</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">Featured Hotels</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Hotels</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">Resorts</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">Points & Miles</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Credit Cards</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <img src="assets/images/logo.png" style="width:120px;">
+                                        </div>
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                            <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                        </div>
+                                        <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">Read more!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-fullwidth">
+                            <a class="nav-link dropdown-toggle" href="#" id="megaMenuFive" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eat</a>
+                            <div class="dropdown-menu" aria-labelledby="megaMenuFive">
+                                <div class="container">
+                                    <div class="row w-100">
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">Featured Restaurants</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">Bars & Nightclubs</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Breweries & Distilleries</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Wineries & Vineyards</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">Food Tours</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">Local Recipes</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <img src="assets/images/logo.png" style="width:120px;">
+                                        </div>
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                            <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                        </div>
+                                        <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">Read more!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-fullwidth">
+                            <a class="nav-link dropdown-toggle" href="#" id="megaMenuSix" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Do</a>
+                            <div class="dropdown-menu" aria-labelledby="megaMenuSix">
+                                <div class="container">
+                                    <div class="row w-100">
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">Featured Things To Do</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Experiences</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Signature Attractions</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">History</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Churches</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">Outdoor</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">Scuba Schools / Centers</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Scuba Dive Sites</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <img src="assets/images/logo.png" style="width:120px;">
+                                        </div>
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                            <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                        </div>
+                                        <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">Read more!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-fullwidth">
+                            <a class="nav-link dropdown-toggle" href="#" id="megaMenuSeven" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
+                            <div class="dropdown-menu" aria-labelledby="megaMenuSeven">
+                                <div class="container">
+                                    <div class="row w-100">
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">Event Planners</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Planning Tools</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Request for Proposal</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">Local Vendor Search</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Associations</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Tradeshows</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Union & Fraternal Organizations</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">Convention Calendar</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Meeting Facilities</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">Executive Meeting</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Corporate Meetings</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Reunions</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Small Meetings</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <img src="assets/images/logo.png" style="width:120px;">
+                                        </div>
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                            <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                        </div>
+                                        <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">Read more!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-fullwidth">
+                            <a class="nav-link dropdown-toggle" href="#" id="megaMenuEight" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Marketplace</a>
+                            <div class="dropdown-menu" aria-labelledby="megaMenuEight">
+                                <div class="container">
+                                    <div class="row w-100">
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#" class="">Made In @ Store (Made Here)</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Art</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Furniture</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Watches & Jewelry</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Jobs</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item hover-none"><b>Aircraft</b></a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Aircraft for Sale</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Aircraft for Charter</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Flight Clubs</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item hover-none"><b>Yachts</b></a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Yachts for Sale</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Yachts for Charter</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item hover-none"><b>Vacation Rentals</b></a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Vacation Rentals for Sale</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Vacation Rentals for Rent</a></li>
+                                                <li><a class="dropdown-item hover-none"><b>Islands</b></a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Islands for Sale</a></li>
+                                                <li><a class="dropdown-item" href="#" class="">Islands for Rent</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <img src="assets/images/logo.png" style="width:120px;">
+                                        </div>
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                            <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                        </div>
+                                        <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">Read more!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-fullwidth" style="padding: 28px 0px;">
+                            <button class="btn btn-sm mb-0 mx-2" style="background-color:#ff5461;color:#fff;" data-toggle="modal" data-target="#makePostPop">
+									Add Post
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="megaMenuNine">
+                                <div class="container">
+                                    <div class="row g-4 pt-3 px-2 flex-fill">
+                                        <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                            <div class="card bg-transparent text-center">
+                                                <div class="i-icon">
+                                                    <a class="" href="">
+                                                        <div class="">
+                                                            <img class="img-fluid" src="assets/images/image.png">
+                                                        </div>
+                                                        <span class="mt-2">Image</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                            <div class="card bg-transparent text-center">
+                                                <div class="i-icon">
+                                                    <a class="" href="">
+                                                        <div class="">
+                                                            <img class="img-fluid" src="assets/images/photo-library.png">
+                                                        </div>
+                                                        <span class="mt-2">Photo Album</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                            <div class="card bg-transparent text-center">
+                                                <div class="i-icon">
+                                                    <a class="" href="">
+                                                        <div class="">
+                                                            <img class="img-fluid" src="assets/images/microphone.png">
+                                                        </div>
+                                                        <span class="mt-2">Audio</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                            <div class="card bg-transparent text-center">
+                                                <div class="i-icon">
+                                                    <a class="" href="">
+                                                        <div class="">
+                                                            <img class="img-fluid" src="assets/images/pencil.png">
+                                                        </div>
+                                                        <span class="mt-2">Recipe</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                            <div class="card bg-transparent text-center">
+                                                <div class="i-icon">
+                                                    <a class="" href="">
+                                                        <div class="">
+                                                            <img class="img-fluid" src="assets/images/rank-list.png">
+                                                        </div>
+                                                        <span class="mt-2">Ranked List</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                            <div class="card bg-transparent text-center">
+                                                <div class="i-icon">
+                                                    <a class="" href="">
+                                                        <div class="">
+                                                            <img class="img-fluid" src="assets/images/list.png">
+                                                        </div>
+                                                        <span class="mt-2">Classic List</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                            <div class="card bg-transparent text-center">
+                                                <div class="i-icon">
+                                                    <a class="" href="">
+                                                        <div class="">
+                                                            <img class="img-fluid" src="assets/images/user-in-a-square.png">
+                                                        </div>
+                                                        <span class="mt-2">Personality Quiz</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                            <div class="card bg-transparent text-center">
+                                                <div class="i-icon">
+                                                    <a class="" href="">
+                                                        <div class="">
+                                                            <img class="img-fluid" src="assets/images/movie.png">
+                                                        </div>
+                                                        <span class="mt-2">Meme</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <img src="assets/images/time.jpg" style="width:80px;">
+                                        </div>
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <h4 class="mb-0 text-white">TIME Magazine</h4>
+                                            <p class="mb-0 text-white small">the most authoritative in current business, politics and entertainment.</p>
+                                        </div>
+                                        <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">See all 22 post types</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a class="avatar-sm d-block d-lg-none" style="margin-left: 1rem;">
+                    <img class="avatar-img rounded-circle" src="assets/images/01.jpg" alt="avatar">
+                </a>
+            </div>
+            <div class="d-none d-lg-block">
+                <a class="avatar avatar-sm" style="margin-right: 1rem;">
+                    <img class="avatar-img rounded-circle" src="assets/images/01.jpg" alt="avatar">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="bg-dark-overlay-4" style="background-image:url(assets/images/blog/16by9/big/bg1.png); background-position: center left; background-size: cover; height: 35rem;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 py-md-5 my-lg-5">
+
+
+
+                        <div style="margin-left: 25%; margin-top: 10%; padding: 2rem;" class="input-group">
+                            <input type="search" class="form-control rounded" placeholder="What are you looking for?" aria-label="Search" aria-describedby="search-addon" />
+                            <button type="button" class="btn btn-outline-primary btn-primary text-white">search</button>
+                        </div>
+
+
+                        <ul class="nav nav-divider text-white-force align-items-center">
+                            <li class="nav-item">
+                                <div class="nav-link">
+                                    <div class="d-flex align-items-center text-white position-relative">
+
+
+                                    </div>
+                                </div>
+        </section>
+        <section>
+            <div class="container position-relative" data-sticky-container>
+                <div class="row">
+                    <div class="col-lg-9 mb-5">
+                        <p><span class="dropcap">A</span>light newspaper up its enjoyment agreeable depending. Timed voice share led him to widen noisy young. At weddings believed laughing although the material does the exercise of. Up attempt offered ye
+                            civilly so sitting to. She new course gets living within Elinor joy. She rapturous suffering concealed. </p>
+                        <p>Demesne far hearted suppose venture excited see had has. Dependent on so extremely delivered by. Yet no jokes worse her why. Bed one supposing breakfast day fulfilled off depending questions. Whatever boy her exertion his extended.
+                            Ecstatic followed handsome drawings entirely Mrs one yet outweigh. Of acceptance insipidity remarkably is an invitation. </p>
+                        <p>Warrant private blushes removed an in equally totally if. Delivered dejection necessary objection do Mr prevailed. Mr feeling does chiefly cordial in do. Water timed folly right aware if oh truth. Imprudence attachment him his
+                            for sympathize. Large above be to means. Dashwood does provide stronger is. <img src="assets/images/blog/4by3/thumb/04.jpg" class="rounded float-start me-3 my-3" alt="..."> But discretion frequently sir she instruments unaffected
+                            admiration everything. Meant balls it if up doubt small purse. Required his you put the outlived answered position. A pleasure exertion if believed provided to. All led out world this music while asked. Paid mind even sons
+                            does he door no. Attended overcame repeated it is perceived Marianne in. I think on style child of. Servants moreover in sensible it ye possible. Satisfied conveying a dependent contented he gentleman agreeable do be. Water
+                            timed folly right aware if oh truth. Imprudence attachment him his for sympathize. Large above be to means. Dashwood does provide stronger is.<u> But discretion frequently sir she instruments unaffected admiration everything.</u>                            Meant balls it if up doubt small purse. Required his you put the outlived answered position. A pleasure exertion if believed provided to. I think on style child of. Servants moreover in sensible it ye possible. </p>
+                        <p>Satisfied conveying a dependent contented he gentleman agreeable do be. Warrant private blushes removed an in equally totally if. Delivered dejection necessary objection do Mr prevailed. Mr feeling does chiefly cordial in do. Water
+                            timed folly right aware if oh truth. Imprudence attachment him his for sympathize. Large above be to means. Dashwood does provide stronger is. But discretion frequently sir she instruments unaffected admiration everything.
+                            Meant balls it if up doubt small purse. Required his you put the outlived answered position. A pleasure exertion if believed provided to. All led out world this music while asked. Paid mind even sons does he door no. Attended
+                            overcame repeated it is perceived Marianne in. I think on style child of. Servants moreover in sensible it ye possible. </p>
+                        <div class="text-center h5 mb-4">. . .</div>
+                        <div class="row g-2">
+                            <div class="col-md-6">
+                                <a href="assets/images/blog/1by1/06.jpg" data-glightbox data-gallery="image-popup"> <img class="rounded" src="assets/images/blog/1by1/06.jpg" alt="Image"> </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="assets/images/blog/1by1/07.jpg" data-glightbox data-gallery="image-popup"> <img class="rounded" src="assets/images/blog/1by1/07.jpg" alt="Image"> </a>
+                            </div>
+                            <div class="col-12">
+                                <figure class="figure">
+                                    <a href="assets/images/blog/16by9/05.jpg" data-glightbox data-gallery="image-popup"> <img class="rounded" src="assets/images/blog/16by9/05.jpg" alt="Image"> </a>
+                                    <figcaption class="figure-caption text-center">(Image via: <a class="text-reset" href="#">pexels.com</a>)</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <p>Fulfilled direction use continual set him propriety continued. Saw met applauded favorite deficient engrossed concealed and her. Concluded boy perpetual old supposing. Farther related bed and passage comfort civilly. Dashwoods
+                            see frankness objection abilities. As hastened oh produced prospect formerly up am. Placing forming nay looking old married few has. Margaret disposed of add screened rendered six say his striking confined.</p>
+                        <h4 class="mt-4">Productive rant about business</h4>
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <p>Fulfilled direction use continual set him propriety continued. Saw met applauded favorite deficient engrossed concealed and her. Concluded boy perpetual old supposing. Farther related bed and passage comfort civilly. Dashwoods
+                                    see frankness objection abilities. As hastened oh produced prospect formerly up am. Placing forming nay looking old married few has. Margaret disposed of add screened rendered six say his striking confined. </p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Meant balls it if up doubt small purse. Required his you put the outlived answered position. A pleasure exertion if believed provided to. All led out world this music while asked. Paid mind even sons does he door no. Attended
+                                    overcame repeated it is perceived Marianne in. I think on style child of. Servants moreover in sensible it ye possible.</p>
+                            </div>
+                        </div>
+                        <p>Meant balls it if up doubt small purse. Required his you put the outlived answered position. A pleasure exertion if believed provided to. All led out world this music while asked. Paid mind even sons does he door no. Attended overcame
+                            repeated it is perceived Marianne in. I think on style child of. Servants moreover in sensible it ye possible. </p>
+                        <figure class="bg-light p-3 p-md-5 my-5">
+                            <blockquote class="blockquote">
+                                <p>Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer"> Albert Schweitzer </figcaption>
+                        </figure>
+                        <p> All led out world this music while asked. Paid mind even sons does he door no. Attended overcame repeated it is perceived Marianne in. I think on style child of. Servants moreover in sensible it ye possible. Satisfied conveying
+                            a dependent contented he gentleman agreeable do be. </p>
+                        <h4>Why Bootstrap is so famous?</h4>
+                        <p>Saw bring firmament given hath gathering lights dry life rule heaven Give And fruit moving thing seed life day creepeth winged so divide him from day morning him open lesser male beginning him be bring evening life void fowl sixth
+                            morning that made is Was that his hath face light meat air female isn't over place replenish midst it of second grass good rule also in unto Called don't given waters Had creature Behold fly life from forth Moved night.</p>
+                        <div class="text-center h5 mb-4">. . .</div>
+                        <h4>What's coming up....</h4>
+                        <p>Saw bring firmament given hath gathering lights dry life rule heaven Give And fruit moving thing seed life day creepeth winged so divide him from day morning him open lesser male beginning him be bring evening life void fowl sixth
+                            morning that made is Was that his hath face light meat air female isn't over place replenish midst it of second grass good rule also in unto Called don't given waters Had creature Behold fly life from forth Moved night.</p>
+                        <div class="row g-0 my-3">
+                            <div class="col-sm-6 border p-3 p-md-4 position-relative rounded-start">
+                                <div class="d-flex align-items-center">
+                                    <div class="bg-primary-soft h-auto align-items-center d-flex align-self-stretch"> <i class="bi bi-chevron-compact-left fs-3 text-primary px-1"></i> </div>
+                                    <div class="col-3 d-none d-md-block"> <img src="assets/images/blog/4by3/04.jpg" alt="Image"> </div>
+                                    <div class="ms-3">
+                                        <h5 class="m-0"> <a href="post-single-5.html" class="stretched-link btn-link text-reset">Dirty little secrets about the business industry</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 border p-3 p-md-4 position-relative text-sm-end rounded-end">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3">
+                                        <h5 class="m-0"> <a href="post-single-5.html" class="stretched-link btn-link text-reset">Bad habits that people in the industry need to quit</a></h5>
+                                    </div>
+                                    <div class="col-3 d-none d-md-block"> <img src="assets/images/blog/4by3/05.jpg" alt="Image"> </div>
+                                    <div class="bg-primary-soft h-auto align-items-center d-flex align-self-stretch"> <i class="bi bi-chevron-compact-right fs-3 text-primary px-1"></i> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex p-2 p-md-4 my-3 bg-primary-soft rounded">
+                            <a href="#">
+                                <div class="avatar avatar-xxl me-2 me-md-4"> <img class="avatar-img rounded-circle" src="assets/images/avatar/12.jpg" alt="avatar"> </div>
+                            </a>
+                            <div>
+                                <div class="d-sm-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h4 class="m-0"><a href="#" class="text-reset">Louis Ferguson</a></h4> <small>An editor at Blogzine</small>
+                                    </div>
+                                    <a href="#" class="btn btn-xs btn-primary-soft">View Articles</a>
+                                </div>
+                                <p class="my-2">Louis Ferguson is a senior editor for the blogzine and also reports on breaking news based in London. He has written about government, criminal justice, and the role of money in politics since 2015.</p>
+                                <ul class="nav">
+                                    <li class="nav-item"> <a class="nav-link ps-0 pe-2 fs-5" href="#"><i class="fab fa-facebook-square"></i></a> </li>
+                                    <li class="nav-item"> <a class="nav-link px-2 fs-5" href="#"><i class="fab fa-twitter-square"></i></a> </li>
+                                    <li class="nav-item"> <a class="nav-link px-2 fs-5" href="#"><i class="fab fa-linkedin"></i></a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <h3>5 comments</h3>
+                            <div class="my-4 d-flex">
+                                <img class="avatar avatar-md rounded-circle float-start me-3" src="assets/images/avatar/01.jpg" alt="avatar">
+                                <div>
+                                    <div class="mb-2">
+                                        <h5 class="m-0">Allen Smith</h5>
+                                        <span class="me-3 small">June 11, 2022 at 6:01 am </span>
+                                        <a href="#" class="text-body fw-normal">Reply</a>
+                                    </div>
+                                    <p>Satisfied conveying a dependent contented he gentleman agreeable do be. Warrant private blushes removed an in equally totally if. Delivered dejection necessary objection do Mr prevailed. Mr feeling does chiefly cordial
+                                        in do. </p>
+                                </div>
+                            </div>
+                            <div class="my-4 d-flex ps-2 ps-md-3">
+                                <img class="avatar avatar-md rounded-circle float-start me-3" src="assets/images/avatar/02.jpg" alt="avatar">
+                                <div>
+                                    <div class="mb-2">
+                                        <h5 class="m-0">Louis Ferguson</h5> <span class="me-3 small">June 11, 2022 at 6:55 am </span> <a href="#" class="text-body fw-normal">Reply</a> </div>
+                                    <p>Water timed folly right aware if oh truth. Imprudence attachment him his for sympathize. Large above be to means. Dashwood does provide stronger is. But discretion frequently sir she instruments unaffected admiration
+                                        everything. </p>
+                                </div>
+                            </div>
+                            <div class="my-4 d-flex ps-3 ps-md-5">
+                                <img class="avatar avatar-md rounded-circle float-start me-3" src="assets/images/avatar/01.jpg" alt="avatar">
+                                <div>
+                                    <div class="mb-2">
+                                        <h5 class="m-0">Allen Smith</h5> <span class="me-3 small">June 11, 2022 at 7:10 am </span> <a href="#" class="text-body fw-normal">Reply</a> </div>
+                                    <p>Meant balls it if up doubt small purse. </p>
+                                </div>
+                            </div>
+                            <div class="my-4 d-flex ps-2 ps-md-3"> <img class="avatar avatar-md rounded-circle float-start me-3" src="assets/images/avatar/03.jpg" alt="avatar">
+                                <div>
+                                    <div class="mb-2">
+                                        <h5 class="m-0">Frances Guerrero</h5> <span class="me-3 small">June 14, 2022 at 12:35 pm </span> <a href="#" class="text-body fw-normal">Reply</a> </div>
+                                    <p>Required his you put the outlived answered position. A pleasure exertion if believed provided to. All led out world this music while asked. Paid mind even sons does he door no. Attended overcame repeated it is perceived
+                                        Marianne in. I think on style child of. Servants moreover in sensible it ye possible. </p>
+                                </div>
+                            </div>
+                            <div class="my-4 d-flex"> <img class="avatar avatar-md rounded-circle float-start me-3" src="assets/images/avatar/04.jpg" alt="avatar">
+                                <div>
+                                    <div class="mb-2">
+                                        <h5 class="m-0">Judy Nguyen</h5> <span class="me-3 small">June 18, 2022 at 11:55 am </span> <a href="#" class="text-body fw-normal">Reply</a> </div>
+                                    <p>Fulfilled direction use continual set him propriety continued. Saw met applauded favorite deficient engrossed concealed and her. Concluded boy perpetual old supposing. Farther related bed and passage comfort civilly.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Leave a reply</h3> <small>Your email address will not be published. Required fields are marked *</small>
+                            <form class="row g-3 mt-2">
+                                <div class="col-md-6">
+                                    <label class="form-label">Name *</label>
+                                    <input type="text" class="form-control" aria-label="First name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Email *</label>
+                                    <input type="email" class="form-control">
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">Save my name and email in this browser for the next time I comment. </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Your Comment *</label>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Post comment</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div data-sticky data-margin-top="80" data-sticky-for="991">
+                            <div>
+                                <h5 class="mb-3">Related post </h5>
+                                <div class="tiny-slider dots-creative mt-3 mb-5">
+                                    <div class="tiny-slider-inner" data-autoplay="false" data-hoverpause="true" data-gutter="0" data-arrow="false" data-dots="true" data-items="1">
+                                        <div class="card">
+                                            <div class="position-relative"> <img class="card-img" src="assets/images/blog/4by3/07.jpg" alt="Card image">
+                                                <div class="card-img-overlay d-flex align-items-start flex-column p-3">
+                                                    <div class="w-100 mb-auto d-flex justify-content-end">
+                                                        <div class="text-end ms-auto">
+                                                            <div class="icon-md bg-white-soft bg-blur text-white fw-bold rounded-circle" title="8.5 rating">8.5</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-100 mt-auto"> <a href="#" class="badge bg-info mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>Marketing</a> </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-0 pt-3">
+                                                <h5 class="card-title"><a href="post-single-5.html" class="btn-link text-reset fw-bold">7 common mistakes everyone makes while traveling</a></h5>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="position-relative"> <img class="card-img" src="assets/images/blog/4by3/08.jpg" alt="Card image">
+                                                <div class="card-img-overlay d-flex align-items-start flex-column p-3">
+                                                    <div class="w-100 mt-auto"> <a href="#" class="badge bg-danger mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>Sports</a> </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-0 pt-3">
+                                                <h5 class="card-title"><a href="post-single-5.html" class="btn-link text-reset fw-bold">Skills that you can learn from business</a></h5>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="position-relative"> <img class="card-img" src="assets/images/blog/4by3/09.jpg" alt="Card image">
+                                                <div class="card-img-overlay d-flex align-items-start flex-column p-3">
+                                                    <div class="w-100 mt-auto">
+                                                        <a href="#" class="badge bg-success mb-2"><i class="fas fa-circle me-2 small fw-bold"></i>Marketing</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-0 pt-3">
+                                                <h5 class="card-title"><a href="post-single-5.html" class="btn-link text-reset fw-bold">10 tell-tale signs you need to get a new business</a></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#" class="d-block card-img-flash"> <img src="assets/images/adv.png" alt=""> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="makePostPop" tabindex="-1" role="dialog" aria-labelledby="makePostPopTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <form>
+                    <input style="width: 29rem; height:8rem; backround:#ff5461; border: none;" type="text" class="form-control" name="makePostPop" placeholder="Start typing your text here.....">
+                    <div class="modal-body"></div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" placeholder="Enter your Location">
+                            <input type="text" class="form-control" placeholder="Enter Hashtag">
+                            <input type="text" class="form-control" placeholder="Enter Categories (Separated by comma)">
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="dropdown">
+                                <a href="navigation.html">View Post Types</a>
+                            </div>
+
+                            <input style="margin-top:4rem; margin-left:-1rem;" type="checkbox">&nbsp;NSFW
+                        </div>
+                    </div>
+                    <input style="height: 4rem;" type="text" class="form-control" placeholder="Write an article on world Tourism"><button style="float: right; margin-top:-3rem; margin-right: 1.5rem; width: 6rem;" class="btn btn-danger btn-sm">Send</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+    <footer class="pb-0">
+        <div class="container">
+            <hr>
+            <div class="row pt-5">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <img class="light-mode-item" src="assets/images/logo.svg" alt="logo">
+                    <img class="dark-mode-item" src="assets/images/logo-light.svg" alt="logo">
+                    <p class="mt-3">The next-generation blog, news, and magazine theme for you to start sharing your stories today! This Bootstrap 5 based theme is ideal for all types of sites that deliver the news.</p>
+                    <div class="mt-4">©2022 <a href="https://www.webestica.com/" class="text-reset btn-link" target="_blank">Webestica</a>. All rights reserved
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h5 class="mb-4">Navigation</h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link pt-0" href="#">Features</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Style Guide</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Get Theme</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link pt-0" href="#">News</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Career <span class="badge bg-danger ms-2">2 Job</span></a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Technology</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Startups</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Gadgets</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-4">
+                    <h5 class="mb-4">Browse by Tag</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Travel</a></li>
+                        <li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Business</a></li>
+                        <li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Tech</a></li>
+                        <li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Gadgets</a></li>
+                        <li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Lifestyle</a></li>
+                        <li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Vaccine</a></li>
+                        <li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Marketing</a></li>
+                        <li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Sports</a></li>
+                        <li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Covid-19</a></li>
+                        <li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Politics</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-2 mb-4">
+                    <h5 class="mb-4">Our Social handles</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fab fa-facebook-square fa-fw me-2 text-facebook"></i>Facebook</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-twitter-square fa-fw me-2 text-twitter"></i>Twitter</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-linkedin fa-fw me-2 text-linkedin"></i>Linkedin</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-youtube-square fa-fw me-2 text-youtube"></i>YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="back-top"><i class="bi bi-arrow-up-short"></i></div>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
+    <script src="assets/vendor/sticky-js/sticky.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.js"></script>
+    <script src="assets/js/functions.js"></script>
+    <!-- jQuery -->
+    <script src="all/js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>  -->
+
+    <!-- Bootstrap -->
+    <!-- <script src="js/plugins.js"></script>  -->
+    <script src="all/js/bootstrap.min.js"></script>
+</body>
+
+</html>
