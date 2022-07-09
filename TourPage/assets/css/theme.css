@@ -8772,8 +8772,8 @@ input[type="button"].btn-block {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid #e7eaf3;
-    border-radius: 0.3125rem;
+    border: 0;
+    border-radius: 0;
 }
 
 .card>hr {
@@ -37539,14 +37539,14 @@ label.btn {
 
 /* Toggle */
 
-.dropdown-toggle::after {
+/* .dropdown-toggle::after {
     display: inline-block;
     font-family: "Font Awesome 5 Free";
     font-size: 80%;
     font-weight: 900;
     content: "";
     margin-left: .5rem;
-}
+} */
 
 .dropdown-toggle-collapse::after {
     transition: 0.3s;
