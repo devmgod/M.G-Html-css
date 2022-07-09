@@ -1,0 +1,4528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- bootstrap 4.3.1 -->
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <!-- styles -->
+  <link rel="stylesheet" href="css/styles.min.css">
+  <!-- simplebar styles -->
+  <link rel="stylesheet" href="css/vendor/simplebar.css">
+  <!-- favicon -->
+  <link rel="icon" href="img/favicon.ico">
+  <title>Vikinger | Badges</title>
+
+  <!-- for Header -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-y++enYq9sdV7msNmXr08kJdkX4zEI1gMjjkw0l9ttOepH7fMdhb7CePwuRQCfwCr" crossorigin="anonymous">
+  <!-- Page Style -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker3.standalone.css">
+  -->
+
+
+  <link rel="shortcut icon" href="../assets/images/WT-Globe.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/tiny-slider/tiny-slider.css">
+  <link id="style-switch" rel="stylesheet" type="text/css" href="../assets/css/style.css"> 
+</head>
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader">
+    <!-- PAGE LOADER DECORATION -->
+    <div class="page-loader-decoration">
+      <!-- ICON LOGO -->
+      <svg class="icon-logo" viewBox="0 0 28 40" preserveAspectRatio="xMinYMin meet">
+        <path d="M27.18,24.038c-0.141-0.095-0.244-0.146-0.244-0.146l-0.005-0.049C25.489,22.783,23.103,22,23.103,22c1.542,0,2.582-0.563,3.501-1.334c-0.049-0.055,0.7-0.666,0.7-0.666c0.146-8.251-4.477-12.745-7.001-14.667C18.15,9.564,16.802,14,16.802,14c-0.219-4.426,0.243-8.072,0.7-10.667c-0.85-0.452-1.956-0.698-2.296-1.537C14.865,0.957,14.015,0,14.015,0L14,0.014L13.985,0c0,0-0.85,0.957-1.19,1.796c-0.34,0.839-1.445,1.085-2.295,1.537C10.957,5.928,11.418,9.574,11.2,14c0,0-1.349-4.436-3.501-8.667C5.174,7.255,0.551,11.749,0.697,20c0,0,0.75,0.611,0.701,0.666C2.316,21.437,3.357,22,4.898,22c0,0-2.387,0.783-3.829,1.844l-0.005,0.049c0,0-0.104,0.051-0.244,0.146c-0.48,0.397-0.806,0.828-0.819,1.269c-0.023,0.521,0.263,1.181,1.233,1.973c0,0,0.136,9.259,9.69,11.29c0,0,0.212,0.815,0.975,1.431L14,38l2.102,2c0.763-0.615,0.975-1.431,0.975-1.431c9.555-2.031,9.689-11.29,9.689-11.29c0.971-0.792,1.256-1.451,1.233-1.973C27.986,24.866,27.659,24.436,27.18,24.038z M4.198,26c2.362,0.121,3.517,1.473,5.602,4c0.799,0.969,2.059,0.83,2.059,0.83L11.899,34C5.249,34,4.198,26,4.198,26z M14,28.162l-2.97-2.828l2.101-2.001l-2.101-2l2.101-2l-2.101-2L14,14.505l2.972,2.828l-2.102,2l2.102,2l-2.102,2l2.102,2.001L14,28.162z M16.102,34l0.041-3.17c0,0,1.26,0.139,2.059-0.83c2.085-2.527,3.239-3.879,5.602-4C23.803,26,22.752,34,16.102,34z M13.3,26h1.4v-1.333h-1.4V26z M13.3,22h1.4v-1.334h-1.4V22z M13.3,18h1.4v-1.333h-1.4V18z"/>
+      </svg>
+      <!-- /ICON LOGO -->
+    </div>
+    <!-- /PAGE LOADER DECORATION -->
+
+    <!-- PAGE LOADER INFO -->
+    <div class="page-loader-info">
+      <!-- PAGE LOADER INFO TITLE -->
+      <p class="page-loader-info-title">Vikinger</p>
+      <!-- /PAGE LOADER INFO TITLE -->
+
+      <!-- PAGE LOADER INFO TEXT -->
+      <p class="page-loader-info-text">Loading...</p>
+      <!-- /PAGE LOADER INFO TEXT -->
+    </div>
+    <!-- /PAGE LOADER INFO -->
+    
+    <!-- PAGE LOADER INDICATOR -->
+    <div class="page-loader-indicator loader-bars">
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+      <div class="loader-bar"></div>
+    </div>
+    <!-- /PAGE LOADER INDICATOR -->
+  </div>
+  <!-- /PAGE LOADER -->
+
+  <!-- NAVIGATION WIDGET -->
+  <nav id="navigation-widget-small" class="navigation-widget navigation-widget-desktop closed sidebar left delayed">
+    <!-- USER AVATAR -->
+    <a class="user-avatar small no-outline online" href="profile-timeline.html">
+      <!-- USER AVATAR CONTENT -->
+      <div class="user-avatar-content">
+        <!-- HEXAGON -->
+        <div class="hexagon-image-30-32" data-src="img/avatar/01.jpg"></div>
+        <!-- /HEXAGON -->
+      </div>
+      <!-- /USER AVATAR CONTENT -->
+  
+      <!-- USER AVATAR PROGRESS -->
+      <div class="user-avatar-progress">
+        <!-- HEXAGON -->
+        <div class="hexagon-progress-40-44"></div>
+        <!-- /HEXAGON -->
+      </div>
+      <!-- /USER AVATAR PROGRESS -->
+  
+      <!-- USER AVATAR PROGRESS BORDER -->
+      <div class="user-avatar-progress-border">
+        <!-- HEXAGON -->
+        <div class="hexagon-border-40-44"></div>
+        <!-- /HEXAGON -->
+      </div>
+      <!-- /USER AVATAR PROGRESS BORDER -->
+  
+      <!-- USER AVATAR BADGE -->
+      <div class="user-avatar-badge">
+        <!-- USER AVATAR BADGE BORDER -->
+        <div class="user-avatar-badge-border">
+          <!-- HEXAGON -->
+          <div class="hexagon-22-24"></div>
+          <!-- /HEXAGON -->
+        </div>
+        <!-- /USER AVATAR BADGE BORDER -->
+  
+        <!-- USER AVATAR BADGE CONTENT -->
+        <div class="user-avatar-badge-content">
+          <!-- HEXAGON -->
+          <div class="hexagon-dark-16-18"></div>
+          <!-- /HEXAGON -->
+        </div>
+        <!-- /USER AVATAR BADGE CONTENT -->
+  
+        <!-- USER AVATAR BADGE TEXT -->
+        <p class="user-avatar-badge-text">24</p>
+        <!-- /USER AVATAR BADGE TEXT -->
+      </div>
+      <!-- /USER AVATAR BADGE -->
+    </a>
+    <!-- /USER AVATAR -->
+
+    <!-- MENU -->
+    <ul class="menu small">
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link text-tooltip-tfr" href="newsfeed.html" data-title="Newsfeed">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-newsfeed">
+            <use xlink:href="#svg-newsfeed"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link text-tooltip-tfr" href="overview.html" data-title="Overview">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-overview">
+            <use xlink:href="#svg-overview"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link text-tooltip-tfr" href="groups.html" data-title="Groups">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-group">
+            <use xlink:href="#svg-group"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link text-tooltip-tfr" href="members.html" data-title="Members">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-members">
+            <use xlink:href="#svg-members"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item active">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link text-tooltip-tfr" href="badges.html" data-title="Badges">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-badges">
+            <use xlink:href="#svg-badges"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link text-tooltip-tfr" href="quests.html" data-title="Quests">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-quests">
+            <use xlink:href="#svg-quests"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link text-tooltip-tfr" href="streams.html" data-title="Streams">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-streams">
+            <use xlink:href="#svg-streams"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link text-tooltip-tfr" href="events.html" data-title="Events">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-events">
+            <use xlink:href="#svg-events"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link text-tooltip-tfr" href="forums.html" data-title="Forums">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-forums">
+            <use xlink:href="#svg-forums"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link text-tooltip-tfr" href="marketplace.html" data-title="Marketplace">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-marketplace">
+            <use xlink:href="#svg-marketplace"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+    </ul>
+    <!-- /MENU -->
+  </nav>
+  <!-- /NAVIGATION WIDGET -->
+
+  <!-- NAVIGATION WIDGET -->
+  <nav id="navigation-widget" class="navigation-widget navigation-widget-desktop sidebar left hidden" data-simplebar>
+    <!-- NAVIGATION WIDGET COVER -->
+    <figure class="navigation-widget-cover liquid">
+      <img src="img/cover/01.jpg" alt="cover-01">
+    </figure>
+    <!-- /NAVIGATION WIDGET COVER -->
+
+    <!-- USER SHORT DESCRIPTION -->
+    <div class="user-short-description">
+      <!-- USER SHORT DESCRIPTION AVATAR -->
+      <a class="user-short-description-avatar user-avatar medium" href="profile-timeline.html">
+        <!-- USER AVATAR BORDER -->
+        <div class="user-avatar-border">
+          <!-- HEXAGON -->
+          <div class="hexagon-120-132"></div>
+          <!-- /HEXAGON -->
+        </div>
+        <!-- /USER AVATAR BORDER -->
+    
+        <!-- USER AVATAR CONTENT -->
+        <div class="user-avatar-content">
+          <!-- HEXAGON -->
+          <div class="hexagon-image-82-90" data-src="img/avatar/01.jpg"></div>
+          <!-- /HEXAGON -->
+        </div>
+        <!-- /USER AVATAR CONTENT -->
+    
+        <!-- USER AVATAR PROGRESS -->
+        <div class="user-avatar-progress">
+          <!-- HEXAGON -->
+          <div class="hexagon-progress-100-110"></div>
+          <!-- /HEXAGON -->
+        </div>
+        <!-- /USER AVATAR PROGRESS -->
+    
+        <!-- USER AVATAR PROGRESS BORDER -->
+        <div class="user-avatar-progress-border">
+          <!-- HEXAGON -->
+          <div class="hexagon-border-100-110"></div>
+          <!-- /HEXAGON -->
+        </div>
+        <!-- /USER AVATAR PROGRESS BORDER -->
+    
+        <!-- USER AVATAR BADGE -->
+        <div class="user-avatar-badge">
+          <!-- USER AVATAR BADGE BORDER -->
+          <div class="user-avatar-badge-border">
+            <!-- HEXAGON -->
+            <div class="hexagon-32-36"></div>
+            <!-- /HEXAGON -->
+          </div>
+          <!-- /USER AVATAR BADGE BORDER -->
+    
+          <!-- USER AVATAR BADGE CONTENT -->
+          <div class="user-avatar-badge-content">
+            <!-- HEXAGON -->
+            <div class="hexagon-dark-26-28"></div>
+            <!-- /HEXAGON -->
+          </div>
+          <!-- /USER AVATAR BADGE CONTENT -->
+    
+          <!-- USER AVATAR BADGE TEXT -->
+          <p class="user-avatar-badge-text">24</p>
+          <!-- /USER AVATAR BADGE TEXT -->
+        </div>
+        <!-- /USER AVATAR BADGE -->
+      </a>
+      <!-- /USER SHORT DESCRIPTION AVATAR -->
+
+      <!-- USER SHORT DESCRIPTION TITLE -->
+      <p class="user-short-description-title"><a href="profile-timeline.html">Marina Valentine</a></p>
+      <!-- /USER SHORT DESCRIPTION TITLE -->
+
+      <!-- USER SHORT DESCRIPTION TEXT -->
+      <p class="user-short-description-text"><a href="#">www.gamehuntress.com</a></p>
+      <!-- /USER SHORT DESCRIPTION TEXT -->
+    </div>
+    <!-- /USER SHORT DESCRIPTION -->
+
+    <!-- BADGE LIST -->
+    <div class="badge-list small">
+      <!-- BADGE ITEM -->
+      <div class="badge-item">
+        <img src="img/badge/gold-s.png" alt="badge-gold-s">
+      </div>
+      <!-- /BADGE ITEM -->
+
+      <!-- BADGE ITEM -->
+      <div class="badge-item">
+        <img src="img/badge/age-s.png" alt="badge-age-s">
+      </div>
+      <!-- /BADGE ITEM -->
+
+      <!-- BADGE ITEM -->
+      <div class="badge-item">
+        <img src="img/badge/caffeinated-s.png" alt="badge-caffeinated-s">
+      </div>
+      <!-- /BADGE ITEM -->
+
+      <!-- BADGE ITEM -->
+      <div class="badge-item">
+        <img src="img/badge/warrior-s.png" alt="badge-warrior-s">
+      </div>
+      <!-- /BADGE ITEM -->
+
+      <!-- BADGE ITEM -->
+      <a class="badge-item" href="profile-badges.html">
+        <img src="img/badge/blank-s.png" alt="badge-blank-s">
+        <!-- BADGE ITEM TEXT -->
+        <p class="badge-item-text">+9</p>
+        <!-- /BADGE ITEM TEXT -->
+      </a>
+      <!-- /BADGE ITEM -->
+    </div>
+    <!-- /BADGE LIST -->
+
+    <!-- USER STATS -->
+    <div class="user-stats">
+      <!-- USER STAT -->
+      <div class="user-stat">
+        <!-- USER STAT TITLE -->
+        <p class="user-stat-title">930</p>
+        <!-- /USER STAT TITLE -->
+
+        <!-- USER STAT TEXT -->
+        <p class="user-stat-text">posts</p>
+        <!-- /USER STAT TEXT -->
+      </div>
+      <!-- /USER STAT -->
+
+      <!-- USER STAT -->
+      <div class="user-stat">
+        <!-- USER STAT TITLE -->
+        <p class="user-stat-title">82</p>
+        <!-- /USER STAT TITLE -->
+
+        <!-- USER STAT TEXT -->
+        <p class="user-stat-text">friends</p>
+        <!-- /USER STAT TEXT -->
+      </div>
+      <!-- /USER STAT -->
+
+      <!-- USER STAT -->
+      <div class="user-stat">
+        <!-- USER STAT TITLE -->
+        <p class="user-stat-title">5.7k</p>
+        <!-- /USER STAT TITLE -->
+
+        <!-- USER STAT TEXT -->
+        <p class="user-stat-text">visits</p>
+        <!-- /USER STAT TEXT -->
+      </div>
+      <!-- /USER STAT -->
+    </div>
+    <!-- /USER STATS -->
+
+    <!-- MENU -->
+    <ul class="menu">
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="newsfeed.html">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-newsfeed">
+            <use xlink:href="#svg-newsfeed"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Newsfeed
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="overview.html">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-overview">
+            <use xlink:href="#svg-overview"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Overview
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="groups.html">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-group">
+            <use xlink:href="#svg-group"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Groups
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="members.html">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-members">
+            <use xlink:href="#svg-members"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Members
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item active">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="badges.html">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-badges">
+            <use xlink:href="#svg-badges"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Badges
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="quests.html">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-quests">
+            <use xlink:href="#svg-quests"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Quests
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="streams.html">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-streams">
+            <use xlink:href="#svg-streams"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Streams
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="events.html">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-events">
+            <use xlink:href="#svg-events"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Events
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="forums.html">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-forums">
+            <use xlink:href="#svg-forums"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Forums
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="marketplace.html">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-marketplace">
+            <use xlink:href="#svg-marketplace"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Marketplace
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+    </ul>
+    <!-- /MENU -->
+  </nav>
+  <!-- /NAVIGATION WIDGET -->
+
+  <!-- NAVIGATION WIDGET -->
+  <nav id="navigation-widget-mobile" class="navigation-widget navigation-widget-mobile sidebar left hidden" data-simplebar>
+    <!-- NAVIGATION WIDGET CLOSE BUTTON -->
+    <div class="navigation-widget-close-button">
+      <!-- NAVIGATION WIDGET CLOSE BUTTON ICON -->
+      <svg class="navigation-widget-close-button-icon icon-back-arrow">
+        <use xlink:href="#svg-back-arrow"></use>
+      </svg>
+      <!-- NAVIGATION WIDGET CLOSE BUTTON ICON -->
+    </div>
+    <!-- /NAVIGATION WIDGET CLOSE BUTTON -->
+
+    <!-- NAVIGATION WIDGET INFO WRAP -->
+    <div class="navigation-widget-info-wrap">
+      <!-- NAVIGATION WIDGET INFO -->
+      <div class="navigation-widget-info">
+        <!-- USER AVATAR -->
+        <a class="user-avatar small no-outline" href="profile-timeline.html">
+          <!-- USER AVATAR CONTENT -->
+          <div class="user-avatar-content">
+            <!-- HEXAGON -->
+            <div class="hexagon-image-30-32" data-src="img/avatar/01.jpg"></div>
+            <!-- /HEXAGON -->
+          </div>
+          <!-- /USER AVATAR CONTENT -->
+      
+          <!-- USER AVATAR PROGRESS -->
+          <div class="user-avatar-progress">
+            <!-- HEXAGON -->
+            <div class="hexagon-progress-40-44"></div>
+            <!-- /HEXAGON -->
+          </div>
+          <!-- /USER AVATAR PROGRESS -->
+      
+          <!-- USER AVATAR PROGRESS BORDER -->
+          <div class="user-avatar-progress-border">
+            <!-- HEXAGON -->
+            <div class="hexagon-border-40-44"></div>
+            <!-- /HEXAGON -->
+          </div>
+          <!-- /USER AVATAR PROGRESS BORDER -->
+      
+          <!-- USER AVATAR BADGE -->
+          <div class="user-avatar-badge">
+            <!-- USER AVATAR BADGE BORDER -->
+            <div class="user-avatar-badge-border">
+              <!-- HEXAGON -->
+              <div class="hexagon-22-24"></div>
+              <!-- /HEXAGON -->
+            </div>
+            <!-- /USER AVATAR BADGE BORDER -->
+      
+            <!-- USER AVATAR BADGE CONTENT -->
+            <div class="user-avatar-badge-content">
+              <!-- HEXAGON -->
+              <div class="hexagon-dark-16-18"></div>
+              <!-- /HEXAGON -->
+            </div>
+            <!-- /USER AVATAR BADGE CONTENT -->
+      
+            <!-- USER AVATAR BADGE TEXT -->
+            <p class="user-avatar-badge-text">24</p>
+            <!-- /USER AVATAR BADGE TEXT -->
+          </div>
+          <!-- /USER AVATAR BADGE -->
+        </a>
+        <!-- /USER AVATAR -->
+
+        <!-- NAVIGATION WIDGET INFO TITLE -->
+        <p class="navigation-widget-info-title"><a href="profile-timeline.html">Marina Valentine</a></p>
+        <!-- /NAVIGATION WIDGET INFO TITLE -->
+
+        <!-- NAVIGATION WIDGET INFO TEXT -->
+        <p class="navigation-widget-info-text">Welcome Back!</p>
+        <!-- /NAVIGATION WIDGET INFO TEXT -->
+      </div>
+      <!-- /NAVIGATION WIDGET INFO -->
+
+      <!-- NAVIGATION WIDGET BUTTON -->
+      <p class="navigation-widget-info-button button small secondary">Logout</p>
+      <!-- /NAVIGATION WIDGET BUTTON -->
+    </div>
+    <!-- /NAVIGATION WIDGET INFO WRAP -->
+
+    <!-- NAVIGATION WIDGET SECTION TITLE -->
+    <p class="navigation-widget-section-title">Sections</p>
+    <!-- /NAVIGATION WIDGET SECTION TITLE -->
+
+    <!-- MENU -->
+    <ul class="menu">
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="newsfeed.html">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-newsfeed">
+            <use xlink:href="#svg-newsfeed"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Newsfeed
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="overview.html">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-overview">
+            <use xlink:href="#svg-overview"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Overview
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="groups.html">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-group">
+            <use xlink:href="#svg-group"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Groups
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="members.html">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-members">
+            <use xlink:href="#svg-members"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Members
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item active">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="badges.html">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-badges">
+            <use xlink:href="#svg-badges"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Badges
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="quests.html">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-quests">
+            <use xlink:href="#svg-quests"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Quests
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="streams.html">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-streams">
+            <use xlink:href="#svg-streams"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Streams
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="events.html">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-events">
+            <use xlink:href="#svg-events"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Events
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="forums.html">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-forums">
+            <use xlink:href="#svg-forums"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Forums
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+
+      <!-- MENU ITEM -->
+      <li class="menu-item">
+        <!-- MENU ITEM LINK -->
+        <a class="menu-item-link" href="marketplace.html">
+          <!-- MENU ITEM LINK ICON -->
+          <svg class="menu-item-link-icon icon-marketplace">
+            <use xlink:href="#svg-marketplace"></use>
+          </svg>
+          <!-- /MENU ITEM LINK ICON -->
+          Marketplace
+        </a>
+        <!-- /MENU ITEM LINK -->
+      </li>
+      <!-- /MENU ITEM -->
+    </ul>
+    <!-- /MENU -->
+
+    <!-- NAVIGATION WIDGET SECTION TITLE -->
+    <p class="navigation-widget-section-title">My Profile</p>
+    <!-- /NAVIGATION WIDGET SECTION TITLE -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="hub-profile-info.html">Profile Info</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="hub-profile-social.html">Social &amp; Stream</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="hub-profile-notifications.html">Notifications</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="hub-profile-messages.html">Messages</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="hub-profile-requests.html">Friend Requests</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+    <!-- NAVIGATION WIDGET SECTION TITLE -->
+    <p class="navigation-widget-section-title">Account</p>
+    <!-- /NAVIGATION WIDGET SECTION TITLE -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="hub-account-info.html">Account Info</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="hub-account-password.html">Change Password</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="hub-account-settings.html">General Settings</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+    <!-- NAVIGATION WIDGET SECTION TITLE -->
+    <p class="navigation-widget-section-title">Groups</p>
+    <!-- /NAVIGATION WIDGET SECTION TITLE -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="hub-group-management.html">Manage Groups</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="hub-group-invitations.html">Invitations</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+    <!-- NAVIGATION WIDGET SECTION TITLE -->
+    <p class="navigation-widget-section-title">My Store</p>
+    <!-- /NAVIGATION WIDGET SECTION TITLE -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="hub-store-account.html">My Account <span class="highlighted">$250,32</span></a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="hub-store-statement.html">Sales Statement</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="hub-store-items.html">Manage Items</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="hub-store-downloads.html">Downloads</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+    <!-- NAVIGATION WIDGET SECTION TITLE -->
+    <p class="navigation-widget-section-title">Main Links</p>
+    <!-- /NAVIGATION WIDGET SECTION TITLE -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="#">Home</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="#">Careers</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="#">Faqs</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="#">About Us</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="#">Our Blog</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="#">Contact Us</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+
+    <!-- NAVIGATION WIDGET SECTION LINK -->
+    <a class="navigation-widget-section-link" href="#">Privacy Policy</a>
+    <!-- /NAVIGATION WIDGET SECTION LINK -->
+  </nav>
+  <!-- /NAVIGATION WIDGET -->
+
+  <!-- CHAT WIDGET -->
+  <aside id="chat-widget-messages" class="chat-widget closed sidebar right">
+    <!-- CHAT WIDGET MESSAGES -->
+    <div class="chat-widget-messages" data-simplebar>
+      <!-- CHAT WIDGET MESSAGE -->
+      <div class="chat-widget-message">
+        <!-- USER STATUS -->
+        <div class="user-status">
+          <!-- USER STATUS AVATAR -->
+          <div class="user-status-avatar">
+            <!-- USER AVATAR -->
+            <div class="user-avatar small no-outline online">
+              <!-- USER AVATAR CONTENT -->
+              <div class="user-avatar-content">
+                <!-- HEXAGON -->
+                <div class="hexagon-image-30-32" data-src="img/avatar/03.jpg"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR CONTENT -->
+          
+              <!-- USER AVATAR PROGRESS -->
+              <div class="user-avatar-progress">
+                <!-- HEXAGON -->
+                <div class="hexagon-progress-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS -->
+          
+              <!-- USER AVATAR PROGRESS BORDER -->
+              <div class="user-avatar-progress-border">
+                <!-- HEXAGON -->
+                <div class="hexagon-border-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS BORDER -->
+          
+              <!-- USER AVATAR BADGE -->
+              <div class="user-avatar-badge">
+                <!-- USER AVATAR BADGE BORDER -->
+                <div class="user-avatar-badge-border">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-22-24"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE BORDER -->
+          
+                <!-- USER AVATAR BADGE CONTENT -->
+                <div class="user-avatar-badge-content">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-dark-16-18"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE CONTENT -->
+          
+                <!-- USER AVATAR BADGE TEXT -->
+                <p class="user-avatar-badge-text">16</p>
+                <!-- /USER AVATAR BADGE TEXT -->
+              </div>
+              <!-- /USER AVATAR BADGE -->
+            </div>
+            <!-- /USER AVATAR -->
+          </div>
+          <!-- /USER STATUS AVATAR -->
+      
+          <!-- USER STATUS TITLE -->
+          <p class="user-status-title"><span class="bold">Nick Grissom</span></p>
+          <!-- /USER STATUS TITLE -->
+      
+          <!-- USER STATUS TEXT -->
+          <p class="user-status-text small">Can you stream the new game?</p>
+          <!-- /USER STATUS TEXT -->
+      
+          <!-- USER STATUS TIMESTAMP -->
+          <p class="user-status-timestamp floaty">2hrs</p>
+          <!-- /USER STATUS TIMESTAMP -->
+        </div>
+        <!-- /USER STATUS -->
+      </div>
+      <!-- /CHAT WIDGET MESSAGE -->
+
+      <!-- CHAT WIDGET MESSAGE -->
+      <div class="chat-widget-message">
+        <!-- USER STATUS -->
+        <div class="user-status">
+          <!-- USER STATUS AVATAR -->
+          <div class="user-status-avatar">
+            <!-- USER AVATAR -->
+            <div class="user-avatar small no-outline online">
+              <!-- USER AVATAR CONTENT -->
+              <div class="user-avatar-content">
+                <!-- HEXAGON -->
+                <div class="hexagon-image-30-32" data-src="img/avatar/20.jpg"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR CONTENT -->
+          
+              <!-- USER AVATAR PROGRESS -->
+              <div class="user-avatar-progress">
+                <!-- HEXAGON -->
+                <div class="hexagon-progress-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS -->
+          
+              <!-- USER AVATAR PROGRESS BORDER -->
+              <div class="user-avatar-progress-border">
+                <!-- HEXAGON -->
+                <div class="hexagon-border-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS BORDER -->
+          
+              <!-- USER AVATAR BADGE -->
+              <div class="user-avatar-badge">
+                <!-- USER AVATAR BADGE BORDER -->
+                <div class="user-avatar-badge-border">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-22-24"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE BORDER -->
+          
+                <!-- USER AVATAR BADGE CONTENT -->
+                <div class="user-avatar-badge-content">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-dark-16-18"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE CONTENT -->
+          
+                <!-- USER AVATAR BADGE TEXT -->
+                <p class="user-avatar-badge-text">9</p>
+                <!-- /USER AVATAR BADGE TEXT -->
+              </div>
+              <!-- /USER AVATAR BADGE -->
+            </div>
+            <!-- /USER AVATAR -->
+          </div>
+          <!-- /USER STATUS AVATAR -->
+      
+          <!-- USER STATUS TITLE -->
+          <p class="user-status-title"><span class="bold">Matt Parker</span></p>
+          <!-- /USER STATUS TITLE -->
+      
+          <!-- USER STATUS TEXT -->
+          <p class="user-status-text small">Can you stream the new game?</p>
+          <!-- /USER STATUS TEXT -->
+      
+          <!-- USER STATUS TIMESTAMP -->
+          <p class="user-status-timestamp floaty">2hrs</p>
+          <!-- /USER STATUS TIMESTAMP -->
+        </div>
+        <!-- /USER STATUS -->
+      </div>
+      <!-- /CHAT WIDGET MESSAGE -->
+
+      <!-- CHAT WIDGET MESSAGE -->
+      <div class="chat-widget-message">
+        <!-- USER STATUS -->
+        <div class="user-status">
+          <!-- USER STATUS AVATAR -->
+          <div class="user-status-avatar">
+            <!-- USER AVATAR -->
+            <div class="user-avatar small no-outline away">
+              <!-- USER AVATAR CONTENT -->
+              <div class="user-avatar-content">
+                <!-- HEXAGON -->
+                <div class="hexagon-image-30-32" data-src="img/avatar/05.jpg"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR CONTENT -->
+          
+              <!-- USER AVATAR PROGRESS -->
+              <div class="user-avatar-progress">
+                <!-- HEXAGON -->
+                <div class="hexagon-progress-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS -->
+          
+              <!-- USER AVATAR PROGRESS BORDER -->
+              <div class="user-avatar-progress-border">
+                <!-- HEXAGON -->
+                <div class="hexagon-border-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS BORDER -->
+          
+              <!-- USER AVATAR BADGE -->
+              <div class="user-avatar-badge">
+                <!-- USER AVATAR BADGE BORDER -->
+                <div class="user-avatar-badge-border">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-22-24"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE BORDER -->
+          
+                <!-- USER AVATAR BADGE CONTENT -->
+                <div class="user-avatar-badge-content">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-dark-16-18"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE CONTENT -->
+          
+                <!-- USER AVATAR BADGE TEXT -->
+                <p class="user-avatar-badge-text">12</p>
+                <!-- /USER AVATAR BADGE TEXT -->
+              </div>
+              <!-- /USER AVATAR BADGE -->
+            </div>
+            <!-- /USER AVATAR -->
+          </div>
+          <!-- /USER STATUS AVATAR -->
+      
+          <!-- USER STATUS TITLE -->
+          <p class="user-status-title"><span class="bold">Neko Bebop</span></p>
+          <!-- /USER STATUS TITLE -->
+      
+          <!-- USER STATUS TEXT -->
+          <p class="user-status-text small">Awesome! I'll see you there!</p>
+          <!-- /USER STATUS TEXT -->
+      
+          <!-- USER STATUS TIMESTAMP -->
+          <p class="user-status-timestamp floaty">54mins</p>
+          <!-- /USER STATUS TIMESTAMP -->
+        </div>
+        <!-- /USER STATUS -->
+      </div>
+      <!-- /CHAT WIDGET MESSAGE -->
+
+      <!-- CHAT WIDGET MESSAGE -->
+      <div class="chat-widget-message">
+        <!-- USER STATUS -->
+        <div class="user-status">
+          <!-- USER STATUS AVATAR -->
+          <div class="user-status-avatar">
+            <!-- USER AVATAR -->
+            <div class="user-avatar small no-outline offline">
+              <!-- USER AVATAR CONTENT -->
+              <div class="user-avatar-content">
+                <!-- HEXAGON -->
+                <div class="hexagon-image-30-32" data-src="img/avatar/04.jpg"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR CONTENT -->
+          
+              <!-- USER AVATAR PROGRESS -->
+              <div class="user-avatar-progress">
+                <!-- HEXAGON -->
+                <div class="hexagon-progress-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS -->
+          
+              <!-- USER AVATAR PROGRESS BORDER -->
+              <div class="user-avatar-progress-border">
+                <!-- HEXAGON -->
+                <div class="hexagon-border-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS BORDER -->
+          
+              <!-- USER AVATAR BADGE -->
+              <div class="user-avatar-badge">
+                <!-- USER AVATAR BADGE BORDER -->
+                <div class="user-avatar-badge-border">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-22-24"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE BORDER -->
+          
+                <!-- USER AVATAR BADGE CONTENT -->
+                <div class="user-avatar-badge-content">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-dark-16-18"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE CONTENT -->
+          
+                <!-- USER AVATAR BADGE TEXT -->
+                <p class="user-avatar-badge-text">6</p>
+                <!-- /USER AVATAR BADGE TEXT -->
+              </div>
+              <!-- /USER AVATAR BADGE -->
+            </div>
+            <!-- /USER AVATAR -->
+          </div>
+          <!-- /USER STATUS AVATAR -->
+      
+          <!-- USER STATUS TITLE -->
+          <p class="user-status-title"><span class="bold">Bearded Wonder</span></p>
+          <!-- /USER STATUS TITLE -->
+      
+          <!-- USER STATUS TEXT -->
+          <p class="user-status-text small">Great! Then we'll meet with them at...</p>
+          <!-- /USER STATUS TEXT -->
+      
+          <!-- USER STATUS TIMESTAMP -->
+          <p class="user-status-timestamp floaty">2hrs</p>
+          <!-- /USER STATUS TIMESTAMP -->
+        </div>
+        <!-- /USER STATUS -->
+      </div>
+      <!-- /CHAT WIDGET MESSAGE -->
+
+      <!-- CHAT WIDGET MESSAGE -->
+      <div class="chat-widget-message">
+        <!-- USER STATUS -->
+        <div class="user-status">
+          <!-- USER STATUS AVATAR -->
+          <div class="user-status-avatar">
+            <!-- USER AVATAR -->
+            <div class="user-avatar small no-outline online">
+              <!-- USER AVATAR CONTENT -->
+              <div class="user-avatar-content">
+                <!-- HEXAGON -->
+                <div class="hexagon-image-30-32" data-src="img/avatar/09.jpg"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR CONTENT -->
+          
+              <!-- USER AVATAR PROGRESS -->
+              <div class="user-avatar-progress">
+                <!-- HEXAGON -->
+                <div class="hexagon-progress-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS -->
+          
+              <!-- USER AVATAR PROGRESS BORDER -->
+              <div class="user-avatar-progress-border">
+                <!-- HEXAGON -->
+                <div class="hexagon-border-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS BORDER -->
+          
+              <!-- USER AVATAR BADGE -->
+              <div class="user-avatar-badge">
+                <!-- USER AVATAR BADGE BORDER -->
+                <div class="user-avatar-badge-border">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-22-24"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE BORDER -->
+          
+                <!-- USER AVATAR BADGE CONTENT -->
+                <div class="user-avatar-badge-content">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-dark-16-18"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE CONTENT -->
+          
+                <!-- USER AVATAR BADGE TEXT -->
+                <p class="user-avatar-badge-text">27</p>
+                <!-- /USER AVATAR BADGE TEXT -->
+              </div>
+              <!-- /USER AVATAR BADGE -->
+            </div>
+            <!-- /USER AVATAR -->
+          </div>
+          <!-- /USER STATUS AVATAR -->
+      
+          <!-- USER STATUS TITLE -->
+          <p class="user-status-title"><span class="bold">Sandra Strange</span></p>
+          <!-- /USER STATUS TITLE -->
+      
+          <!-- USER STATUS TEXT -->
+          <p class="user-status-text small">Can you stream the new game?</p>
+          <!-- /USER STATUS TEXT -->
+      
+          <!-- USER STATUS TIMESTAMP -->
+          <p class="user-status-timestamp floaty">2hrs</p>
+          <!-- /USER STATUS TIMESTAMP -->
+        </div>
+        <!-- /USER STATUS -->
+      </div>
+      <!-- /CHAT WIDGET MESSAGE -->
+
+      <!-- CHAT WIDGET MESSAGE -->
+      <div class="chat-widget-message">
+        <!-- USER STATUS -->
+        <div class="user-status">
+          <!-- USER STATUS AVATAR -->
+          <div class="user-status-avatar">
+            <!-- USER AVATAR -->
+            <div class="user-avatar small no-outline online">
+              <!-- USER AVATAR CONTENT -->
+              <div class="user-avatar-content">
+                <!-- HEXAGON -->
+                <div class="hexagon-image-30-32" data-src="img/avatar/12.jpg"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR CONTENT -->
+          
+              <!-- USER AVATAR PROGRESS -->
+              <div class="user-avatar-progress">
+                <!-- HEXAGON -->
+                <div class="hexagon-progress-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS -->
+          
+              <!-- USER AVATAR PROGRESS BORDER -->
+              <div class="user-avatar-progress-border">
+                <!-- HEXAGON -->
+                <div class="hexagon-border-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS BORDER -->
+          
+              <!-- USER AVATAR BADGE -->
+              <div class="user-avatar-badge">
+                <!-- USER AVATAR BADGE BORDER -->
+                <div class="user-avatar-badge-border">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-22-24"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE BORDER -->
+          
+                <!-- USER AVATAR BADGE CONTENT -->
+                <div class="user-avatar-badge-content">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-dark-16-18"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE CONTENT -->
+          
+                <!-- USER AVATAR BADGE TEXT -->
+                <p class="user-avatar-badge-text">10</p>
+                <!-- /USER AVATAR BADGE TEXT -->
+              </div>
+              <!-- /USER AVATAR BADGE -->
+            </div>
+            <!-- /USER AVATAR -->
+          </div>
+          <!-- /USER STATUS AVATAR -->
+      
+          <!-- USER STATUS TITLE -->
+          <p class="user-status-title"><span class="bold">James Murdock</span></p>
+          <!-- /USER STATUS TITLE -->
+      
+          <!-- USER STATUS TEXT -->
+          <p class="user-status-text small">Great! Then we'll meet with them at...</p>
+          <!-- /USER STATUS TEXT -->
+      
+          <!-- USER STATUS TIMESTAMP -->
+          <p class="user-status-timestamp floaty">7hrs</p>
+          <!-- /USER STATUS TIMESTAMP -->
+        </div>
+        <!-- /USER STATUS -->
+      </div>
+      <!-- /CHAT WIDGET MESSAGE -->
+
+      <!-- CHAT WIDGET MESSAGE -->
+      <div class="chat-widget-message">
+        <!-- USER STATUS -->
+        <div class="user-status">
+          <!-- USER STATUS AVATAR -->
+          <div class="user-status-avatar">
+            <!-- USER AVATAR -->
+            <div class="user-avatar small no-outline away">
+              <!-- USER AVATAR CONTENT -->
+              <div class="user-avatar-content">
+                <!-- HEXAGON -->
+                <div class="hexagon-image-30-32" data-src="img/avatar/10.jpg"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR CONTENT -->
+          
+              <!-- USER AVATAR PROGRESS -->
+              <div class="user-avatar-progress">
+                <!-- HEXAGON -->
+                <div class="hexagon-progress-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS -->
+          
+              <!-- USER AVATAR PROGRESS BORDER -->
+              <div class="user-avatar-progress-border">
+                <!-- HEXAGON -->
+                <div class="hexagon-border-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS BORDER -->
+          
+              <!-- USER AVATAR BADGE -->
+              <div class="user-avatar-badge">
+                <!-- USER AVATAR BADGE BORDER -->
+                <div class="user-avatar-badge-border">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-22-24"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE BORDER -->
+          
+                <!-- USER AVATAR BADGE CONTENT -->
+                <div class="user-avatar-badge-content">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-dark-16-18"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE CONTENT -->
+          
+                <!-- USER AVATAR BADGE TEXT -->
+                <p class="user-avatar-badge-text">5</p>
+                <!-- /USER AVATAR BADGE TEXT -->
+              </div>
+              <!-- /USER AVATAR BADGE -->
+            </div>
+            <!-- /USER AVATAR -->
+          </div>
+          <!-- /USER STATUS AVATAR -->
+      
+          <!-- USER STATUS TITLE -->
+          <p class="user-status-title"><span class="bold">The Green Goo</span></p>
+          <!-- /USER STATUS TITLE -->
+      
+          <!-- USER STATUS TEXT -->
+          <p class="user-status-text small">Can you stream the new game?</p>
+          <!-- /USER STATUS TEXT -->
+      
+          <!-- USER STATUS TIMESTAMP -->
+          <p class="user-status-timestamp floaty">2hrs</p>
+          <!-- /USER STATUS TIMESTAMP -->
+        </div>
+        <!-- /USER STATUS -->
+      </div>
+      <!-- /CHAT WIDGET MESSAGE -->
+
+      <!-- CHAT WIDGET MESSAGE -->
+      <div class="chat-widget-message">
+        <!-- USER STATUS -->
+        <div class="user-status">
+          <!-- USER STATUS AVATAR -->
+          <div class="user-status-avatar">
+            <!-- USER AVATAR -->
+            <div class="user-avatar small no-outline online">
+              <!-- USER AVATAR CONTENT -->
+              <div class="user-avatar-content">
+                <!-- HEXAGON -->
+                <div class="hexagon-image-30-32" data-src="img/avatar/07.jpg"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR CONTENT -->
+          
+              <!-- USER AVATAR PROGRESS -->
+              <div class="user-avatar-progress">
+                <!-- HEXAGON -->
+                <div class="hexagon-progress-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS -->
+          
+              <!-- USER AVATAR PROGRESS BORDER -->
+              <div class="user-avatar-progress-border">
+                <!-- HEXAGON -->
+                <div class="hexagon-border-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS BORDER -->
+          
+              <!-- USER AVATAR BADGE -->
+              <div class="user-avatar-badge">
+                <!-- USER AVATAR BADGE BORDER -->
+                <div class="user-avatar-badge-border">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-22-24"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE BORDER -->
+          
+                <!-- USER AVATAR BADGE CONTENT -->
+                <div class="user-avatar-badge-content">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-dark-16-18"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE CONTENT -->
+          
+                <!-- USER AVATAR BADGE TEXT -->
+                <p class="user-avatar-badge-text">26</p>
+                <!-- /USER AVATAR BADGE TEXT -->
+              </div>
+              <!-- /USER AVATAR BADGE -->
+            </div>
+            <!-- /USER AVATAR -->
+          </div>
+          <!-- /USER STATUS AVATAR -->
+      
+          <!-- USER STATUS TITLE -->
+          <p class="user-status-title"><span class="bold">Sarah Diamond</span></p>
+          <!-- /USER STATUS TITLE -->
+      
+          <!-- USER STATUS TEXT -->
+          <p class="user-status-text small">I'm sending you the latest news of...</p>
+          <!-- /USER STATUS TEXT -->
+      
+          <!-- USER STATUS TIMESTAMP -->
+          <p class="user-status-timestamp floaty">16hrs</p>
+          <!-- /USER STATUS TIMESTAMP -->
+        </div>
+        <!-- /USER STATUS -->
+      </div>
+      <!-- /CHAT WIDGET MESSAGE -->
+
+      <!-- CHAT WIDGET MESSAGE -->
+      <div class="chat-widget-message">
+        <!-- USER STATUS -->
+        <div class="user-status">
+          <!-- USER STATUS AVATAR -->
+          <div class="user-status-avatar">
+            <!-- USER AVATAR -->
+            <div class="user-avatar small no-outline offline">
+              <!-- USER AVATAR CONTENT -->
+              <div class="user-avatar-content">
+                <!-- HEXAGON -->
+                <div class="hexagon-image-30-32" data-src="img/avatar/02.jpg"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR CONTENT -->
+          
+              <!-- USER AVATAR PROGRESS -->
+              <div class="user-avatar-progress">
+                <!-- HEXAGON -->
+                <div class="hexagon-progress-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS -->
+          
+              <!-- USER AVATAR PROGRESS BORDER -->
+              <div class="user-avatar-progress-border">
+                <!-- HEXAGON -->
+                <div class="hexagon-border-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS BORDER -->
+          
+              <!-- USER AVATAR BADGE -->
+              <div class="user-avatar-badge">
+                <!-- USER AVATAR BADGE BORDER -->
+                <div class="user-avatar-badge-border">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-22-24"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE BORDER -->
+          
+                <!-- USER AVATAR BADGE CONTENT -->
+                <div class="user-avatar-badge-content">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-dark-16-18"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE CONTENT -->
+          
+                <!-- USER AVATAR BADGE TEXT -->
+                <p class="user-avatar-badge-text">13</p>
+                <!-- /USER AVATAR BADGE TEXT -->
+              </div>
+              <!-- /USER AVATAR BADGE -->
+            </div>
+            <!-- /USER AVATAR -->
+          </div>
+          <!-- /USER STATUS AVATAR -->
+      
+          <!-- USER STATUS TITLE -->
+          <p class="user-status-title"><span class="bold">Destroy Dex</span></p>
+          <!-- /USER STATUS TITLE -->
+      
+          <!-- USER STATUS TEXT -->
+          <p class="user-status-text small">Can you stream the new game?</p>
+          <!-- /USER STATUS TEXT -->
+      
+          <!-- USER STATUS TIMESTAMP -->
+          <p class="user-status-timestamp floaty">2hrs</p>
+          <!-- /USER STATUS TIMESTAMP -->
+        </div>
+        <!-- /USER STATUS -->
+      </div>
+      <!-- /CHAT WIDGET MESSAGE -->
+
+      <!-- CHAT WIDGET MESSAGE -->
+      <div class="chat-widget-message">
+        <!-- USER STATUS -->
+        <div class="user-status">
+          <!-- USER STATUS AVATAR -->
+          <div class="user-status-avatar">
+            <!-- USER AVATAR -->
+            <div class="user-avatar small no-outline online">
+              <!-- USER AVATAR CONTENT -->
+              <div class="user-avatar-content">
+                <!-- HEXAGON -->
+                <div class="hexagon-image-30-32" data-src="img/avatar/08.jpg"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR CONTENT -->
+          
+              <!-- USER AVATAR PROGRESS -->
+              <div class="user-avatar-progress">
+                <!-- HEXAGON -->
+                <div class="hexagon-progress-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS -->
+          
+              <!-- USER AVATAR PROGRESS BORDER -->
+              <div class="user-avatar-progress-border">
+                <!-- HEXAGON -->
+                <div class="hexagon-border-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS BORDER -->
+          
+              <!-- USER AVATAR BADGE -->
+              <div class="user-avatar-badge">
+                <!-- USER AVATAR BADGE BORDER -->
+                <div class="user-avatar-badge-border">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-22-24"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE BORDER -->
+          
+                <!-- USER AVATAR BADGE CONTENT -->
+                <div class="user-avatar-badge-content">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-dark-16-18"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE CONTENT -->
+          
+                <!-- USER AVATAR BADGE TEXT -->
+                <p class="user-avatar-badge-text">4</p>
+                <!-- /USER AVATAR BADGE TEXT -->
+              </div>
+              <!-- /USER AVATAR BADGE -->
+            </div>
+            <!-- /USER AVATAR -->
+          </div>
+          <!-- /USER STATUS AVATAR -->
+      
+          <!-- USER STATUS TITLE -->
+          <p class="user-status-title"><span class="bold">Damian Greyson</span></p>
+          <!-- /USER STATUS TITLE -->
+      
+          <!-- USER STATUS TEXT -->
+          <p class="user-status-text small">Can you stream the new game?</p>
+          <!-- /USER STATUS TEXT -->
+      
+          <!-- USER STATUS TIMESTAMP -->
+          <p class="user-status-timestamp floaty">2hrs</p>
+          <!-- /USER STATUS TIMESTAMP -->
+        </div>
+        <!-- /USER STATUS -->
+      </div>
+      <!-- /CHAT WIDGET MESSAGE -->
+
+      <!-- CHAT WIDGET MESSAGE -->
+      <div class="chat-widget-message">
+        <!-- USER STATUS -->
+        <div class="user-status">
+          <!-- USER STATUS AVATAR -->
+          <div class="user-status-avatar">
+            <!-- USER AVATAR -->
+            <div class="user-avatar small no-outline online">
+              <!-- USER AVATAR CONTENT -->
+              <div class="user-avatar-content">
+                <!-- HEXAGON -->
+                <div class="hexagon-image-30-32" data-src="img/avatar/14.jpg"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR CONTENT -->
+          
+              <!-- USER AVATAR PROGRESS -->
+              <div class="user-avatar-progress">
+                <!-- HEXAGON -->
+                <div class="hexagon-progress-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS -->
+          
+              <!-- USER AVATAR PROGRESS BORDER -->
+              <div class="user-avatar-progress-border">
+                <!-- HEXAGON -->
+                <div class="hexagon-border-40-44"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR PROGRESS BORDER -->
+          
+              <!-- USER AVATAR BADGE -->
+              <div class="user-avatar-badge">
+                <!-- USER AVATAR BADGE BORDER -->
+                <div class="user-avatar-badge-border">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-22-24"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE BORDER -->
+          
+                <!-- USER AVATAR BADGE CONTENT -->
+                <div class="user-avatar-badge-content">
+                  <!-- HEXAGON -->
+                  <div class="hexagon-dark-16-18"></div>
+                  <!-- /HEXAGON -->
+                </div>
+                <!-- /USER AVATAR BADGE CONTENT -->
+          
+                <!-- USER AVATAR BADGE TEXT -->
+                <p class="user-avatar-badge-text">3</p>
+                <!-- /USER AVATAR BADGE TEXT -->
+              </div>
+              <!-- /USER AVATAR BADGE -->
+            </div>
+            <!-- /USER AVATAR -->
+          </div>
+          <!-- /USER STATUS AVATAR -->
+      
+          <!-- USER STATUS TITLE -->
+          <p class="user-status-title"><span class="bold">Paul Lang</span></p>
+          <!-- /USER STATUS TITLE -->
+      
+          <!-- USER STATUS TEXT -->
+          <p class="user-status-text small">Can you stream the new game?</p>
+          <!-- /USER STATUS TEXT -->
+      
+          <!-- USER STATUS TIMESTAMP -->
+          <p class="user-status-timestamp floaty">2hrs</p>
+          <!-- /USER STATUS TIMESTAMP -->
+        </div>
+        <!-- /USER STATUS -->
+      </div>
+      <!-- /CHAT WIDGET MESSAGE -->
+    </div>
+    <!-- /CHAT WIDGET MESSAGES -->
+
+    <!-- CHAT WIDGET FORM -->
+    <form class="chat-widget-form">
+      <!-- INTERACTIVE INPUT -->
+      <div class="interactive-input small">
+        <input type="text" id="chat-widget-search" name="chat_widget_search" placeholder="Search Messages...">
+        <!-- INTERACTIVE INPUT ICON WRAP -->
+        <div class="interactive-input-icon-wrap">
+          <!-- INTERACTIVE INPUT ICON -->
+          <svg class="interactive-input-icon icon-magnifying-glass">
+            <use xlink:href="#svg-magnifying-glass"></use>
+          </svg>
+          <!-- /INTERACTIVE INPUT ICON -->
+        </div>
+        <!-- /INTERACTIVE INPUT ICON WRAP -->
+
+        <!-- INTERACTIVE INPUT ACTION -->
+        <div class="interactive-input-action">
+          <!-- INTERACTIVE INPUT ACTION ICON -->
+          <svg class="interactive-input-action-icon icon-cross-thin">
+            <use xlink:href="#svg-cross-thin"></use>
+          </svg>
+          <!-- /INTERACTIVE INPUT ACTION ICON -->
+        </div>
+        <!-- /INTERACTIVE INPUT ACTION -->
+      </div>
+      <!-- /INTERACTIVE INPUT -->
+    </form>
+    <!-- /CHAT WIDGET FORM -->
+
+    <!-- CHAT WIDGET BUTTON -->
+    <div class="chat-widget-button">
+      <!-- CHAT WIDGET BUTTON ICON -->
+      <div class="chat-widget-button-icon">
+        <!-- BURGER ICON -->
+        <div class="burger-icon">
+          <!-- BURGER ICON BAR -->
+          <div class="burger-icon-bar"></div>
+          <!-- /BURGER ICON BAR -->
+
+          <!-- BURGER ICON BAR -->
+          <div class="burger-icon-bar"></div>
+          <!-- /BURGER ICON BAR -->
+
+          <!-- BURGER ICON BAR -->
+          <div class="burger-icon-bar"></div>
+          <!-- /BURGER ICON BAR -->
+        </div>
+        <!-- /BURGER ICON -->
+      </div>
+      <!-- /CHAT WIDGET BUTTON ICON -->
+
+      <!-- CHAT WIDGET BUTTON TEXT -->
+      <p class="chat-widget-button-text">Messages / Chat</p>
+      <!-- /CHAT WIDGET BUTTON TEXT -->
+    </div>
+    <!-- /CHAT WIDGET BUTTON -->
+  </aside>
+  <!-- /CHAT WIDGET -->
+
+  <!-- CHAT WIDGET -->
+  <aside id="chat-widget-message" class="chat-widget chat-widget-overlay hidden sidebar right">
+    <!-- CHAT WIDGET HEADER -->
+    <div class="chat-widget-header">
+      <!-- CHAT WIDGET CLOSE BUTTON -->
+      <div class="chat-widget-close-button">
+        <!-- CHAT WIDGET CLOSE BUTTON ICON -->
+        <svg class="chat-widget-close-button-icon icon-back-arrow">
+          <use xlink:href="#svg-back-arrow"></use>
+        </svg>
+        <!-- CHAT WIDGET CLOSE BUTTON ICON -->
+      </div>
+      <!-- /CHAT WIDGET CLOSE BUTTON -->
+
+      <!-- USER STATUS -->
+      <div class="user-status">
+        <!-- USER STATUS AVATAR -->
+        <div class="user-status-avatar">
+          <!-- USER AVATAR -->
+          <div class="user-avatar small no-outline online">
+            <!-- USER AVATAR CONTENT -->
+            <div class="user-avatar-content">
+              <!-- HEXAGON -->
+              <div class="hexagon-image-30-32" data-src="img/avatar/03.jpg"></div>
+              <!-- /HEXAGON -->
+            </div>
+            <!-- /USER AVATAR CONTENT -->
+        
+            <!-- USER AVATAR PROGRESS -->
+            <div class="user-avatar-progress">
+              <!-- HEXAGON -->
+              <div class="hexagon-progress-40-44"></div>
+              <!-- /HEXAGON -->
+            </div>
+            <!-- /USER AVATAR PROGRESS -->
+        
+            <!-- USER AVATAR PROGRESS BORDER -->
+            <div class="user-avatar-progress-border">
+              <!-- HEXAGON -->
+              <div class="hexagon-border-40-44"></div>
+              <!-- /HEXAGON -->
+            </div>
+            <!-- /USER AVATAR PROGRESS BORDER -->
+        
+            <!-- USER AVATAR BADGE -->
+            <div class="user-avatar-badge">
+              <!-- USER AVATAR BADGE BORDER -->
+              <div class="user-avatar-badge-border">
+                <!-- HEXAGON -->
+                <div class="hexagon-22-24"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR BADGE BORDER -->
+        
+              <!-- USER AVATAR BADGE CONTENT -->
+              <div class="user-avatar-badge-content">
+                <!-- HEXAGON -->
+                <div class="hexagon-dark-16-18"></div>
+                <!-- /HEXAGON -->
+              </div>
+              <!-- /USER AVATAR BADGE CONTENT -->
+        
+              <!-- USER AVATAR BADGE TEXT -->
+              <p class="user-avatar-badge-text">16</p>
+              <!-- /USER AVATAR BADGE TEXT -->
+            </div>
+            <!-- /USER AVATAR BADGE -->
+          </div>
+          <!-- /USER AVATAR -->
+        </div>
+        <!-- /USER STATUS AVATAR -->
+
+        <!-- USER STATUS TITLE -->
+        <p class="user-status-title"><span class="bold">Nick Grissom</span></p>
+        <!-- /USER STATUS TITLE -->
+
+        <!-- USER STATUS TAG -->
+        <p class="user-status-tag online">Online</p>
+        <!-- /USER STATUS TAG -->
+      </div>
+      <!-- /USER STATUS -->
+    </div>
+    <!-- /CHAT WIDGET HEADER -->
+
+    <!-- CHAT WIDGET CONVERSATION -->
+    <div class="chat-widget-conversation" data-simplebar>
+      <!-- CHAT WIDGET SPEAKER -->
+      <div class="chat-widget-speaker left">
+        <!-- CHAT WIDGET SPEAKER AVATAR -->
+        <div class="chat-widget-speaker-avatar">
+          <!-- USER AVATAR -->
+          <div class="user-avatar tiny no-border">
+            <!-- USER AVATAR CONTENT -->
+            <div class="user-avatar-content">
+              <!-- HEXAGON -->
+              <div class="hexagon-image-24-26" data-src="img/avatar/03.jpg"></div>
+              <!-- /HEXAGON -->
+            </div>
+            <!-- /USER AVATAR CONTENT -->
+          </div>
+          <!-- /USER AVATAR -->
+        </div>
+        <!-- /CHAT WIDGET SPEAKER AVATAR -->
+
+        <!-- CHAT WIDGET SPEAKER MESSAGE -->
+        <p class="chat-widget-speaker-message">Hi Marina! It's been a long time!</p>
+        <!-- /CHAT WIDGET SPEAKER MESSAGE -->
+
+        <!-- CHAT WIDGET SPEAKER TIMESTAMP -->
+        <p class="chat-widget-speaker-timestamp">Yesterday at 8:36PM</p>
+        <!-- /CHAT WIDGET SPEAKER TIMESTAMP -->
+      </div>
+      <!-- /CHAT WIDGET SPEAKER -->
+
+      <!-- CHAT WIDGET SPEAKER -->
+      <div class="chat-widget-speaker right">
+        <!-- CHAT WIDGET SPEAKER MESSAGE -->
+        <p class="chat-widget-speaker-message">Hey Nick!</p>
+        <!-- /CHAT WIDGET SPEAKER MESSAGE -->
+
+        <!-- CHAT WIDGET SPEAKER MESSAGE -->
+        <p class="chat-widget-speaker-message">You're right, it's been a really long time! I think the last time we saw was at Neko's party</p>
+        <!-- /CHAT WIDGET SPEAKER MESSAGE -->
+
+        <!-- CHAT WIDGET SPEAKER TIMESTAMP -->
+        <p class="chat-widget-speaker-timestamp">10:05AM</p>
+        <!-- /CHAT WIDGET SPEAKER TIMESTAMP -->
+      </div>
+      <!-- /CHAT WIDGET SPEAKER -->
+
+      <!-- CHAT WIDGET SPEAKER -->
+      <div class="chat-widget-speaker left">
+        <!-- CHAT WIDGET SPEAKER AVATAR -->
+        <div class="chat-widget-speaker-avatar">
+          <!-- USER AVATAR -->
+          <div class="user-avatar tiny no-border">
+            <!-- USER AVATAR CONTENT -->
+            <div class="user-avatar-content">
+              <!-- HEXAGON -->
+              <div class="hexagon-image-24-26" data-src="img/avatar/03.jpg"></div>
+              <!-- /HEXAGON -->
+            </div>
+            <!-- /USER AVATAR CONTENT -->
+          </div>
+          <!-- /USER AVATAR -->
+        </div>
+        <!-- /CHAT WIDGET SPEAKER AVATAR -->
+
+        <!-- CHAT WIDGET SPEAKER MESSAGE -->
+        <p class="chat-widget-speaker-message">Yeah! I remember now! The stream launch party</p>
+        <!-- /CHAT WIDGET SPEAKER MESSAGE -->
+
+        <!-- CHAT WIDGET SPEAKER MESSAGE -->
+        <p class="chat-widget-speaker-message">That reminds me that I wanted to ask you something</p>
+        <!-- /CHAT WIDGET SPEAKER MESSAGE -->
+
+        <!-- CHAT WIDGET SPEAKER MESSAGE -->
+        <p class="chat-widget-speaker-message">Can you stream the new game?</p>
+        <!-- /CHAT WIDGET SPEAKER MESSAGE -->
+      </div>
+      <!-- /CHAT WIDGET SPEAKER -->
+    </div>
+    <!-- /CHAT WIDGET CONVERSATION -->
+
+    <!-- CHAT WIDGET FORM -->
+    <form class="chat-widget-form">
+      <!-- INTERACTIVE INPUT -->
+      <div class="interactive-input small">
+        <input type="text" id="chat-widget-message-text" name="chat_widget_message_text" placeholder="Write a message...">
+        <!-- INTERACTIVE INPUT ICON WRAP -->
+        <div class="interactive-input-icon-wrap">
+          <!-- INTERACTIVE INPUT ICON -->
+          <svg class="interactive-input-icon icon-send-message">
+            <use xlink:href="#svg-send-message"></use>
+          </svg>
+          <!-- /INTERACTIVE INPUT ICON -->
+        </div>
+        <!-- /INTERACTIVE INPUT ICON WRAP -->
+
+        <!-- INTERACTIVE INPUT ACTION -->
+        <div class="interactive-input-action">
+          <!-- INTERACTIVE INPUT ACTION ICON -->
+          <svg class="interactive-input-action-icon icon-cross-thin">
+            <use xlink:href="#svg-cross-thin"></use>
+          </svg>
+          <!-- /INTERACTIVE INPUT ACTION ICON -->
+        </div>
+        <!-- /INTERACTIVE INPUT ACTION -->
+      </div>
+      <!-- /INTERACTIVE INPUT -->
+    </form>
+    <!-- /CHAT WIDGET FORM -->
+  </aside>
+  <!-- /CHAT WIDGET -->
+
+  <!-- HEADER -->
+  <header class="navbar-light navbar-sticky header-static">
+    <nav class="navbar navbar-expand-lg">
+        <ul class="navbar-nav navbar-nav-scroll d-none d-lg-block" style="margin-right:2rem;">
+            <li class="nav-item dropdown dropdown-fullwidth">
+                <a href="#" style="padding:48px 0px;margin-left:1rem;" id="megaMenuOne" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="../assets/images/WT-Globe.png" style="width:48px;height:auto;" class="img-fluid">
+                </a>
+                <div class="dropdown-menufirst" style="left:10px;padding-bottom:0px;" aria-labelledby="megaMenuOne">
+                    <div class="container">
+                        <div class="text-center">
+                            <h3 class="mb-3">Our Network</h3>
+                        </div>
+                        <div class="row g-4 px-3 flex-fill">
+                            <div class="col-lg-3 mt-0 mt-lg-3">
+                                <div class="card bg-transparent">
+                                    <h6 class="mt-2">Nearby Areas</h6>
+                                    <hr>
+                                    <ul class="list-inline padding_left-side mt-1">
+                                        <li class="list-item py-1">
+                                            <a href="../TourPage/index.html" class="">Tour Page</a>
+                                        </li>
+                                        <li class="list-item py-1">
+                                            <a href="../frum/index.html" class="">forum</a>
+                                        </li>
+                                        <li class="list-item py-1"><a href="../navigation.html" class="">All Post</a></li>
+                                        <li class="list-item py-1"><a href="../newsfeed.html" class="">News Feed</a></li>
+                                        <li class="list-item py-1"><a href="../businessPage/index.html" class="">businessPage/index</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-0 mt-lg-3">
+                                <div class="card bg-transparent">
+                                    <h6 class="mt-2">The Americas</h6>
+                                    <hr>
+                                    <ul class="list-inline padding_left-side mt-1">
+                                      <li class="list-item py-1"><a href="../points/badges.html" class="">Point Badge Page</a></li>
+                                      <li class="list-item py-1"><a href="../points/quests.html" class="">Point Quests page</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-0 mt-lg-3">
+                                <div class="card bg-transparent">
+                                    <h6 class="mt-2">Europe</h6>
+                                    <hr>
+                                    <ul class="list-inline padding_left-side mt-1">
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mt-0 mt-lg-3">
+                                <div class="card bg-transparent">
+                                    <h6 class="mt-2">Asia Pacific</h6>
+                                    <hr>
+                                    <ul class="list-inline padding_left-side mt-1">
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12" id="no_pad">
+                        <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white">
+                            <div class="row">
+                                <div class="col-4">
+                                    <h4 class="mb-0 text-white">Checkout the doc!</h4>
+                                    <p class="mb-0 text-white small">For better understanding of theme standard</p>
+                                </div>
+                                <div class="col-8">
+                                    <div class="search">
+                                        <div class="search-2">
+                                            <input type="text" placeholder="Search Our Network">
+                                            <button><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="container px-0">
+            <button class="navbar-toggler" type="button" href="#" id="navbarCollapseFirst" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a href="#" style="margin-right:1rem;">
+                    <img src="../assets/images/WT-Globe.png" style="width:48px;height:auto;" class="img-fluid">
+                </a>
+            </button>
+            <div class="dropdown-menu" style="overflow:auto;height:3720px;width:100%;" aria-labelledby="navbarCollapseFirst">
+                <div class="container">
+                    <div class="text-center">
+                        <h3 class="pb-3">Our Network</h3>
+                    </div>
+                    <div class="row g-4 px-3 flex-fill">
+                        <div class="col-md-3 col-6 mt-0 mt-lg-3">
+                            <div class="card bg-transparent">
+                                <h6 class="mt-2">Nearby Areas</h6>
+                                <ul class="list-inline mt-1">
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 mt-0 mt-lg-3">
+                            <div class="card bg-transparent">
+                                <h6 class="mt-2">The Americas</h6>
+                                <ul class="list-inline mt-1">
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 mt-0 mt-lg-3">
+                            <div class="card bg-transparent">
+                                <h6 class="mt-2">Europe</h6>
+                                <ul class="list-inline mt-1">
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 mt-0 mt-lg-3">
+                            <div class="card bg-transparent">
+                                <h6 class="mt-2">Asia Pacific</h6>
+                                <ul class="list-inline mt-1">
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 px-3" id="no_pad">
+                        <div class="align-self-center me-md-4 me-2">
+                            <div class="searchone">
+                                <div class="search-2">
+                                    <i class="bx bx-search-alt"></i>
+                                    <input type="text" placeholder="Search Our Network">
+                                    <button><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="navbar-brand" href="../index.html">
+                <img class="navbar-brand-item light-mode-item" style="width:120px;height:auto;" src="../assets/images/wtlogosm.png" alt="logo">
+            </a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav navbar-nav-scroll ms-auto">
+                    <li class="nav-item dropdown dropdown-fullwidth">
+                        <a class="nav-link dropdown-toggle" href="#" id="megaMenuTwo" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Destinations</a>
+                        <div class="dropdown-menu" aria-labelledby="megaMenuTwo">
+                            <div class="container">
+                                <div class="row w-100">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Featured Destinations</a></li>
+                                            <li><a class="dropdown-item" href="#">Trip Ideas</a></li>
+                                            <li><a class="dropdown-item" href="#">Road Trips</a></li>
+                                            <li><a class="dropdown-item" href="#">Seasonal Adventures</a></li>
+                                            <li><a class="dropdown-item" href="#">Blockquote</a></li>
+                                            <li><a class="dropdown-item" href="#">Resorts</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Getting Here &amp; Getting Around</a></li>
+                                            <li><a class="dropdown-item" href="#">Maps &amp; Visitor Guides</a></li>
+                                            <li><a class="dropdown-item" href="#">World Travel Index</a></li>
+                                            <li><a class="dropdown-item" href="#">Places To Go</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item hover-none"><b>Types of Trips</b></a></li>
+                                            <li><a class="dropdown-item" href="#">Adventure</a></li>
+                                            <li><a class="dropdown-item" href="#">Budget</a></li>
+                                            <li><a class="dropdown-item" href="#">Couples</a></li>
+                                            <li><a class="dropdown-item" href="#">Culinary</a></li>
+                                            <li><a class="dropdown-item" href="#">Family</a></li>
+                                            <li><a class="dropdown-item" href="#">Festivals</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Group</a></li>
+                                            <li><a class="dropdown-item" href="#">Luxury</a></li>
+                                            <li><a class="dropdown-item" href="#">Off the Beaten Path</a></li>
+                                            <li><a class="dropdown-item" href="#">Resorts</a></li>
+                                            <li><a class="dropdown-item" href="#">Road Trips</a></li>
+                                            <li><a class="dropdown-item" href="#">Solo</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12" id="no_pad">
+                                <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                    <div class="align-self-center me-md-4 me-2">
+                                        <img src="../assets/images/logo.png" style="width:120px;">
+                                    </div>
+                                    <div class="align-self-center me-md-4 me-2">
+                                        <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                        <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                    </div>
+                                    <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="overflow: revert;">Add On</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown dropdown-fullwidth">
+                        <a class="nav-link dropdown-toggle" href="#" id="megaMenuThree" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Travel</a>
+                        <div class="dropdown-menu" aria-labelledby="megaMenuThree">
+                            <div class="container">
+                                <div class="row w-100">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Fly</a></li>
+                                            <li><a class="dropdown-item" href="#">Aircraft Charter</a></li>
+                                            <li><a class="dropdown-item" href="#">Airlines</a></li>
+                                            <li><a class="dropdown-item" href="#">Airports</a></li>
+                                            <li><a class="dropdown-item" href="#">Airline Carry On Limits</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Drive</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Cruises</a></li>
+                                            <li><a class="dropdown-item" href="#">Boat Charter</a></li>
+                                            <li><a class="dropdown-item" href="#">Cruise Lines</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item hover-none"><b>Types of Trips</b></a></li>
+                                            <li><a class="dropdown-item" href="#">Cruises</a></li>
+                                            <li><a class="dropdown-item" href="#">Boat Charter</a></li>
+                                            <li><a class="dropdown-item" href="#">Cruise Lines</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12" id="no_pad">
+                                <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                    <div class="align-self-center me-md-4 me-2">
+                                        <img src="../assets/images/logo.png" style="width:120px;">
+                                    </div>
+                                    <div class="align-self-center me-md-4 me-2">
+                                        <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                        <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                    </div>
+                                    <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">Read more!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown dropdown-fullwidth">
+                        <a class="nav-link dropdown-toggle" href="#" id="megaMenuFour" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Stay</a>
+                        <div class="dropdown-menu" aria-labelledby="megaMenuFour">
+                            <div class="container">
+                                <div class="row w-100">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Featured Vacation Rentals</a></li>
+                                            <li><a class="dropdown-item" href="#">Vacation Rentals</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Featured Hotels</a></li>
+                                            <li><a class="dropdown-item" href="#">Hotels</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Resorts</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Points &amp; Miles</a></li>
+                                            <li><a class="dropdown-item" href="#">Credit Cards</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12" id="no_pad">
+                                <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                    <div class="align-self-center me-md-4 me-2">
+                                        <img src="../assets/images/logo.png" style="width:120px;">
+                                    </div>
+                                    <div class="align-self-center me-md-4 me-2">
+                                        <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                        <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                    </div>
+                                    <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">Read more!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown dropdown-fullwidth">
+                        <a class="nav-link dropdown-toggle" href="#" id="megaMenuFive" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eat</a>
+                        <div class="dropdown-menu" aria-labelledby="megaMenuFive">
+                            <div class="container">
+                                <div class="row w-100">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Featured Restaurants</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Bars &amp; Nightclubs</a></li>
+                                            <li><a class="dropdown-item" href="#">Breweries &amp; Distilleries</a></li>
+                                            <li><a class="dropdown-item" href="#">Wineries &amp; Vineyards</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Food Tours</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Local Recipes</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12" id="no_pad">
+                                <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                    <div class="align-self-center me-md-4 me-2">
+                                        <img src="../assets/images/logo.png" style="width:120px;">
+                                    </div>
+                                    <div class="align-self-center me-md-4 me-2">
+                                        <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                        <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                    </div>
+                                    <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">Read more!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown dropdown-fullwidth">
+                        <a class="nav-link dropdown-toggle" href="#" id="megaMenuSix" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Do</a>
+                        <div class="dropdown-menu" aria-labelledby="megaMenuSix">
+                            <div class="container">
+                                <div class="row w-100">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Featured Things To Do</a></li>
+                                            <li><a class="dropdown-item" href="#">Experiences</a></li>
+                                            <li><a class="dropdown-item" href="#">Signature Attractions</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">History</a></li>
+                                            <li><a class="dropdown-item" href="#">Churches</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Outdoor</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Scuba Schools / Centers</a></li>
+                                            <li><a class="dropdown-item" href="#">Scuba Dive Sites</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12" id="no_pad">
+                                <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                    <div class="align-self-center me-md-4 me-2">
+                                        <img src="../assets/images/logo.png" style="width:120px;">
+                                    </div>
+                                    <div class="align-self-center me-md-4 me-2">
+                                        <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                        <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                    </div>
+                                    <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">Read more!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown dropdown-fullwidth">
+                        <a class="nav-link dropdown-toggle" href="#" id="megaMenuSeven" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
+                        <div class="dropdown-menu" aria-labelledby="megaMenuSeven">
+                            <div class="container">
+                                <div class="row w-100">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Event Planners</a></li>
+                                            <li><a class="dropdown-item" href="#">Planning Tools</a></li>
+                                            <li><a class="dropdown-item" href="#">Request for Proposal</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Local Vendor Search</a></li>
+                                            <li><a class="dropdown-item" href="#">Associations</a></li>
+                                            <li><a class="dropdown-item" href="#">Tradeshows</a></li>
+                                            <li><a class="dropdown-item" href="#">Union &amp; Fraternal Organizations</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Convention Calendar</a></li>
+                                            <li><a class="dropdown-item" href="#">Meeting Facilities</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Executive Meeting</a></li>
+                                            <li><a class="dropdown-item" href="#">Corporate Meetings</a></li>
+                                            <li><a class="dropdown-item" href="#">Reunions</a></li>
+                                            <li><a class="dropdown-item" href="#">Small Meetings</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12" id="no_pad">
+                                <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                    <div class="align-self-center me-md-4 me-2">
+                                        <img src="../assets/images/logo.png" style="width:120px;">
+                                    </div>
+                                    <div class="align-self-center me-md-4 me-2">
+                                        <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                        <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                    </div>
+                                    <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">Read more!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown dropdown-fullwidth">
+                        <a class="nav-link dropdown-toggle" href="#" id="megaMenuEight" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Marketplace</a>
+                        <div class="dropdown-menu" aria-labelledby="megaMenuEight">
+                            <div class="container">
+                                <div class="row w-100">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">Made In @ Store (Made Here)</a></li>
+                                            <li><a class="dropdown-item" href="#">Art</a></li>
+                                            <li><a class="dropdown-item" href="#">Furniture</a></li>
+                                            <li><a class="dropdown-item" href="#">Watches &amp; Jewelry</a></li>
+                                            <li><a class="dropdown-item" href="#">Jobs</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item hover-none"><b>Aircraft</b></a></li>
+                                            <li><a class="dropdown-item" href="#">Aircraft for Sale</a></li>
+                                            <li><a class="dropdown-item" href="#">Aircraft for Charter</a></li>
+                                            <li><a class="dropdown-item" href="#">Flight Clubs</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item hover-none"><b>Yachts</b></a></li>
+                                            <li><a class="dropdown-item" href="#">Yachts for Sale</a></li>
+                                            <li><a class="dropdown-item" href="#">Yachts for Charter</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item hover-none"><b>Vacation Rentals</b></a></li>
+                                            <li><a class="dropdown-item" href="#">Vacation Rentals for Sale</a></li>
+                                            <li><a class="dropdown-item" href="#">Vacation Rentals for Rent</a></li>
+                                            <li><a class="dropdown-item hover-none"><b>Islands</b></a></li>
+                                            <li><a class="dropdown-item" href="#">Islands for Sale</a></li>
+                                            <li><a class="dropdown-item" href="#">Islands for Rent</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12" id="no_pad">
+                                <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                    <div class="align-self-center me-md-4 me-2">
+                                        <img src="../assets/images/logo.png" style="width:120px;">
+                                    </div>
+                                    <div class="align-self-center me-md-4 me-2">
+                                        <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                        <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                    </div>
+                                    <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">Read more!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown dropdown-fullwidth" style="padding: 28px 0px;">
+                        <a class="btn btn-sm mb-0 mx-2" style="background-color:#ff5461;color:#fff;" href="#" id="megaMenuNine" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Add Post
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="megaMenuNine">
+                            <div class="container">
+                                <div class="row g-4 pt-3 px-2 flex-fill">
+                                    <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                        <div class="card bg-transparent text-center">
+                                            <div class="i-icon">
+                                                <a class="" href="">
+                                                    <div class="">
+                                                        <img class="img-fluid" src="../assets/images/image.png">
+                                                    </div>
+                                                    <span class="mt-2">Image</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                        <div class="card bg-transparent text-center">
+                                            <div class="i-icon">
+                                                <a class="" href="">
+                                                    <div class="">
+                                                        <img class="img-fluid" src="../assets/images/photo-library.png">
+                                                    </div>
+                                                    <span class="mt-2">Photo Album</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                        <div class="card bg-transparent text-center">
+                                            <div class="i-icon">
+                                                <a class="" href="">
+                                                    <div class="">
+                                                        <img class="img-fluid" src="../assets/images/microphone.png">
+                                                    </div>
+                                                    <span class="mt-2">Audio</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                        <div class="card bg-transparent text-center">
+                                            <div class="i-icon">
+                                                <a class="" href="">
+                                                    <div class="">
+                                                        <img class="img-fluid" src="../assets/images/pencil.png">
+                                                    </div>
+                                                    <span class="mt-2">Recipe</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                        <div class="card bg-transparent text-center">
+                                            <div class="i-icon">
+                                                <a class="" href="">
+                                                    <div class="">
+                                                        <img class="img-fluid" src="../assets/images/rank-list.png">
+                                                    </div>
+                                                    <span class="mt-2">Ranked List</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                        <div class="card bg-transparent text-center">
+                                            <div class="i-icon">
+                                                <a class="" href="">
+                                                    <div class="">
+                                                        <img class="img-fluid" src="../assets/images/list.png">
+                                                    </div>
+                                                    <span class="mt-2">Classic List</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                        <div class="card bg-transparent text-center">
+                                            <div class="i-icon">
+                                                <a class="" href="">
+                                                    <div class="">
+                                                        <img class="img-fluid" src="../assets/images/user-in-a-square.png">
+                                                    </div>
+                                                    <span class="mt-2">Personality Quiz</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                        <div class="card bg-transparent text-center">
+                                            <div class="i-icon">
+                                                <a class="" href="">
+                                                    <div class="">
+                                                        <img class="img-fluid" src="../assets/images/movie.png">
+                                                    </div>
+                                                    <span class="mt-2">Meme</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12" id="no_pad">
+                                <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                    <div class="align-self-center me-md-4 me-2">
+                                        <img src="../assets/images/time.jpg" style="width:80px;">
+                                    </div>
+                                    <div class="align-self-center me-md-4 me-2">
+                                        <h4 class="mb-0 text-white">TIME Magazine</h4>
+                                        <p class="mb-0 text-white small">the most authoritative in current business, politics and entertainment.</p>
+                                    </div>
+                                    <a href="./navigation.html" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">See all 22 post types</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a class="avatar-sm d-block d-lg-none" style="margin-left: 1rem;">
+                <img class="avatar-img rounded-circle" src="../assets/images/01.jpg" alt="avatar">
+            </a>
+        </div>
+        <div class="d-none d-lg-block">
+            <a class="avatar avatar-sm" style="margin-right: 1rem;">
+                <img class="avatar-img rounded-circle" src="../assets/images/01.jpg" alt="avatar">
+            </a>
+        </div>
+    </nav>
+</header>
+  <!-- /HEADER -->
+
+  <!-- FLOATY BAR -->
+  <aside class="floaty-bar">
+    <!-- BAR ACTIONS -->
+    <div class="bar-actions">
+      <!-- PROGRESS STAT -->
+      <div class="progress-stat">
+        <!-- BAR PROGRESS WRAP -->
+        <div class="bar-progress-wrap">
+          <!-- BAR PROGRESS INFO -->
+          <p class="bar-progress-info">Next: <span class="bar-progress-text"></span></p>
+          <!-- /BAR PROGRESS INFO -->
+        </div>
+        <!-- /BAR PROGRESS WRAP -->
+    
+        <!-- PROGRESS STAT BAR -->
+        <div id="logged-user-level-cp" class="progress-stat-bar"></div>
+        <!-- /PROGRESS STAT BAR -->
+      </div>
+      <!-- /PROGRESS STAT -->
+    </div>
+    <!-- /BAR ACTIONS -->
+
+    <!-- BAR ACTIONS -->
+    <div class="bar-actions">
+      <!-- ACTION LIST -->
+      <div class="action-list dark">
+        <!-- ACTION LIST ITEM -->
+        <a class="action-list-item" href="marketplace-cart.html">
+          <!-- ACTION LIST ITEM ICON -->
+          <svg class="action-list-item-icon icon-shopping-bag">
+            <use xlink:href="#svg-shopping-bag"></use>
+          </svg>
+          <!-- /ACTION LIST ITEM ICON -->
+        </a>
+        <!-- /ACTION LIST ITEM -->
+
+        <!-- ACTION LIST ITEM -->
+        <a class="action-list-item" href="hub-profile-requests.html">
+          <!-- ACTION LIST ITEM ICON -->
+          <svg class="action-list-item-icon icon-friend">
+            <use xlink:href="#svg-friend"></use>
+          </svg>
+          <!-- /ACTION LIST ITEM ICON -->
+        </a>
+        <!-- /ACTION LIST ITEM -->
+
+        <!-- ACTION LIST ITEM -->
+        <a class="action-list-item" href="hub-profile-messages.html">
+          <!-- ACTION LIST ITEM ICON -->
+          <svg class="action-list-item-icon icon-messages">
+            <use xlink:href="#svg-messages"></use>
+          </svg>
+          <!-- /ACTION LIST ITEM ICON -->
+        </a>
+        <!-- /ACTION LIST ITEM -->
+
+        <!-- ACTION LIST ITEM -->
+        <a class="action-list-item unread" href="hub-profile-notifications.html">
+          <!-- ACTION LIST ITEM ICON -->
+          <svg class="action-list-item-icon icon-notification">
+            <use xlink:href="#svg-notification"></use>
+          </svg>
+          <!-- /ACTION LIST ITEM ICON -->
+        </a>
+        <!-- /ACTION LIST ITEM -->
+      </div>
+      <!-- /ACTION LIST -->
+
+      <!-- ACTION ITEM WRAP -->
+      <a class="action-item-wrap" href="hub-profile-info.html">
+        <!-- ACTION ITEM -->
+        <div class="action-item dark">
+          <!-- ACTION ITEM ICON -->
+          <svg class="action-item-icon icon-settings">
+            <use xlink:href="#svg-settings"></use>
+          </svg>
+          <!-- /ACTION ITEM ICON -->
+        </div>
+        <!-- /ACTION ITEM -->
+      </a>
+      <!-- /ACTION ITEM WRAP -->
+    </div>
+    <!-- /BAR ACTIONS -->
+  </aside>
+  <!-- /FLOATY BAR -->
+
+  <!-- CONTENT GRID -->
+  <div class="content-grid">
+    <!-- SECTION BANNER -->
+    <div class="section-banner">
+      <!-- SECTION BANNER ICON -->
+      <img class="section-banner-icon" src="img/banner/badges-icon.png" alt="badges-icon">
+      <!-- /SECTION BANNER ICON -->
+  
+      <!-- SECTION BANNER TITLE -->
+      <p class="section-banner-title">Badges</p>
+      <!-- /SECTION BANNER TITLE -->
+  
+      <!-- SECTION BANNER TEXT -->
+      <p class="section-banner-text">Check out all your unlocked and locked badges!</p>
+      <!-- /SECTION BANNER TEXT -->
+    </div>
+    <!-- /SECTION BANNER -->
+
+    <!-- GRID -->
+    <div class="grid grid-3-3-3-3 top-space centered">
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          20 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/bronze-s.png" alt="badge-bronze-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/bronze-b.png" alt="badge-bronze-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Bronze User</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Has posted more than 1 post on their profile</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-bronze" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          40 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/silver-s.png" alt="badge-silver-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/silver-b.png" alt="badge-silver-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Silver User</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Has posted more than 100 posts on their profile</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-silver" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          60 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/gold-s.png" alt="badge-gold-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/gold-b.png" alt="badge-gold-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Gold User</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Has posted more than 500 posts on their profile</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-gold" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          100 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/platinum-s.png" alt="badge-platinum-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/platinum-b.png" alt="badge-platinum-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Platinum User</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Has posted more than 1000 posts on their profile</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-platinum" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          40 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/traveller-s.png" alt="badge-traveller-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/traveller-b.png" alt="badge-traveller-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Forum Traveller</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Created at least 1 topic on 5 different groups forums</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+            <!-- PROGRESS STAT BAR -->
+            <div id="badge-traveller" class="progress-stat-bar"></div>
+            <!-- /PROGRESS STAT BAR -->
+        
+            <!-- BAR PROGRESS WRAP -->
+            <div class="bar-progress-wrap">
+              <!-- BAR PROGRESS INFO -->
+              <p class="bar-progress-info negative center"><span class="light">Next Tier:</span><span class="bar-progress-text"></span></p>
+              <!-- /BAR PROGRESS INFO -->
+            </div>
+            <!-- /BAR PROGRESS WRAP -->
+          </div>
+          <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          40 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/caffeinated-s.png" alt="badge-caffeinated-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/caffeinated-b.png" alt="badge-caffeinated-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Caffeinated</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Commented on a friend's post inside 30 seconds of posted</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-caffeinated" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          80 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/upowered-s.png" alt="badge-upowered-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/upowered-b.png" alt="badge-upowered-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Ultra Powered</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Received 50+ reacts inside 30 minutes of posting</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-upowered" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          40 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/scientist-s.png" alt="badge-scientist-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/scientist-b.png" alt="badge-scientist-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Crazy Scientist</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Helped us beta test new awesome features</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-scientist" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          20 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/ncreature-s.png" alt="badge-ncreature-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/ncreature-b.png" alt="badge-ncreature-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Night Creature</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Created 100+ posts between 1AM and 5AM</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-ncreature" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          40 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/warrior-s.png" alt="badge-warrior-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/warrior-b.png" alt="badge-warrior-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">The Warrior</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Helped the team enforce the communty rules</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-warrior" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          60 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/liked-s.png" alt="badge-liked-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/liked-b.png" alt="badge-liked-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Liked User</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Received 500+ like or love reactions in their profile posts</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-liked" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          80 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/sloved-s.png" alt="badge-sloved-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/sloved-b.png" alt="badge-sloved-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Super Loved User</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Received 1000+ like or love reactions in their profile posts</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-sloved" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          40 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/qconq-s.png" alt="badge-qconq-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/qconq-b.png" alt="badge-qconq-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Quest Conqueror</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Succesfully completed at least 10 quests at 100%</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-qconq" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          40 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/villain-s.png" alt="badge-villain-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/villain-b.png" alt="badge-villain-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Super Villain</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Received 100+ dislike reactions in their profile posts</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-villain" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          20 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/age-s.png" alt="badge-age-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/age-b.png" alt="badge-age-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Profile Age</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Congratz! You've been part of the community for 2 years</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+            <!-- PROGRESS STAT BAR -->
+            <div id="badge-age" class="progress-stat-bar"></div>
+            <!-- /PROGRESS STAT BAR -->
+        
+            <!-- BAR PROGRESS WRAP -->
+            <div class="bar-progress-wrap">
+              <!-- BAR PROGRESS INFO -->
+              <p class="bar-progress-info negative center"><span class="light">Next Tier:</span><span class="bar-progress-text"></span></p>
+              <!-- /BAR PROGRESS INFO -->
+            </div>
+            <!-- /BAR PROGRESS WRAP -->
+          </div>
+          <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          60 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/tstruck-s.png" alt="badge-tstruck-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/tstruck-b.png" alt="badge-tstruck-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Thunderstruck</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">The user reacted first on 50+ friends posts</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-tstruck" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          20 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/uexp-s.png" alt="badge-uexp-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/uexp-b.png" alt="badge-uexp-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Universe Explorer</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Joined and posted on 20 different groups</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-uexp" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          40 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/globet-s.png" alt="badge-globet-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/globet-b.png" alt="badge-globet-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Globe Trotter</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Has at least 10 friends from different countries</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-globet" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          40 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/verifieds-s.png" alt="badge-verifieds-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/verifieds-b.png" alt="badge-verifieds-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Verified Streamer</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Has linked a stream that was verified by the staff</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-verifieds" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          80 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/gempost-s.png" alt="badge-gempost-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/gempost-b.png" alt="badge-gempost-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Rare GemPost</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Received 100+ likes and 50+ comments on a single post</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-gempost" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          40 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/peoplesp-s.png" alt="badge-peoplesp-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/peoplesp-b.png" alt="badge-peoplesp-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">People's Person</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Has accepted at least 200 friends requests</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-peoplesp" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          40 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/rulerm-s.png" alt="badge-rulerm-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/rulerm-b.png" alt="badge-rulerm-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Ruler of Masses</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Has created and admins 5+ different groups</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-rulerm" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          20 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/marketeer-s.png" alt="badge-marketeer-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/marketeer-b.png" alt="badge-marketeer-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">The Marketeer</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Has posted at least 10 items on their shop</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-marketeer" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+      
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="light">Next Tier:</span><span class="bar-progress-text"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          80 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/tycoon-s.png" alt="badge-tycoon-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/tycoon-b.png" alt="badge-tycoon-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Bussiness Tycoon</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Sold more than 100 items on their shop</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-tycoon" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          40 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/mightiers-s.png" alt="badge-mightiers-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/mightiers-b.png" alt="badge-mightiers-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Mightier Than Sword</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Wrote at least 50 blog posts in their profile</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-mightiers" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          40 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/phantom-s.png" alt="badge-phantom-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/phantom-b.png" alt="badge-phantom-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">The Phantom</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Visited other profiles but hasn’t posted in 1+ year</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-phantom" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          40 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/forumsf-s.png" alt="badge-forumsf-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/forumsf-b.png" alt="badge-forumsf-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Forums Fan</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Started at least 20 topics on the forums</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-forumsf" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          40 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/fcultivator-s.png" alt="badge-fcultivator-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/fcultivator-b.png" alt="badge-fcultivator-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Friendship Cultivator</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Commented first on 100+ friend's posts</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-fcultivator" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          20 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/splanner-s.png" alt="badge-splanner-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/splanner-b.png" alt="badge-splanner-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Super Planner</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Has created at least 25 public or private events</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-splanner" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          40 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/collector-s.png" alt="badge-collector-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/collector-b.png" alt="badge-collector-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">The Collector</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Bought at least 5 items in the markeplace</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-collector" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          40 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/prophoto-s.png" alt="badge-prophoto-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/prophoto-b.png" alt="badge-prophoto-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Pro Photographer</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Uploaded more than 500 photos to their profile</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-prophoto" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          40 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/rmachine-s.png" alt="badge-rmachine-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/rmachine-b.png" alt="badge-rmachine-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Referral Machine</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Referred at least 50 friends that joined the comunity</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-rmachine" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          20 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/bronzec-s.png" alt="badge-bronzec-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/bronzec-b.png" alt="badge-bronzec-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Bronze Cup</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Won third place on a verified forum competition</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-bronzec" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          40 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/silverc-s.png" alt="badge-silverc-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/silverc-b.png" alt="badge-silverc-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Silver Cup</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Won second place on a verified forum competition</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-silverc" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          60 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/goldc-s.png" alt="badge-goldc-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/goldc-b.png" alt="badge-goldc-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Gold Cup</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Won first place on a verified forum competition</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-goldc" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+
+      <!-- BADGE ITEM STAT -->
+      <div class="badge-item-stat">
+        <!-- TEXT STICKER -->
+        <p class="text-sticker">
+          <!-- TEXT STICKER ICON -->
+          <svg class="text-sticker-icon icon-plus-small">
+            <use xlink:href="#svg-plus-small"></use>
+          </svg>
+          <!-- TEXT STICKER ICON -->
+          100 Exp
+        </p>
+        <!-- /TEXT STICKER -->
+    
+        <!-- BADGE ITEM STAT IMAGE PREVIEW -->
+        <img class="badge-item-stat-image-preview" src="img/badge/platinumc-s.png" alt="badge-platinumc-s">
+        <!-- /BADGE ITEM STAT IMAGE PREVIEW -->
+    
+        <!-- BADGE ITEM STAT IMAGE -->
+        <img class="badge-item-stat-image" src="img/badge/platinumc-b.png" alt="badge-platinumc-b">
+        <!-- /BADGE ITEM STAT IMAGE -->
+    
+        <!-- BADGE ITEM STAT TITLE -->
+        <p class="badge-item-stat-title">Platinum Cup</p>
+        <!-- /BADGE ITEM STAT TITLE -->
+    
+        <!-- BADGE ITEM STAT TEXT -->
+        <p class="badge-item-stat-text">Won an official Social Network competition</p>
+        <!-- /BADGE ITEM STAT TEXT -->
+    
+        <!-- PROGRESS STAT -->
+        <div class="progress-stat">
+          <!-- PROGRESS STAT BAR -->
+          <div id="badge-platinumc" class="progress-stat-bar"></div>
+          <!-- /PROGRESS STAT BAR -->
+    
+          <!-- BAR PROGRESS WRAP -->
+          <div class="bar-progress-wrap">
+            <!-- BAR PROGRESS INFO -->
+            <p class="bar-progress-info negative center"><span class="bar-progress-text no-space"></span></p>
+            <!-- /BAR PROGRESS INFO -->
+          </div>
+          <!-- /BAR PROGRESS WRAP -->
+        </div>
+        <!-- /PROGRESS STAT -->
+      </div>
+      <!-- /BADGE ITEM STAT -->
+    </div>
+    <!-- /GRID -->
+  </div>
+  <!-- /CONTENT GRID -->
+
+<!-- app -->
+<script src="app.bundle.min.js"></script>
+<!-- for header -->
+
+         <!-- jQuery -->
+         <script src="../js/jquery-1.12.4.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+ 
+         <!-- Bootstrap -->
+         <script src="../js/plugins.js"></script>
+         <script src="../js/bootstrap.min.js"></script>
+         <!-- Script -->
+         <script src="../js/script.js"></script>
+ 
+         <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+         <script src="../assets/vendor/tiny-slider/tiny-slider.js"></script>
+         <script src="../assets/vendor/sticky-js/sticky.min.js"></script>
+         <script src="../assets/vendor/glightbox/js/glightbox.js"></script>
+         <script src="../assets/js/functions.js"></script>
+</body>
+</html>
