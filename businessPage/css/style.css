@@ -174,7 +174,7 @@ blockquote p {
     width: 100%;
     position: relative;
     z-index: 5;
-    padding-top: 110px;
+    padding-top: 100px;
 }
 
 #wrapper.home-wrap {
@@ -545,8 +545,8 @@ blockquote p {
     z-index: 100;
     border-bottom: 1px solid rgba(0, 0, 0, 0.21);
     -webkit-transform: translate3d(0, 0, 0);
-    height: 110px;
-    background: #18458B;
+    height: 100px;
+    background: #fff;
 }
 
 .fs-header {
