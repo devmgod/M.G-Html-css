@@ -2670,9 +2670,12 @@ p.high {
 }
 
 .footer-bar .flex {
+    display: flex;
     justify-content: space-between;
 }
-
+body > div.footer-bar > div > div > div:nth-child(2) > ul > li > a > img {
+    width: 20px;
+}
 .footer-bar ul {
     list-style-type: none;
     padding: 0;
