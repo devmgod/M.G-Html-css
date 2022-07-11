@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
 
     <!-- Google Tag Manager -->
-    <!-- <script>
+    <script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
@@ -26,16 +26,43 @@
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-KQHJPZP');
-    </script> -->
+    </script>
     <!-- End Google Tag Manager -->
 
     <!-- Fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto-brands.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto-brands.min.css" rel="stylesheet">
     <!-- Core CSS -->
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/core.css">
+
+      <!-- for Header -->
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-y++enYq9sdV7msNmXr08kJdkX4zEI1gMjjkw0l9ttOepH7fMdhb7CePwuRQCfwCr" crossorigin="anonymous">
+      <!-- Page Style -->
+      <link rel="stylesheet" href="../css/style.css">
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker3.standalone.css">
+      -->
+
+
+      <link rel="shortcut icon" href="../assets/images/WT-Globe.png">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"> -->
+      <link rel="stylesheet" type="text/css" href="../assets/vendor/font-awesome/css/all.min.css">
+      <link rel="stylesheet" type="text/css" href="../assets/vendor/bootstrap-icons/bootstrap-icons.css">
+      <link rel="stylesheet" type="text/css" href="../assets/vendor/tiny-slider/tiny-slider.css">
+      <link id="style-switch" rel="stylesheet" type="text/css" href="../assets/css/style.css"> 
 </head>
 
 <body>
@@ -47,538 +74,668 @@
     <div class="pageloader"></div>
     <div class="infraloader is-active"></div>
     <div class="app-overlay"></div>
-
-    <div id="main-navbar" class="navbar navbar-v1 is-inline-flex is-transparent no-shadow is-hidden-mobile">
-        <div class="container is-fluid">
-            <div class="navbar-brand">
-                <a href="/" class="navbar-item">
-                    <img class="logo light-image" src="assets/img/logo/friendkit-bold.svg" width="112" height="28" alt="">
-                    <img class="logo dark-image" src="assets/img/logo/friendkit-white.svg" width="112" height="28" alt="">
+    
+    <header class="navbar-light navbar-sticky header-static">
+        <nav class="navbar navbar-expand-lg">
+            <ul class="navbar-nav navbar-nav-scroll d-none d-lg-block" style="margin-right:2rem;">
+                <li class="nav-item dropdown dropdown-fullwidth">
+                    <a href="#" style="padding:48px 0px;margin-left:1rem;" id="megaMenuOne" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../assets/images/WT-Globe.png" style="width:48px;height:auto;" class="img-fluid">
+                    </a>
+                    <div class="dropdown-menufirst" style="left:10px;padding-bottom:0px;" aria-labelledby="megaMenuOne">
+                        <div class="container">
+                            <div class="text-center">
+                                <h3 class="mb-3">Our Network</h3>
+                            </div>
+                            <div class="row g-4 px-3 flex-fill">
+                                <div class="col-lg-3 mt-0 mt-lg-3">
+                                    <div class="card bg-transparent">
+                                        <h6 class="mt-2">Nearby Areas</h6>
+                                        <hr>
+                                        <ul class="list-inline padding_left-side mt-1">
+                                            <li class="list-item py-1">
+                                                <a href="../TourPage/index.html" class="">Tour Page</a>
+                                            </li>
+                                            <li class="list-item py-1">
+                                                <a href="../frum/index.html" class="">forum</a>
+                                            </li>
+                                            <li class="list-item py-1"><a href="../navigation.html" class="">All Post</a></li>
+                                            <li class="list-item py-1"><a href="../newsfeed.html" class="">News Feed</a></li>
+                                            <li class="list-item py-1"><a href="../businessPage/index.html" class="">businessPage/index</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Friend Kit</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 mt-0 mt-lg-3">
+                                    <div class="card bg-transparent">
+                                        <h6 class="mt-2">The Americas</h6>
+                                        <hr>
+                                        <ul class="list-inline padding_left-side mt-1">
+                                            <li class="list-item py-1"><a href="../points/badges.html" class="">Point Badge Page</a></li>
+                                            <li class="list-item py-1"><a href="../points/quests.html" class="">Point Quests page</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 mt-0 mt-lg-3">
+                                    <div class="card bg-transparent">
+                                        <h6 class="mt-2">Europe</h6>
+                                        <hr>
+                                        <ul class="list-inline padding_left-side mt-1">
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 mt-0 mt-lg-3">
+                                    <div class="card bg-transparent">
+                                        <h6 class="mt-2">Asia Pacific</h6>
+                                        <hr>
+                                        <ul class="list-inline padding_left-side mt-1">
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                            <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" id="no_pad">
+                            <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <h4 class="mb-0 text-white">Checkout the doc!</h4>
+                                        <p class="mb-0 text-white small">For better understanding of theme standard</p>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="search">
+                                            <div class="search-2">
+                                                <input type="text" placeholder="Search Our Network">
+                                                <button><i class="fa fa-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="container px-0">
+                <button class="navbar-toggler" type="button" href="#" id="navbarCollapseFirst" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="#" style="margin-right:1rem;">
+                        <img src="../assets/images/WT-Globe.png" style="width:48px;height:auto;" class="img-fluid">
+                    </a>
+                </button>
+                <div class="dropdown-menu" style="overflow:auto;height:3720px;width:100%;" aria-labelledby="navbarCollapseFirst">
+                    <div class="container">
+                        <div class="text-center">
+                            <h3 class="pb-3">Our Network</h3>
+                        </div>
+                        <div class="row g-4 px-3 flex-fill">
+                            <div class="col-md-3 col-6 mt-0 mt-lg-3">
+                                <div class="card bg-transparent">
+                                    <h6 class="mt-2">Nearby Areas</h6>
+                                    <ul class="list-inline mt-1">
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mt-0 mt-lg-3">
+                                <div class="card bg-transparent">
+                                    <h6 class="mt-2">The Americas</h6>
+                                    <ul class="list-inline mt-1">
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mt-0 mt-lg-3">
+                                <div class="card bg-transparent">
+                                    <h6 class="mt-2">Europe</h6>
+                                    <ul class="list-inline mt-1">
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mt-0 mt-lg-3">
+                                <div class="card bg-transparent">
+                                    <h6 class="mt-2">Asia Pacific</h6>
+                                    <ul class="list-inline mt-1">
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                        <li class="list-item py-1"><a href="#" class="">Lorem Ipsum</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 px-3" id="no_pad">
+                            <div class="align-self-center me-md-4 me-2">
+                                <div class="searchone">
+                                    <div class="search-2">
+                                        <i class="bx bx-search-alt"></i>
+                                        <input type="text" placeholder="Search Our Network">
+                                        <button><i class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="navbar-brand" href="../index.html">
+                    <img class="navbar-brand-item light-mode-item" style="width:120px;height:auto;" src="../assets/images/wtlogosm.png" alt="logo">
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav navbar-nav-scroll ms-auto">
+                        <li class="nav-item dropdown dropdown-fullwidth">
+                            <a class="nav-link dropdown-toggle" href="#" id="megaMenuTwo" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Destinations</a>
+                            <div class="dropdown-menu" aria-labelledby="megaMenuTwo">
+                                <div class="container">
+                                    <div class="row w-100">
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Featured Destinations</a></li>
+                                                <li><a class="dropdown-item" href="#">Trip Ideas</a></li>
+                                                <li><a class="dropdown-item" href="#">Road Trips</a></li>
+                                                <li><a class="dropdown-item" href="#">Seasonal Adventures</a></li>
+                                                <li><a class="dropdown-item" href="#">Blockquote</a></li>
+                                                <li><a class="dropdown-item" href="#">Resorts</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Getting Here &amp; Getting Around</a></li>
+                                                <li><a class="dropdown-item" href="#">Maps &amp; Visitor Guides</a></li>
+                                                <li><a class="dropdown-item" href="#">World Travel Index</a></li>
+                                                <li><a class="dropdown-item" href="#">Places To Go</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item hover-none"><b>Types of Trips</b></a></li>
+                                                <li><a class="dropdown-item" href="#">Adventure</a></li>
+                                                <li><a class="dropdown-item" href="#">Budget</a></li>
+                                                <li><a class="dropdown-item" href="#">Couples</a></li>
+                                                <li><a class="dropdown-item" href="#">Culinary</a></li>
+                                                <li><a class="dropdown-item" href="#">Family</a></li>
+                                                <li><a class="dropdown-item" href="#">Festivals</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Group</a></li>
+                                                <li><a class="dropdown-item" href="#">Luxury</a></li>
+                                                <li><a class="dropdown-item" href="#">Off the Beaten Path</a></li>
+                                                <li><a class="dropdown-item" href="#">Resorts</a></li>
+                                                <li><a class="dropdown-item" href="#">Road Trips</a></li>
+                                                <li><a class="dropdown-item" href="#">Solo</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12" id="no_pad">
+                                    <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <img src="../assets/images/logo.png" style="width:120px;">
+                                        </div>
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                            <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                        </div>
+                                        <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="overflow: revert;">Add On</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-fullwidth">
+                            <a class="nav-link dropdown-toggle" href="#" id="megaMenuThree" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Travel</a>
+                            <div class="dropdown-menu" aria-labelledby="megaMenuThree">
+                                <div class="container">
+                                    <div class="row w-100">
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Fly</a></li>
+                                                <li><a class="dropdown-item" href="#">Aircraft Charter</a></li>
+                                                <li><a class="dropdown-item" href="#">Airlines</a></li>
+                                                <li><a class="dropdown-item" href="#">Airports</a></li>
+                                                <li><a class="dropdown-item" href="#">Airline Carry On Limits</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Drive</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Cruises</a></li>
+                                                <li><a class="dropdown-item" href="#">Boat Charter</a></li>
+                                                <li><a class="dropdown-item" href="#">Cruise Lines</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item hover-none"><b>Types of Trips</b></a></li>
+                                                <li><a class="dropdown-item" href="#">Cruises</a></li>
+                                                <li><a class="dropdown-item" href="#">Boat Charter</a></li>
+                                                <li><a class="dropdown-item" href="#">Cruise Lines</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12" id="no_pad">
+                                    <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <img src="../assets/images/logo.png" style="width:120px;">
+                                        </div>
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                            <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                        </div>
+                                        <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">Read more!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-fullwidth">
+                            <a class="nav-link dropdown-toggle" href="#" id="megaMenuFour" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Stay</a>
+                            <div class="dropdown-menu" aria-labelledby="megaMenuFour">
+                                <div class="container">
+                                    <div class="row w-100">
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Featured Vacation Rentals</a></li>
+                                                <li><a class="dropdown-item" href="#">Vacation Rentals</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Featured Hotels</a></li>
+                                                <li><a class="dropdown-item" href="#">Hotels</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Resorts</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Points &amp; Miles</a></li>
+                                                <li><a class="dropdown-item" href="#">Credit Cards</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12" id="no_pad">
+                                    <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <img src="../assets/images/logo.png" style="width:120px;">
+                                        </div>
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                            <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                        </div>
+                                        <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">Read more!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-fullwidth">
+                            <a class="nav-link dropdown-toggle" href="#" id="megaMenuFive" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eat</a>
+                            <div class="dropdown-menu" aria-labelledby="megaMenuFive">
+                                <div class="container">
+                                    <div class="row w-100">
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Featured Restaurants</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Bars &amp; Nightclubs</a></li>
+                                                <li><a class="dropdown-item" href="#">Breweries &amp; Distilleries</a></li>
+                                                <li><a class="dropdown-item" href="#">Wineries &amp; Vineyards</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Food Tours</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Local Recipes</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12" id="no_pad">
+                                    <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <img src="../assets/images/logo.png" style="width:120px;">
+                                        </div>
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                            <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                        </div>
+                                        <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">Read more!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-fullwidth">
+                            <a class="nav-link dropdown-toggle" href="#" id="megaMenuSix" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Do</a>
+                            <div class="dropdown-menu" aria-labelledby="megaMenuSix">
+                                <div class="container">
+                                    <div class="row w-100">
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Featured Things To Do</a></li>
+                                                <li><a class="dropdown-item" href="#">Experiences</a></li>
+                                                <li><a class="dropdown-item" href="#">Signature Attractions</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">History</a></li>
+                                                <li><a class="dropdown-item" href="#">Churches</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Outdoor</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Scuba Schools / Centers</a></li>
+                                                <li><a class="dropdown-item" href="#">Scuba Dive Sites</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12" id="no_pad">
+                                    <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <img src="../assets/images/logo.png" style="width:120px;">
+                                        </div>
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                            <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                        </div>
+                                        <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">Read more!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-fullwidth">
+                            <a class="nav-link dropdown-toggle" href="#" id="megaMenuSeven" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
+                            <div class="dropdown-menu" aria-labelledby="megaMenuSeven">
+                                <div class="container">
+                                    <div class="row w-100">
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Event Planners</a></li>
+                                                <li><a class="dropdown-item" href="#">Planning Tools</a></li>
+                                                <li><a class="dropdown-item" href="#">Request for Proposal</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Local Vendor Search</a></li>
+                                                <li><a class="dropdown-item" href="#">Associations</a></li>
+                                                <li><a class="dropdown-item" href="#">Tradeshows</a></li>
+                                                <li><a class="dropdown-item" href="#">Union &amp; Fraternal Organizations</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Convention Calendar</a></li>
+                                                <li><a class="dropdown-item" href="#">Meeting Facilities</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Executive Meeting</a></li>
+                                                <li><a class="dropdown-item" href="#">Corporate Meetings</a></li>
+                                                <li><a class="dropdown-item" href="#">Reunions</a></li>
+                                                <li><a class="dropdown-item" href="#">Small Meetings</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12" id="no_pad">
+                                    <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <img src="../assets/images/logo.png" style="width:120px;">
+                                        </div>
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                            <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                        </div>
+                                        <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">Read more!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-fullwidth">
+                            <a class="nav-link dropdown-toggle" href="#" id="megaMenuEight" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Marketplace</a>
+                            <div class="dropdown-menu" aria-labelledby="megaMenuEight">
+                                <div class="container">
+                                    <div class="row w-100">
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#">Made In @ Store (Made Here)</a></li>
+                                                <li><a class="dropdown-item" href="#">Art</a></li>
+                                                <li><a class="dropdown-item" href="#">Furniture</a></li>
+                                                <li><a class="dropdown-item" href="#">Watches &amp; Jewelry</a></li>
+                                                <li><a class="dropdown-item" href="#">Jobs</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item hover-none"><b>Aircraft</b></a></li>
+                                                <li><a class="dropdown-item" href="#">Aircraft for Sale</a></li>
+                                                <li><a class="dropdown-item" href="#">Aircraft for Charter</a></li>
+                                                <li><a class="dropdown-item" href="#">Flight Clubs</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item hover-none"><b>Yachts</b></a></li>
+                                                <li><a class="dropdown-item" href="#">Yachts for Sale</a></li>
+                                                <li><a class="dropdown-item" href="#">Yachts for Charter</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6 col-lg-3">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item hover-none"><b>Vacation Rentals</b></a></li>
+                                                <li><a class="dropdown-item" href="#">Vacation Rentals for Sale</a></li>
+                                                <li><a class="dropdown-item" href="#">Vacation Rentals for Rent</a></li>
+                                                <li><a class="dropdown-item hover-none"><b>Islands</b></a></li>
+                                                <li><a class="dropdown-item" href="#">Islands for Sale</a></li>
+                                                <li><a class="dropdown-item" href="#">Islands for Rent</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12" id="no_pad">
+                                    <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <img src="../assets/images/logo.png" style="width:120px;">
+                                        </div>
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <h4 class="mb-0 text-white">Maker's Mark</h4>
+                                            <p class="mb-0 text-white small">we have to plan something new and intresting.</p>
+                                        </div>
+                                        <a href="https://wizixo.webestica.com/documentation/" target="_blank" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">Read more!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-fullwidth" style="padding: 28px 0px;">
+                            <a class="btn btn-sm mb-0 mx-2" style="background-color:#ff5461;color:#fff;" href="#" id="megaMenuNine" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Add Post
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="megaMenuNine">
+                                <div class="container">
+                                    <div class="row g-4 pt-3 px-2 flex-fill">
+                                        <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                            <div class="card bg-transparent text-center">
+                                                <div class="i-icon">
+                                                    <a class="" href="">
+                                                        <div class="">
+                                                            <img class="img-fluid" src="../assets/images/image.png">
+                                                        </div>
+                                                        <span class="mt-2">Image</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                            <div class="card bg-transparent text-center">
+                                                <div class="i-icon">
+                                                    <a class="" href="">
+                                                        <div class="">
+                                                            <img class="img-fluid" src="../assets/images/photo-library.png">
+                                                        </div>
+                                                        <span class="mt-2">Photo Album</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                            <div class="card bg-transparent text-center">
+                                                <div class="i-icon">
+                                                    <a class="" href="">
+                                                        <div class="">
+                                                            <img class="img-fluid" src="../assets/images/microphone.png">
+                                                        </div>
+                                                        <span class="mt-2">Audio</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                            <div class="card bg-transparent text-center">
+                                                <div class="i-icon">
+                                                    <a class="" href="">
+                                                        <div class="">
+                                                            <img class="img-fluid" src="../assets/images/pencil.png">
+                                                        </div>
+                                                        <span class="mt-2">Recipe</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                            <div class="card bg-transparent text-center">
+                                                <div class="i-icon">
+                                                    <a class="" href="">
+                                                        <div class="">
+                                                            <img class="img-fluid" src="../assets/images/rank-list.png">
+                                                        </div>
+                                                        <span class="mt-2">Ranked List</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                            <div class="card bg-transparent text-center">
+                                                <div class="i-icon">
+                                                    <a class="" href="">
+                                                        <div class="">
+                                                            <img class="img-fluid" src="../assets/images/list.png">
+                                                        </div>
+                                                        <span class="mt-2">Classic List</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                            <div class="card bg-transparent text-center">
+                                                <div class="i-icon">
+                                                    <a class="" href="">
+                                                        <div class="">
+                                                            <img class="img-fluid" src="../assets/images/user-in-a-square.png">
+                                                        </div>
+                                                        <span class="mt-2">Personality Quiz</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg col-md-3 col-6 mt-3 px-0">
+                                            <div class="card bg-transparent text-center">
+                                                <div class="i-icon">
+                                                    <a class="" href="">
+                                                        <div class="">
+                                                            <img class="img-fluid" src="../assets/images/movie.png">
+                                                        </div>
+                                                        <span class="mt-2">Meme</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12" id="no_pad">
+                                    <div class="w-100 bg-grad pattern-overlay-2 p-2 mt-3 all-text-white d-flex">
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <img src="../assets/images/time.jpg" style="width:80px;">
+                                        </div>
+                                        <div class="align-self-center me-md-4 me-2">
+                                            <h4 class="mb-0 text-white">TIME Magazine</h4>
+                                            <p class="mb-0 text-white small">the most authoritative in current business, politics and entertainment.</p>
+                                        </div>
+                                        <a href="./navigation.html" class="btn btn-outline-white btn-sm mb-0 align-self-center ms-auto" style="white-space: break-spaces;">See all 22 post types</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a class="avatar-sm d-block d-lg-none" style="margin-left: 1rem;">
+                    <img class="avatar-img rounded-circle" src="../assets/images/01.jpg" alt="avatar">
                 </a>
             </div>
-            <div class="navbar-menu">
-                <div class="navbar-start">
-                    <!-- Navbar Search -->
-
-                    <div class="navbar-item is-icon drop-trigger">
-                        <a class="icon-link is-friends" href="javascript:void(0);">
-                            <i data-feather="heart"></i>
-                            <span class="indicator"></span>
-                        </a>
-
-                        <div class="nav-drop">
-                            <div class="inner">
-                                <div class="nav-drop-header">
-                                    <span>Friend requests</span>
-                                    <a href="#">
-                                        <i data-feather="search"></i>
-                                    </a>
-                                </div>
-                                <div class="nav-drop-body is-friend-requests">
-                                    <!-- Friend request -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="assets/img/avatars/bobby.jpg" alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <a href="#">Bobby Brown</a>
-                                            <span>Najeel verwick is a common friend</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <button class="button icon-button is-solid grey-button raised">
-                                                <i data-feather="user-plus"></i>
-                                            </button>
-                                            <button class="button icon-button is-solid grey-button raised">
-                                                <i data-feather="user-minus"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <!-- Friend request -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="assets/img/avatars/dan.jpg" alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <a href="#">Dan Walker</a>
-                                            <span>You have 4 common friends</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <button class="button icon-button is-solid grey-button raised">
-                                                <i data-feather="user-plus"></i>
-                                            </button>
-                                            <button class="button icon-button is-solid grey-button raised">
-                                                <i data-feather="user-minus"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <!-- Friend request -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="assets/img/avatars/nelly.png" alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <span>You are now friends with <a href="#">Nelly Schwartz</a>. Check her <a href="#">profile</a>.</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <div class="added-icon">
-                                                <i data-feather="tag"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Friend request -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="assets/img/avatars/milly.jpg" alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <a href="#">Milly Augustine</a>
-                                            <span>You have 8 common friends</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <button class="button icon-button is-solid grey-button raised">
-                                                <i data-feather="user-plus"></i>
-                                            </button>
-                                            <button class="button icon-button is-solid grey-button raised">
-                                                <i data-feather="user-minus"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <!-- Friend request -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="assets/img/avatars/elise.jpg" alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <span>You are now friends with <a href="#">Elise Walker</a>. Check her <a href="#">profile</a>.</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <div class="added-icon">
-                                                <i data-feather="tag"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Friend request -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="assets/img/avatars/edward.jpeg" alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <span>You are now friends with <a href="#">Edward Mayers</a>. Check his <a href="#">profile</a>.</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <div class="added-icon">
-                                                <i data-feather="tag"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="nav-drop-footer">
-                                    <a href="#">View All</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="navbar-item is-icon drop-trigger">
-                        <a class="icon-link" href="javascript:void(0);">
-                            <i data-feather="bell"></i>
-                            <span class="indicator"></span>
-                        </a>
-
-                        <div class="nav-drop">
-                            <div class="inner">
-                                <div class="nav-drop-header">
-                                    <span>Notifications</span>
-                                    <a href="#">
-                                        <i data-feather="bell"></i>
-                                    </a>
-                                </div>
-                                <div class="nav-drop-body is-notifications">
-                                    <!-- Notification -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="assets/img/avatars/david.jpg" alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <span><a href="#">David Kim</a> commented on <a href="#">your post</a>.</span>
-                                            <span class="time">30 minutes ago</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <div class="added-icon">
-                                                <i data-feather="message-square"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Notification -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="assets/img/avatars/daniel.jpg" alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <span><a href="#">Daniel Wellington</a> liked your <a href="#">profile.</a></span>
-                                            <span class="time">43 minutes ago</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <div class="added-icon">
-                                                <i data-feather="heart"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Notification -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="assets/img/avatars/stella.jpg" alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <span><a href="#">Stella Bergmann</a> shared a <a href="#">New video</a> on your wall.</span>
-                                            <span class="time">Yesterday</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <div class="added-icon">
-                                                <i data-feather="youtube"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Notification -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="assets/img/avatars/elise.jpg" alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <span><a href="#">Elise Walker</a> shared an <a href="#">Image</a> with you an 2 other people.</span>
-                                            <span class="time">2 days ago</span>
-                                        </div>
-                                        <div class="media-right">
-                                            <div class="added-icon">
-                                                <i data-feather="image"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="nav-drop-footer">
-                                    <a href="#">View All</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="navbar-item is-icon drop-trigger">
-                        <a class="icon-link is-active" href="javascript:void(0);">
-                            <i data-feather="mail"></i>
-                            <span class="indicator"></span>
-                        </a>
-
-                        <div class="nav-drop">
-                            <div class="inner">
-                                <div class="nav-drop-header">
-                                    <span>Messages</span>
-                                    <a href="messages-inbox.html">Inbox</a>
-                                </div>
-                                <div class="nav-drop-body is-friend-requests">
-                                    <!-- Message -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/nelly.png" data-user-popover="9" alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <a href="#">Nelly Schwartz</a>
-                                            <span>I think we should meet near the Starbucks so we can get...</span>
-                                            <span class="time">Yesterday</span>
-                                        </div>
-                                        <div class="media-right is-centered">
-                                            <div class="added-icon">
-                                                <i data-feather="message-square"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Message -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/edward.jpeg" data-user-popover="5" alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <a href="#">Edward Mayers</a>
-                                            <span>That was a real pleasure seeing you last time we really should...</span>
-                                            <span class="time">last week</span>
-                                        </div>
-                                        <div class="media-right is-centered">
-                                            <div class="added-icon">
-                                                <i data-feather="message-square"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Message -->
-                                    <div class="media">
-                                        <figure class="media-left">
-                                            <p class="image">
-                                                <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/dan.jpg" data-user-popover="1" alt="">
-                                            </p>
-                                        </figure>
-                                        <div class="media-content">
-                                            <a href="#">Dan Walker</a>
-                                            <span>Hey there, would it be possible to borrow your bicycle, i really need...</span>
-                                            <span class="time">Jun 03 2018</span>
-                                        </div>
-                                        <div class="media-right is-centered">
-                                            <div class="added-icon">
-                                                <i data-feather="message-square"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="nav-drop-footer">
-                                    <a href="#">Clear All</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="navbar-item is-icon open-chat">
-                        <a class="icon-link is-primary" href="javascript:void(0);">
-                            <i data-feather="message-square"></i>
-                            <span class="indicator"></span>
-                        </a>
-                    </div>
-
-                    <div id="explorer-trigger" class="navbar-item is-icon">
-                        <a class="icon-link is-primary">
-                            <i class="mdi mdi-apps"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="navbar-end">
-
-                    <div class="navbar-item">
-                        <div id="global-search" class="control">
-                            <input id="tipue_drop_input" class="input is-rounded" type="text" placeholder="Search" required>
-                            <span id="clear-search" class="reset-search">
-                                    <i data-feather="x"></i>
-                                </span>
-                            <span class="search-icon">
-                                    <i data-feather="search"></i>
-                                </span>
-
-                            <div id="tipue_drop_content" class="tipue-drop-content"></div>
-                        </div>
-
-                    </div>
-                    <div class="navbar-item is-cart">
-                        <div class="cart-button">
-                            <i data-feather="shopping-cart"></i>
-                            <div class="cart-count">
-                            </div>
-                        </div>
-
-                        <!-- Cart dropdown -->
-                        <div class="shopping-cart">
-                            <div class="cart-inner">
-
-                                <!--Loader-->
-                                <div class="navbar-cart-loader is-active">
-                                    <div class="loader is-loading"></div>
-                                </div>
-
-                                <div class="shopping-cart-header">
-                                    <a href="/ecommerce-cart.html" class="cart-link">View Cart</a>
-                                    <div class="shopping-cart-total">
-                                        <span class="lighter-text">Total:</span>
-                                        <span class="main-color-text">$193.00</span>
-                                    </div>
-                                </div>
-                                <!--end shopping-cart-header -->
-
-                                <ul class="shopping-cart-items">
-                                    <li class="cart-row">
-                                        <img src="assets/img/products/2.svg" alt="" />
-                                        <span class="item-meta">
-                                                <span class="item-name">Cool Shirt</span>
-                                        <span class="meta-info">
-                                                    <span class="item-price">$29.00</span>
-                                        <span class="item-quantity">Qty: 01</span>
-                                        </span>
-                                        </span>
-                                    </li>
-
-                                    <li class="cart-row">
-                                        <img src="assets/img/products/3.svg" alt="" />
-                                        <span class="item-meta">
-                                                <span class="item-name">Military Short</span>
-                                        <span class="meta-info">
-                                                    <span class="item-price">$39.00</span>
-                                        <span class="item-quantity">Qty: 01</span>
-                                        </span>
-                                        </span>
-                                    </li>
-
-                                    <li class="cart-row">
-                                        <img src="assets/img/products/4.svg" alt="" />
-                                        <span class="item-meta">
-                                                <span class="item-name">Cool Backpack</span>
-                                        <span class="meta-info">
-                                                    <span class="item-price">$125.00</span>
-                                        <span class="item-quantity">Qty: 01</span>
-                                        </span>
-                                        </span>
-                                    </li>
-                                </ul>
-
-                                <a href="#" class="button primary-button is-raised">Checkout</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="account-dropdown" class="navbar-item is-account drop-trigger has-caret">
-                        <div class="user-image">
-                            <img src="https://via.placeholder.com/400x400" data-demo-src="assets/img/avatars/jenna.png" alt="">
-                            <span class="indicator"></span>
-                        </div>
-
-                        <div class="nav-drop is-account-dropdown">
-                            <div class="inner">
-                                <div class="nav-drop-header">
-                                    <span class="username">Jenna Davis</span>
-                                    <label class="theme-toggle">
-                                        <input type="checkbox">
-                                        <span class="toggler">
-                                                <span class="dark">
-                                                    <i data-feather="moon"></i>
-                                                </span>
-                                        <span class="light">
-                                                    <i data-feather="sun"></i>
-                                                </span>
-                                        </span>
-                                    </label>
-                                </div>
-                                <div class="nav-drop-body account-items">
-                                    <a id="profile-link" href="/profile-main.html" class="account-item">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <div class="image">
-                                                    <img src="https://via.placeholder.com/400x400" data-demo-src="assets/img/avatars/jenna.png" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="media-content">
-                                                <h3>Jenna Davis</h3>
-                                                <small>Main account</small>
-                                            </div>
-                                            <div class="media-right">
-                                                <i data-feather="check"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <hr class="account-divider">
-                                    <a href="/pages-main.html" class="account-item">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <div class="image">
-                                                    <img src="assets/img/avatars/hanzo.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="media-content">
-                                                <h3>Css Ninja</h3>
-                                                <small>Company page</small>
-                                            </div>
-                                            <div class="media-right is-hidden">
-                                                <i data-feather="check"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="/pages-main.html" class="account-item">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <div class="image">
-                                                    <img src="assets/img/icons/logos/fastpizza.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="media-content">
-                                                <h3>Fast Pizza</h3>
-                                                <small>Company page</small>
-                                            </div>
-                                            <div class="media-right is-hidden">
-                                                <i data-feather="check"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="/pages-main.html" class="account-item">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <div class="image">
-                                                    <img src="assets/img/icons/logos/slicer.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="media-content">
-                                                <h3>Slicer</h3>
-                                                <small>Company page</small>
-                                            </div>
-                                            <div class="media-right is-hidden">
-                                                <i data-feather="check"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <hr class="account-divider">
-                                    <a href="/options-settings.html" class="account-item">
-                                        <div class="media">
-                                            <div class="icon-wrap">
-                                                <i data-feather="settings"></i>
-                                            </div>
-                                            <div class="media-content">
-                                                <h3>Settings</h3>
-                                                <small>Access widget settings.</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a class="account-item">
-                                        <div class="media">
-                                            <div class="icon-wrap">
-                                                <i data-feather="life-buoy"></i>
-                                            </div>
-                                            <div class="media-content">
-                                                <h3>Help</h3>
-                                                <small>Contact our support.</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a class="account-item">
-                                        <div class="media">
-                                            <div class="icon-wrap">
-                                                <i data-feather="power"></i>
-                                            </div>
-                                            <div class="media-content">
-                                                <h3>Log out</h3>
-                                                <small>Log out from your account.</small>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="d-none d-lg-block">
+                <a class="avatar avatar-sm" style="margin-right: 1rem;">
+                    <img class="avatar-img rounded-circle" src="../assets/images/01.jpg" alt="avatar">
+                </a>
             </div>
-        </div>
-    </div>
+        </nav>
+    </header>
     <nav class="navbar mobile-navbar is-hidden-desktop" aria-label="main navigation">
         <!-- Brand -->
         <div class="navbar-brand">
@@ -2225,7 +2382,8 @@
                                         <div class="media-content">
                                             <a href="#">Dan Walker</a>
                                             <span class="time">28 minutes ago</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris consequat.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et
+                                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris consequat.</p>
                                             <!-- Actions -->
                                             <div class="controls">
                                                 <div class="like-count">
@@ -2252,7 +2410,8 @@
                                                 <div class="media-content">
                                                     <a href="#">David Kim</a>
                                                     <span class="time">15 minutes ago</span>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et
+                                                        dolore magna aliqua.</p>
                                                     <!-- Actions -->
                                                     <div class="controls">
                                                         <div class="like-count">
@@ -2350,7 +2509,8 @@
                                         <div class="media-content">
                                             <a href="#">Rolf Krupp</a>
                                             <span class="time">9 hours ago</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Exercitation ullamco laboris consequat.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et
+                                                dolore magna aliqua. Exercitation ullamco laboris consequat.</p>
                                             <!-- Actions -->
                                             <div class="controls">
                                                 <div class="like-count">
@@ -2374,7 +2534,8 @@
                                                 <div class="media-content">
                                                     <a href="#">Elise Walker</a>
                                                     <span class="time">8 hours ago</span>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et
+                                                        dolore magna aliqua.</p>
                                                     <!-- Actions -->
                                                     <div class="controls">
                                                         <div class="like-count">
@@ -2434,7 +2595,8 @@
                                                 <div class="media-content">
                                                     <a href="#">Rolf Krupp</a>
                                                     <span class="time">7 hours ago</span>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et
+                                                        dolore magna aliqua.</p>
                                                     <!-- Actions -->
                                                     <div class="controls">
                                                         <div class="like-count">
@@ -2494,7 +2656,8 @@
                                                 <div class="media-content">
                                                     <a href="#">Elise Walker</a>
                                                     <span class="time">6 hours ago</span>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et
+                                                        dolore magna aliqua.</p>
                                                     <!-- Actions -->
                                                     <div class="controls">
                                                         <div class="like-count">
@@ -2591,7 +2754,8 @@
                                         <div class="media-content">
                                             <a href="#">Lana Henrikssen</a>
                                             <span class="time">10 hours ago</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore
+                                                et dolore magna aliqua.</p>
                                             <!-- Comment actions -->
                                             <div class="controls">
                                                 <div class="like-count">
@@ -2745,9 +2909,10 @@
                                 <div class="card-body">
                                     <!-- Post body text -->
                                     <div class="post-text">
-                                        <p>You all know how i love bootstrap, but i didn't have time to dig deeper into it. Therefore i found this very interesting video i wanted to share with you all.
+                                        <p>You all know how i love bootstrap, but i didn't have time to dig deeper into it. Therefore i found this very
+                                            interesting video i wanted to share with you all.
                                             <a href="#">#bootsrap #webdesign</a>
-                                            <p>
+                                        <p>
                                     </div>
                                     <!-- Featured youtube video -->
                                     <div class="post-link is-video">
@@ -2764,8 +2929,8 @@
                                             <h4>
                                                 <a href="#">What's new in Bootstrap 4 ?</a>
                                             </h4>
-                                            <p>Before I create the new Bootstrap 4 crash course I want to go over some of the changes from Bootstrap 3.
-                                            </p>
+                                            <p>Before I create the new Bootstrap 4 crash course I want to go over some of the changes from Bootstrap
+                                                3.</p>
                                             <small>Youtube.com</small>
                                         </div>
                                         <!-- Post actions -->
@@ -2855,7 +3020,8 @@
                                         <div class="media-content">
                                             <a href="#">Elise Walker</a>
                                             <span class="time">2 days ago</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris consequat.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et
+                                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris consequat.</p>
                                             <!-- Comment actions -->
                                             <div class="controls">
                                                 <div class="like-count">
@@ -2879,7 +3045,8 @@
                                                 <div class="media-content">
                                                     <a href="#">Daniel Wellington</a>
                                                     <span class="time">2 days ago</span>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et
+                                                        dolore magna aliqua.</p>
                                                     <!-- Comment actions -->
                                                     <div class="controls">
                                                         <div class="like-count">
@@ -3072,8 +3239,9 @@
                                     <div class="post-text">
                                         <p>Thanks a lot to
                                             <a href="#">@Gaelle</a> and
-                                            <a href="#">@Rolf</a> for this wonderful team lunch. The food was really tasty and we had some great laughs. Thanks to all the team, you're all awesome !
-                                            <p>
+                                            <a href="#">@Rolf</a> for this wonderful team lunch. The food was really tasty and we had some great laughs. Thanks
+                                            to all the team, you're all awesome !
+                                        <p>
                                     </div>
                                     <!-- Featured image -->
                                     <div class="post-image">
@@ -3168,7 +3336,8 @@
                                         <div class="media-content">
                                             <a href="#">Gaelle Morris</a>
                                             <span class="time">2 days ago</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris consequat.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et
+                                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris consequat.</p>
                                             <!-- Comment actions -->
                                             <div class="controls">
                                                 <div class="like-count">
@@ -3192,7 +3361,8 @@
                                                 <div class="media-content">
                                                     <a href="#">Elise Walker</a>
                                                     <span class="time">2 days ago</span>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et
+                                                        dolore magna aliqua.</p>
                                                     <!-- Comment actions -->
                                                     <div class="controls">
                                                         <div class="like-count">
@@ -3313,7 +3483,8 @@
                                                 <div class="media-content">
                                                     <a href="#">Elise Walker</a>
                                                     <span class="time">2 days ago</span>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et
+                                                        dolore magna aliqua.</p>
                                                     <!-- Comment actions -->
                                                     <div class="controls">
                                                         <div class="like-count">
@@ -3410,7 +3581,8 @@
                                         <div class="media-content">
                                             <a href="#">Nelly Schwartz</a>
                                             <span class="time">2 days ago</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et
+                                                dolore magna aliqua.</p>
                                             <!-- Comment actions -->
                                             <div class="controls">
                                                 <div class="like-count">
@@ -3562,8 +3734,9 @@
                                 <div class="card-body">
                                     <!-- Post body text -->
                                     <div class="post-text">
-                                        <p>Hey friends ! Iam back and i wanted to share with you some awesome pictures we took during our trip to Santa Monica. We had wonderful holidays at the beach. Kisses to all !
-                                            <p>
+                                        <p>Hey friends ! Iam back and i wanted to share with you some awesome pictures we took during our trip to Santa
+                                            Monica. We had wonderful holidays at the beach. Kisses to all !
+                                        <p>
                                     </div>
                                     <!-- Featured image -->
                                     <div class="post-image">
@@ -3681,7 +3854,8 @@
                                         <div class="media-content">
                                             <a href="#">Jenna Davis</a>
                                             <span class="time">30 minutes ago</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris consequat.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et
+                                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris consequat.</p>
                                             <!-- Comment actions -->
                                             <div class="controls">
                                                 <div class="like-count">
@@ -3766,7 +3940,8 @@
                                                 <div class="media-content">
                                                     <a href="#">David Kim</a>
                                                     <span class="time">12 minutes ago</span>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et
+                                                        dolore magna aliqua.</p>
                                                     <div class="controls">
                                                         <div class="like-count">
                                                             <i data-feather="thumbs-up"></i>
@@ -3980,7 +4155,8 @@
                                         <div class="media-content">
                                             <a href="#">Daniel Wellington</a>
                                             <span class="time">5 hours ago</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore
+                                                et dolore magna aliqua.</p>
                                             <!-- Comment actions -->
                                             <div class="controls">
                                                 <div class="like-count">
@@ -4040,7 +4216,8 @@
                                         <div class="media-content">
                                             <a href="#">Bobby Brown</a>
                                             <span class="time">7 hours ago</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore
+                                                et dolore magna aliqua.</p>
                                             <!-- Comment actions -->
                                             <div class="controls">
                                                 <div class="like-count">
@@ -4315,7 +4492,8 @@
                                     <!-- Post body text -->
                                     <div class="post-text">
                                         <p>Just discovered this awesome CSS framework named
-                                            <a href="#">#bulmaCss</a>. It's based on flexbox, so easy to use and comes with so many mobile first modifiers. You can build anything from scratch easily with Bulma.
+                                            <a href="#">#bulmaCss</a>. It's based on flexbox, so easy to use and comes with so many mobile first modifiers. You
+                                            can build anything from scratch easily with Bulma.
                                             <a href="#">#webdesign #bulmaio</a>
                                         </p>
                                     </div>
@@ -4422,7 +4600,8 @@
                                         <div class="media-content">
                                             <a href="#">Lana Henrikssen</a>
                                             <span class="time">2 days ago</span>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris consequat.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et
+                                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris consequat.</p>
                                             <!-- Comment actions -->
                                             <div class="controls">
                                                 <div class="like-count">
@@ -4446,7 +4625,8 @@
                                                 <div class="media-content">
                                                     <a href="#">David Kim</a>
                                                     <span class="time">2 days ago</span>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et
+                                                        dolore magna aliqua.</p>
                                                     <!-- Comment actions -->
                                                     <div class="controls">
                                                         <div class="like-count">
@@ -4637,10 +4817,11 @@
                                 <div class="card-body">
                                     <!-- Post body text -->
                                     <div class="post-text">
-                                        <p>Today, when i was walking back home from my job, i figured that i should build the best social media template in ThemeForest. As soon as i got back, i started working on this fresh and new project. Any suggestions
+                                        <p>Today, when i was walking back home from my job, i figured that i should build the best social media template
+                                            in ThemeForest. As soon as i got back, i started working on this fresh and new project. Any suggestions
                                             about where i could find some interesting resources for social media design?
                                             <a href="#">#webdesign #socialmedia</a>
-                                            <p>
+                                        <p>
                                     </div>
                                     <!-- Post actions -->
                                     <div class="post-actions">
@@ -5323,7 +5504,8 @@
                     <div class="card-heading">
                         <h3>New album</h3>
                         <div class="button is-solid accent-button fileinput-button">
-                            <i class="mdi mdi-plus"></i> Add pictures/videos
+                            <i class="mdi mdi-plus"></i>
+                            Add pictures/videos
                         </div>
 
                         <!-- Close X button -->
@@ -5597,10 +5779,12 @@
                     <div class="card-heading">
                         <h3>Go live</h3>
                         <div id="stop-stream" class="button is-solid accent-button is-hidden" onclick="stopWebcam();">
-                            <i class="mdi mdi-video-off"></i> Stop stream
+                            <i class="mdi mdi-video-off"></i>
+                            Stop stream
                         </div>
                         <div id="start-stream" class="button is-solid accent-button" onclick="startWebcam();">
-                            <i class="mdi mdi-video"></i> Start stream
+                            <i class="mdi mdi-video"></i>
+                            Start stream
                         </div>
 
 
@@ -5785,8 +5969,8 @@
                                             </figure>
                                             <div class="media-content">
                                                 <div class="username">Dan Walker</div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros.
-                                                </p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna
+                                                    eros.</p>
                                                 <div class="comment-actions">
                                                     <a href="javascript:void(0);" class="is-inverted">Like</a>
                                                     <span>3h</span>
@@ -5818,7 +6002,8 @@
                                             </figure>
                                             <div class="media-content">
                                                 <div class="username">Rolf Krupp</div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros. Consectetur adipiscing elit. Proin ornare magna eros.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna
+                                                    eros. Consectetur adipiscing elit. Proin ornare magna eros.</p>
                                                 <div class="comment-actions">
                                                     <a href="javascript:void(0);" class="is-inverted">Like</a>
                                                     <span>4h</span>
@@ -5861,7 +6046,8 @@
                         <div class="dropdown is-primary share-dropdown">
                             <div>
                                 <div class="button">
-                                    <i class="mdi mdi-format-float-left"></i> <span>Share in your feed</span> <i data-feather="chevron-down"></i>
+                                    <i class="mdi mdi-format-float-left"></i> <span>Share in your feed</span> <i
+                                            data-feather="chevron-down"></i>
                                 </div>
                             </div>
                             <div class="dropdown-menu" role="menu">
@@ -5949,7 +6135,8 @@
                                     <div class="dropdown is-accent page-dropdown">
                                         <div>
                                             <div class="button page-selector">
-                                                <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/hanzo.svg" alt=""> <span>Css Ninja</span> <i data-feather="chevron-down"></i>
+                                                <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/hanzo.svg" alt=""> <span>Css Ninja</span> <i
+                                                        data-feather="chevron-down"></i>
                                             </div>
                                         </div>
                                         <div class="dropdown-menu" role="menu">
@@ -6019,7 +6206,8 @@
                                 <div class="inner-flex">
                                     <img id="share-modal-avatar" src="assets/img/avatars/dan.jpg" data-user-popover="1" alt="">
                                     <p id="share-modal-text">Yesterday with <a href="#">@Karen Miller</a> and <a href="#">@Marvin Stemperd</a> at the
-                                        <a href="#">#Rock'n'Rolla</a> concert in LA. Was totally fantastic! People were really excited about this one!
+                                        <a href="#">#Rock'n'Rolla</a> concert in LA. Was totally fantastic! People were really
+                                        excited about this one!
                                     </p>
                                 </div>
                                 <div class="publication-footer">
@@ -6516,7 +6704,8 @@
                         <img src="assets/img/avatars/daniel.jpg" alt="">
                         <div class="message-block">
                             <span>3:43pm</span>
-                            <div class="message-text">Can i borrow your car for a quick ride to San Fransisco? Iam running behind and there' no train in sight.</div>
+                            <div class="message-text">Can i borrow your car for a quick ride to San Fransisco? Iam running behind and
+                                there' no train in sight.</div>
                         </div>
                     </div>
                 </div>
@@ -6547,14 +6736,16 @@
                         <img src="assets/img/avatars/david.jpg" alt="">
                         <div class="message-block">
                             <span>13:09pm</span>
-                            <div class="message-text">C'mon, you just gotta learn the tricks. You can't expect aliens to behave like humans. I mean that's how the mechanics are.</div>
+                            <div class="message-text">C'mon, you just gotta learn the tricks. You can't expect aliens to behave like
+                                humans. I mean that's how the mechanics are.</div>
                         </div>
                     </div>
                     <div class="chat-message is-received">
                         <img src="assets/img/avatars/david.jpg" alt="">
                         <div class="message-block">
                             <span>13:11pm</span>
-                            <div class="message-text">I checked the replay and for example, you always get supply blocked. That's not the right thing to do.</div>
+                            <div class="message-text">I checked the replay and for example, you always get supply blocked. That's not
+                                the right thing to do.</div>
                         </div>
                     </div>
                     <div class="chat-message is-sent">
@@ -6724,8 +6915,8 @@
                         <img src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>2:02pm</span>
-                            <div class="message-text">Hello Milly, Iam really sorry, Iam so busy recently, but i had the time to read it.
-                            </div>
+                            <div class="message-text">Hello Milly, Iam really sorry, Iam so busy recently, but i had the time to read
+                                it.</div>
                         </div>
                     </div>
 
@@ -6741,8 +6932,8 @@
                         <img src="assets/img/avatars/jenna.png" alt="">
                         <div class="message-block">
                             <span>2:05pm</span>
-                            <div class="message-text">Actually it's quite good, there might be some small changes but overall it's great.
-                            </div>
+                            <div class="message-text">Actually it's quite good, there might be some small changes but overall it's
+                                great.</div>
                         </div>
                     </div>
 
@@ -7931,6 +8122,36 @@
             </div>
         </div>
     </div>
+    <div class="footer-bar">
+        <div class="container-fluid">
+            <div class="flex">
+                <div>
+                    <ul>
+                        <img src="../images/footer/logo2.png" class="logo2">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Become</a></li>
+                        <li><a href="#">Our Guide</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li>&copy; 2019 All Rights Reserved.</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="sm">
+                        <li>Visit us on Social Networks</li>
+                        <li><a href="#"><img src="../fonts/fontawesome-free-6.1.1-web/svgs/brands/facebook.svg" alt=""></a></li>
+                        <li><a href="#"><img src="../fonts/fontawesome-free-6.1.1-web/svgs/brands/twitter.svg" alt=""></a></li>
+                        <li><a href="#"><img src="../fonts/fontawesome-free-6.1.1-web/svgs/brands/google-plus.svg" alt=""></a></li>
+                        <li><a href="#"><img src="../fonts/fontawesome-free-6.1.1-web/svgs/brands/pinterest-p.svg" alt=""></a></li>
+                        <li><a href="#"><img src="../fonts/fontawesome-free-6.1.1-web/svgs/brands/youtube.svg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Concatenated js plugins and jQuery -->
     <script src="assets/js/app.js"></script>
     <script src="https://js.stripe.com/v3/"></script>
@@ -7971,29 +8192,25 @@
     <script src="assets/js/compose.js"></script>
     <script src="assets/js/autocompletes.js"></script>
 
-    <!-- profile js -->
+      <!-- for header -->
 
-    <!-- stories js -->
-
-    <!-- friends js -->
-
-    <!-- questions js -->
-
-    <!-- video js -->
-
-    <!-- events js -->
-
-    <!-- news js -->
-
-    <!-- shop js -->
-
-    <!-- inbox js -->
-
-    <!-- settings js -->
-
-    <!-- map page js -->
-
-    <!-- elements page js -->
+         <!-- jQuery -->
+         <script src="../js/jquery-1.12.4.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+ 
+         <!-- Bootstrap -->
+         <script src="../js/plugins.js"></script>
+         <script src="../js/bootstrap.min.js"></script>
+         <!-- Script -->
+         <script src="../js/script.js"></script>
+ 
+         <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+         <script src="../assets/vendor/tiny-slider/tiny-slider.js"></script>
+         <script src="../assets/vendor/sticky-js/sticky.min.js"></script>
+         <script src="../assets/vendor/glightbox/js/glightbox.js"></script>
+         <script src="../assets/js/functions.js"></script>
+    
 </body>
 
 </html>
