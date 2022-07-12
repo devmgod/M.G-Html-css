@@ -51,7 +51,7 @@ input[type=text],
 label,
 select,
 textarea {
-    font-family: Rajdhani, sans-serif
+    /* font-family: Rajdhani, sans-serif */
 }
 
 label {
@@ -826,7 +826,7 @@ textarea::placeholder {
 .form-counter.with-currency:before {
     content: "$";
     color: #00c7d9;
-    font-family: Rajdhani, sans-serif;
+    /* font-family: Rajdhani, sans-serif; */
     font-size: .875rem;
     font-weight: 700;
     position: absolute;
@@ -1588,7 +1588,7 @@ h5,
 h6,
 p {
     color: #3e3f5e;
-    font-family: Rajdhani, sans-serif;
+    /* font-family: Rajdhani, sans-serif; */
     line-height: 1em
 }
 
@@ -7265,7 +7265,7 @@ figure>img {
 }
 
 .widget-box .widget-box-status .widget-box-status-content .user-status {
-    font-family: Rajdhani, sans-serif;
+    /* font-family: Rajdhani, sans-serif; */
     padding-right: 70px
 }
 
@@ -14121,7 +14121,7 @@ figure>img {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    font-family: Rajdhani, sans-serif;
+    /* font-family: Rajdhani, sans-serif; */
     color: #3e3f5e;
     font-size: .875rem;
     font-weight: 500
