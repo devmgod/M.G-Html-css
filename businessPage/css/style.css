@@ -32,7 +32,7 @@ body {
     text-align: center;
     background: #18458B;
     color: #000;
-    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
 }
 
 @-o-viewport {
