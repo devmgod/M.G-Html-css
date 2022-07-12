@@ -2430,6 +2430,9 @@ progress {
   font-size: 0.875em;
   color: #6c757d;
 }
+.form-group {
+  margin-bottom: 20px;
+}
 
 .form-control {
   display: block;
@@ -2850,6 +2853,16 @@ textarea.form-control-lg {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-control {
+  margin-bottom: 20px;
 }
 .form-range:focus {
   outline: 0;

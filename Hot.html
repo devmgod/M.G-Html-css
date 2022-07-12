@@ -15,8 +15,9 @@
         <!-- <link id="style-switch" rel="stylesheet" type="text/css" href="styles.css"> -->
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- <link rel="stylesheet" href="all/css/style.css"> -->
-        <!-- <link rel="stylesheet" href="all/css/bootstrap.min.css"> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		
        
 
 	</head>
@@ -749,7 +750,7 @@
 									<div class="card-header d-flex p-0">
 									  <h3 class="card-title p-3"></h3>
 									  <ul style="margin-left: 250px;" class="nav nav-pills ml-auto p-2">
-										<li class="nav-item"><a class="nav-link" href="#tab_1" data-toggle="tab"><i class="fa fa-picture-o">&nbsp;&nbsp;IMAGES</i></a></li>
+										<li class="nav-item" class="active"><a class="nav-link" href="#tab_1" data-toggle="tab"><i class="fa fa-picture-o">&nbsp;&nbsp;IMAGES</i></a></li>
 										<li class="nav-item"><a class="nav-link" href="#tab_2" data-toggle="tab"><i class="fa fa-video">&nbsp;&nbsp;VIDEO</i></a></li>
 										<li class="nav-item"><a class="nav-link" href="#tab_3" data-toggle="tab"><i class="fa fa-file-audio-o">&nbsp;&nbsp;AUDIO</i></a></li>
 										<li class="nav-item"><a class="nav-link" href="#tab_4" data-toggle="tab"><i class="fa fa-align-left">&nbsp;&nbsp;TEXT</i></a></li>
@@ -835,7 +836,7 @@
 										<div class="tab-pane" id="tab_4">
 												<div class="col-lg-12">
 										  
-										  <form>
+										  <form style="width: 100%;">
 											<input type="text" placeholder="Enter Title" class="form-control">
 						  
 						  
@@ -844,14 +845,15 @@
 											<button type="button" class="btn btn-dark">Add</button>
 										  </form>
 										</div>
-									</div>
+										</div>
 										<!-- /.tab-pane -->
 										<!-- /.tab-pane -->
 										<div class="tab-pane" id="tab_5">
 						  
-										  <form>
-										  <textarea style="margin-top: 10px;" type="text" rows="7" placeholder="Paste Link or Embed code" class="form-control"></textarea>
-										  <small>e.g.: https://www.youtube.com/watch?v=WwoKkq685Hk</small>
+										  <form style="width: 100%;">
+										  <textarea style="margin-top: 10px;" type="text" rows="7" placeholder="Paste Link or Embed code  e.g.: https://www.youtube.com/watch?v=WwoKkq685Hk" class="form-control"></textarea>
+										  <!-- <small>e.g.: https://www.youtube.com/watch?v=WwoKkq685Hk</small> -->
+										  <button type="button" class="btn btn-dark">Add</button>
 										</form>
 										</div>
 										<!-- /.tab-pane -->

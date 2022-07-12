@@ -15,6 +15,7 @@
         <!-- <link id="style-switch" rel="stylesheet" type="text/css" href="styles.css"> -->
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://cdn.ckeditor.com/4.19.0/standard-all/ckeditor.js"></script>
           
 
 	</head>
@@ -755,7 +756,7 @@
                                     <input type="email" class="form-control" id="inputEmail4" placeholder="Enter Title....">
                     
                     
-                                    <textarea style="margin-top: 30px;" rows="6" type="text" class="form-control" placeholder="Type something...."></textarea>
+                                    <textarea cols="80" id="editor1" name="editor1" rows="10"></textarea>
                                   </div>
                                   <div class="form-group col-md-4">
                                     <input type="file" class="form-control">
@@ -897,5 +898,16 @@
 <!-- Bootstrap --> 
 <!-- <script src="js/plugins.js"></script>  -->
 <script src="all/js/bootstrap.min.js"></script> 
+<script>
+    CKEDITOR.replace('editor1', {
+      fullPage: true,
+      extraPlugins: 'docprops',
+      // Disable content filtering because if you use full page mode, you probably
+      // want to  freely enter any HTML content in source mode without any limitations.
+      allowedContent: true,
+      height: 320,
+      removeButtons: 'PasteFromWord'
+    });
+  </script>
 	</body>
 </html>
